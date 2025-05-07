@@ -20,10 +20,10 @@
 class CTGateFtdcSpi
 {
 public:
-	///é”™è¯¯åº”ç­”
+	///´íÎóÓ¦´ğ
 	virtual void OnRspError(CTGateFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) {};
 
-	///æœåŠ¡åœ°å€å‚æ•°æŸ¥è¯¢å“åº”
+	///·şÎñµØÖ·²ÎÊı²éÑ¯ÏìÓ¦
 	virtual void OnRspQryTGIpAddrParam(CTGateFtdcTGIpAddrParamField* pTGIpAddrParam, CTGateFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) {};
 };
 
@@ -31,36 +31,36 @@ public:
 class TG_API_EXPORT CTGateFtdcApi
 {
 public:
-	///åˆ›å»ºTGApi
+	///´´½¨TGApi
 	static CTGateFtdcApi* CreateTGateFtdcApi();
 
-	///è·å–APIçš„ç‰ˆæœ¬ä¿¡æ¯
-	///@retrun è·å–åˆ°çš„ç‰ˆæœ¬å·
+	///»ñÈ¡APIµÄ°æ±¾ĞÅÏ¢
+	///@retrun »ñÈ¡µ½µÄ°æ±¾ºÅ
 	static const char* GetApiVersion();
 
-	///åˆ é™¤æ¥å£å¯¹è±¡æœ¬èº«
-	///@remark ä¸å†ä½¿ç”¨æœ¬æ¥å£å¯¹è±¡æ—¶,è°ƒç”¨è¯¥å‡½æ•°åˆ é™¤æ¥å£å¯¹è±¡
+	///É¾³ı½Ó¿Ú¶ÔÏó±¾Éí
+	///@remark ²»ÔÙÊ¹ÓÃ±¾½Ó¿Ú¶ÔÏóÊ±,µ÷ÓÃ¸Ãº¯ÊıÉ¾³ı½Ó¿Ú¶ÔÏó
 	virtual void Release() = 0;
 
-	///ç­‰å¾…æ¥å£çº¿ç¨‹ç»“æŸè¿è¡Œ
-	///@return çº¿ç¨‹é€€å‡ºä»£ç 
+	///µÈ´ı½Ó¿ÚÏß³Ì½áÊøÔËĞĞ
+	///@return Ïß³ÌÍË³ö´úÂë
 	virtual int Join() = 0;
 
-	///æ³¨å†ŒTGATEç½‘ç»œåœ°å€
-	///@param pszTGAddressï¼šTGATEç½‘ç»œåœ°å€ã€‚
-	///@remark ç½‘ç»œåœ°å€çš„æ ¼å¼ä¸ºï¼šâ€œprotocol://ipaddress:portâ€ï¼Œå¦‚ï¼šâ€tcp://127.0.0.1:17001â€ã€‚ 
-	///@remark â€œtcpâ€ä»£è¡¨ä¼ è¾“åè®®ï¼Œâ€œ127.0.0.1â€ä»£è¡¨æœåŠ¡å™¨åœ°å€ã€‚â€17001â€ä»£è¡¨æœåŠ¡å™¨ç«¯å£å·ã€‚
+	///×¢²áTGATEÍøÂçµØÖ·
+	///@param pszTGAddress£ºTGATEÍøÂçµØÖ·¡£
+	///@remark ÍøÂçµØÖ·µÄ¸ñÊ½Îª£º¡°protocol://ipaddress:port¡±£¬Èç£º¡±tcp://127.0.0.1:17001¡±¡£ 
+	///@remark ¡°tcp¡±´ú±í´«ÊäĞ­Òé£¬¡°127.0.0.1¡±´ú±í·şÎñÆ÷µØÖ·¡£¡±17001¡±´ú±í·şÎñÆ÷¶Ë¿ÚºÅ¡£
 	virtual void RegisterTGAddr(char* pszTGAddress) = 0;
 
-	///æ³¨å†Œå›è°ƒæ¥å£
-	///@param pSpi æ´¾ç”Ÿè‡ªå›è°ƒæ¥å£ç±»çš„å®ä¾‹
+	///×¢²á»Øµ÷½Ó¿Ú
+	///@param pSpi ÅÉÉú×Ô»Øµ÷½Ó¿ÚÀàµÄÊµÀı
 	virtual void RegisterSpi(CTGateFtdcSpi* pSpi) = 0;
 
-	///æœåŠ¡åœ°å€å‚æ•°æŸ¥è¯¢
-	/// è¿”å›å€¼ï¼š
-	/// -1ï¼šå…¥å‚å‡ºé”™
-	/// -2ï¼šè¶…è¿‡åœ¨é€”æµæ§
-	/// -3ï¼šè¶…è¿‡é¢‘ç‡æµæ§ 
+	///·şÎñµØÖ·²ÎÊı²éÑ¯
+	/// ·µ»ØÖµ£º
+	/// -1£ºÈë²Î³ö´í
+	/// -2£º³¬¹ıÔÚÍ¾Á÷¿Ø
+	/// -3£º³¬¹ıÆµÂÊÁ÷¿Ø 
 	virtual int ReqQryTGIpAddrParam(CTGateFtdcQryTGIpAddrParamField* pQryTGIpAddrParamField,int nRequestID) = 0;
 
 protected:

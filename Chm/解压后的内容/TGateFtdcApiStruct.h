@@ -7,49 +7,49 @@
 
 #include "TGateFtdcApiDataType.h"
 
-///鏈嶅姟鍦板潃鏌ヨ
+///服务地址查询
 struct CTGateFtdcQryTGIpAddrParamField
 {
-	///缁忕邯鍏徃浠ｇ爜
+	///经纪公司代码
 	TTGateFtdcBrokerIDType BrokerID;
-	///鐢ㄦ埛浠ｇ爜
+	///用户代码
 	TTGateFtdcUserIDType   UserID;
 };
 
-///鏈嶅姟鍦板潃鍙傛暟
+///服务地址参数
 struct CTGateFtdcTGIpAddrParamField
 {
-	///缁忕邯鍏徃浠ｇ爜
+	///经纪公司代码
 	TTGateFtdcBrokerIDType	BrokerID;
-	///鐢ㄦ埛浠ｇ爜
+	///用户代码
 	TTGateFtdcUserIDType   UserID;
-	///鏈嶅姟鍦板潃
+	///服务地址
 	TTGateFtdcIpAddrType	Address;
-	///浜ゆ槗涓績浠ｇ爜
+	///交易中心代码
 	TTGateFtdcDRIdentityIDType	DRIdentityID;
-	///浜ゆ槗涓績鍚嶇О
+	///交易中心名称
 	TTGateFtdcDRIdentityNameType	DRIdentityName;
-	///浜ゆ槗鍦板潃OR琛屾儏鍦板潃
+	///交易地址OR行情地址
 	TTGateFtdcAddrSrvModeType	AddrSrvMode;
-	///鍦板潃鐗堟湰
+	///地址版本
 	TTGateFtdcAddrVerType	AddrVer;
-	///鏈嶅姟鍦板潃缂栧彿
+	///服务地址编号
 	TTGateFtdcCommonIntType	AddrNo;
-	///鏈嶅姟鍦板潃鍚嶇О
+	///服务地址名称
 	TTGateFtdcAddrNameType	AddrName;
-	///鏄惁鏄浗瀵嗗湴鍧�
+	///是否是国密地址
 	TTGateFtdcBoolType	IsSM;
-	///鏄惁鏄唴缃戝湴鍧�
+	///是否是内网地址
 	TTGateFtdcBoolType	IsLocalAddr;
-	///鍦板潃琛ュ厖淇℃伅
+	///地址补充信息
 	TTGateFtdcAddrRemarkType	Remark;
 };
 
 struct CTGateFtdcRspInfoField
 {
-	///閿欒浠ｇ爜
+	///错误代码
 	TTGateFtdcErrorIDType	ErrorID;
-	///閿欒淇℃伅
+	///错误信息
 	TTGateFtdcErrorMsgType	ErrorMsg;
 };
 

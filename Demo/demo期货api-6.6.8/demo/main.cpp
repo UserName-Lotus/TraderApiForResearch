@@ -8,9 +8,9 @@ int main()
 	logfile = fopen("syslog.txt", "w");
 	while (true)
 	{
-		LOG("è¯·é€‰æ‹©è¿æ¥è¡Œæƒ…/äº¤æ˜“:\n");
-		LOG("1.è¿æ¥äº¤æ˜“\n");
-		LOG("2.è¿æ¥è¡Œæƒ…\n");
+		LOG("ÇëÑ¡ÔñÁ¬½ÓĞĞÇé/½»Ò×:\n");
+		LOG("1.Á¬½Ó½»Ò×\n");
+		LOG("2.Á¬½ÓĞĞÇé\n");
 		int trade_md;
 		cin >> trade_md;
 		switch (trade_md) {
@@ -28,18 +28,18 @@ int main()
 			WaitForSingleObject(xinhao, INFINITE);
 			ash.ReqUserLogin();
 			WaitForSingleObject(xinhao, INFINITE);
-			//å¼€å§‹è·å–åˆçº¦
+			//¿ªÊ¼»ñÈ¡ºÏÔ¼
 			md_InstrumentID.clear();
 			string New_instrument;
-			LOG("è¯·è¾“å…¥åˆçº¦å·ï¼Œå¤šä¸ªåˆçº¦è¯·ä»¥':'åˆ†éš”:\n");
+			LOG("ÇëÊäÈëºÏÔ¼ºÅ£¬¶à¸öºÏÔ¼ÇëÒÔ':'·Ö¸ô:\n");
 			cin >> New_instrument;
 			md_InstrumentID = split(New_instrument, ":");
 
-			ash.SubscribeMarketData();//è®¢é˜…è¡Œæƒ…
-			//ash.SubscribeForQuoteRsp();//è®¢é˜…è¯¢ä»·
-			//ash.UnSubscribeMarketData();//é€€è®¢è¡Œæƒ…
-			//ash.UnSubscribeForQuoteRsp();//é€€è®¢è¯¢ä»·
-			//ash.ReqQryMulticastInstrument();//è¯·æ±‚æŸ¥è¯¢ç»„æ’­åˆçº¦
+			ash.SubscribeMarketData();//¶©ÔÄĞĞÇé
+			//ash.SubscribeForQuoteRsp();//¶©ÔÄÑ¯¼Û
+			//ash.UnSubscribeMarketData();//ÍË¶©ĞĞÇé
+			//ash.UnSubscribeForQuoteRsp();//ÍË¶©Ñ¯¼Û
+			//ash.ReqQryMulticastInstrument();//ÇëÇó²éÑ¯×é²¥ºÏÔ¼
 			//WaitForSingleObject(xinhao, INFINITE);
 			_getch();
 			pUserMdApi->Release();
@@ -52,8 +52,8 @@ int main()
 			cout << "g_chFrontaddr = " << g_chFrontaddr << "\n" << endl;
 			CTraderApi *pUserApi = new CTraderApi;//--------------------------
 			pUserApi->CreateFtdcTraderApi(".\\flow\\");
-			LOG("\napiç‰ˆæœ¬: \n%s",pUserApi->GetApiVersion());
-			LOG("\né‡‡é›†åº“ç‰ˆæœ¬ï¼š\n%s",CTP_GetDataCollectApiVersion());
+			LOG("\napi°æ±¾: \n%s",pUserApi->GetApiVersion());
+			LOG("\n²É¼¯¿â°æ±¾£º\n%s",CTP_GetDataCollectApiVersion());
 			cout << endl;
 			CSimpleHandler sh(pUserApi);
 		cir:pUserApi->RegisterSpi(&sh);
@@ -65,15 +65,15 @@ int main()
 
 			while (true)
 			{
-				LOG("è¯·ç¡®å®šè¿æ¥æ¨¡å¼:\n");
-				LOG("1.ç›´è¿æ¨¡å¼\n");
-				LOG("2.ä¸­ç»§æœåŠ¡å™¨æ“ä½œå‘˜æ¨¡å¼(ä¸€å¯¹å¤šæ¨¡å¼)\n");
-				LOG("3.ä¸­ç»§æœåŠ¡å™¨éæ“ä½œå‘˜æ¨¡å¼(å¤šå¯¹å¤šæ¨¡å¼)\n");
+				LOG("ÇëÈ·¶¨Á¬½ÓÄ£Ê½:\n");
+				LOG("1.Ö±Á¬Ä£Ê½\n");
+				LOG("2.ÖĞ¼Ì·şÎñÆ÷²Ù×÷Ô±Ä£Ê½(Ò»¶Ô¶àÄ£Ê½)\n");
+				LOG("3.ÖĞ¼Ì·şÎñÆ÷·Ç²Ù×÷Ô±Ä£Ê½(¶à¶Ô¶àÄ£Ê½)\n");
 				int mode_num;
 				cin >> mode_num;
 				switch (mode_num)
 				{
-				case 1://ç›´è¿æ¨¡å¼
+				case 1://Ö±Á¬Ä£Ê½
 				{
 					sh.ReqAuthenticate();
 					WaitForSingleObject(g_hEvent, INFINITE);
@@ -81,7 +81,7 @@ int main()
 					WaitForSingleObject(g_hEvent, INFINITE);
 					break;
 				}
-				case 2://æ“ä½œå‘˜æ¨¡å¼
+				case 2://²Ù×÷Ô±Ä£Ê½
 				{
 					sh.ReqAuthenticate();
 					WaitForSingleObject(g_hEvent, INFINITE);
@@ -90,7 +90,7 @@ int main()
 					sh.SubmitUserSystemInfo();
 					break;
 				}
-				case 3://éæ“ä½œå‘˜æ¨¡å¼
+				case 3://·Ç²Ù×÷Ô±Ä£Ê½
 				{
 					sh.ReqAuthenticate();
 					WaitForSingleObject(g_hEvent, INFINITE);
@@ -100,7 +100,7 @@ int main()
 					break;
 				}
 				default:
-					LOG("é€‰æ‹©çš„æ¨¡å¼æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ï¼\n");
+					LOG("Ñ¡ÔñµÄÄ£Ê½ÓĞÎó£¬ÇëÖØĞÂÊäÈë£¡\n");
 					_getch();
 					system("cls");
 					continue;
@@ -110,31 +110,31 @@ int main()
 
 			_getch();
 
-			LOG("æ—¥æœŸ:");
+			LOG("ÈÕÆÚ:");
 			LOG(pUserApi->GetTradingDay());
 			cout << endl;
 			while (true)
 			{
 			loop:int input1;
 				system("cls");
-				LOG("103.è¯·æ±‚ç™»å‡º\n");
-				LOG("1.ç»“ç®—å•ç¡®è®¤è¯·æ±‚\n");
-				LOG("2.ç”¨æˆ·å£ä»¤æ›´æ–°è¯·æ±‚\n");
-				LOG("3.èµ„é‡‘è´¦æˆ·å£ä»¤æ›´æ–°è¯·æ±‚\n");
-				LOG("/////////////æŠ¥å•////////////\n");
-				LOG("4.æŠ¥å•æ¨¡å—\n");
-				LOG("////////////æŸ¥è¯¢/////////////\n");
-				LOG("5.æŸ¥è¯¢æ¨¡å—\n");
-				LOG("/////////////è¡Œæƒ&åšå¸‚å•†////////////\n");
-				LOG("6.è¡Œæƒ&åšå¸‚å•†\n");
-				LOG("///////////å‡ºå…¥é‡‘/////////////\n");
-				LOG("7.è½¬è´¦æŒ‡ä»¤\n");
-				LOG("///////////é“œæœŸæƒæµ‹è¯•////////////\n");
-				LOG("8.é“œæœŸæƒæµ‹è¯•\n");
-				LOG("9.ç‰ˆæœ¬6.6.5æ–°åŠ æ¥å£\n");
-				LOG("0.æ¸…ç©ºç•Œé¢\n");
-				LOG("100.é€€å‡ºç¨‹åº\n");
-				LOG("è¯·è¾“å…¥ä½ éœ€è¦çš„æ“ä½œåºå·ï¼š");
+				LOG("103.ÇëÇóµÇ³ö\n");
+				LOG("1.½áËãµ¥È·ÈÏÇëÇó\n");
+				LOG("2.ÓÃ»§¿ÚÁî¸üĞÂÇëÇó\n");
+				LOG("3.×Ê½ğÕË»§¿ÚÁî¸üĞÂÇëÇó\n");
+				LOG("/////////////±¨µ¥////////////\n");
+				LOG("4.±¨µ¥Ä£¿é\n");
+				LOG("////////////²éÑ¯/////////////\n");
+				LOG("5.²éÑ¯Ä£¿é\n");
+				LOG("/////////////ĞĞÈ¨&×öÊĞÉÌ////////////\n");
+				LOG("6.ĞĞÈ¨&×öÊĞÉÌ\n");
+				LOG("///////////³öÈë½ğ/////////////\n");
+				LOG("7.×ªÕËÖ¸Áî\n");
+				LOG("///////////Í­ÆÚÈ¨²âÊÔ////////////\n");
+				LOG("8.Í­ÆÚÈ¨²âÊÔ\n");
+				LOG("9.°æ±¾6.6.5ĞÂ¼Ó½Ó¿Ú\n");
+				LOG("0.Çå¿Õ½çÃæ\n");
+				LOG("100.ÍË³ö³ÌĞò\n");
+				LOG("ÇëÊäÈëÄãĞèÒªµÄ²Ù×÷ĞòºÅ£º");
 				cin >> input1;
 				switch (input1)
 				{
@@ -145,52 +145,52 @@ int main()
 					break;
 					//goto cir;
 				}
-				case 1://ç»“ç®—å•ç¡®è®¤è¯·æ±‚
+				case 1://½áËãµ¥È·ÈÏÇëÇó
 				{
-					sh.ReqSettlementInfoConfirm();//ç»“ç®—å•ç¡®è®¤è¯·æ±‚
+					sh.ReqSettlementInfoConfirm();//½áËãµ¥È·ÈÏÇëÇó
 					WaitForSingleObject(g_hEvent, INFINITE);
 					_getch();
 					system("cls");
 					break;
 				}
-				case 2://ç”¨æˆ·å£ä»¤æ›´æ–°è¯·æ±‚
+				case 2://ÓÃ»§¿ÚÁî¸üĞÂÇëÇó
 				{
-					sh.ReqUserPasswordUpdate();//ç”¨æˆ·å£ä»¤æ›´æ–°è¯·æ±‚
+					sh.ReqUserPasswordUpdate();//ÓÃ»§¿ÚÁî¸üĞÂÇëÇó
 					WaitForSingleObject(g_hEvent, INFINITE);
 					_getch();
 					system("cls");
 					break;
 				}
-				case 3://èµ„é‡‘è´¦æˆ·å£ä»¤æ›´æ–°è¯·æ±‚
+				case 3://×Ê½ğÕË»§¿ÚÁî¸üĞÂÇëÇó
 				{
-					sh.ReqTradingAccountPasswordUpdate();//èµ„é‡‘è´¦æˆ·å£ä»¤æ›´æ–°è¯·æ±‚
+					sh.ReqTradingAccountPasswordUpdate();//×Ê½ğÕË»§¿ÚÁî¸üĞÂÇëÇó
 					WaitForSingleObject(g_hEvent, INFINITE);
 					_getch();
 					system("cls");
 					break;
 				}
-				case 4://æŠ¥å•å½•å…¥è¯·æ±‚
+				case 4://±¨µ¥Â¼ÈëÇëÇó
 				{
 				orderinsert:system("cls");
 					int orderinsert_num;
-					LOG("3.å¤§å•†æ‰€å¸‚ä»·æ­¢æŸå•\n");
-					LOG("4.æŠ¥å…¥ä¸€ç¬”ç«‹å³å•\n");
-					LOG("5.æ’¤é”€ä¸Šä¸€ç¬”æŠ¥å•\n");
-					LOG("6.æŠ¥å…¥é¢„åŸ‹å•-é™ä»·å•ç«‹å³å•\n");
-					LOG("7.æ’¤é”€é¢„åŸ‹å•-(ä¸Šä¸€ä¸ªé¢„åŸ‹å•)\n");
-					LOG("8.æŠ¥å…¥é¢„åŸ‹æ’¤å•\n");
-					LOG("9.æ’¤é”€é¢„åŸ‹æ’¤å•-(ä¸Šä¸€ä¸ªé¢„åŸ‹æ’¤å•)\n");
-					LOG("10.æŠ¥å…¥æ¡ä»¶å•\n");
-					LOG("11.æ’¤é”€æ¡ä»¶å•-(ä¸Šä¸€ä¸ªæ¡ä»¶å•)\n");
-					LOG("25.å¤§å•†æ‰€æ­¢æŸå•\n");
-					LOG("26.å¤§å•†æ‰€æ­¢ç›ˆå•\n");
-					LOG("27.FOKå…¨æˆå…¨æ’¤\n");
-					LOG("28.FAKéƒ¨æˆéƒ¨æ’¤\n");
-					LOG("29.å¸‚ä»·å•\n");
-					LOG("30.å¥—åˆ©æŒ‡ä»¤\n");
-					LOG("31.äº’æ¢å•\n");
-					LOG("32.ç”³è¯·ç»„åˆ\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚\n");
+					LOG("3.´óÉÌËùÊĞ¼ÛÖ¹Ëğµ¥\n");
+					LOG("4.±¨ÈëÒ»±ÊÁ¢¼´µ¥\n");
+					LOG("5.³·ÏúÉÏÒ»±Ê±¨µ¥\n");
+					LOG("6.±¨ÈëÔ¤Âñµ¥-ÏŞ¼Ûµ¥Á¢¼´µ¥\n");
+					LOG("7.³·ÏúÔ¤Âñµ¥-(ÉÏÒ»¸öÔ¤Âñµ¥)\n");
+					LOG("8.±¨ÈëÔ¤Âñ³·µ¥\n");
+					LOG("9.³·ÏúÔ¤Âñ³·µ¥-(ÉÏÒ»¸öÔ¤Âñ³·µ¥)\n");
+					LOG("10.±¨ÈëÌõ¼şµ¥\n");
+					LOG("11.³·ÏúÌõ¼şµ¥-(ÉÏÒ»¸öÌõ¼şµ¥)\n");
+					LOG("25.´óÉÌËùÖ¹Ëğµ¥\n");
+					LOG("26.´óÉÌËùÖ¹Ó¯µ¥\n");
+					LOG("27.FOKÈ«³ÉÈ«³·\n");
+					LOG("28.FAK²¿³É²¿³·\n");
+					LOG("29.ÊĞ¼Ûµ¥\n");
+					LOG("30.Ì×ÀûÖ¸Áî\n");
+					LOG("31.»¥»»µ¥\n");
+					LOG("32.ÉêÇë×éºÏ\n");
+					LOG("0.·µ»ØÉÏÒ»²ã\n");
 					cin >> orderinsert_num;
 					switch (orderinsert_num)
 					{
@@ -202,63 +202,63 @@ int main()
 						_getch();
 						break;
 					}
-					case 4://æŠ¥å…¥æ™®é€šç«‹å³å•
+					case 4://±¨ÈëÆÕÍ¨Á¢¼´µ¥
 					{
 						sh.ReqOrderInsert_Ordinary();
 						_getch();
 						break;
 					}
-					case 5://æ’¤é”€ä¸Šä¸€ç¬”æŠ¥å•
+					case 5://³·ÏúÉÏÒ»±Ê±¨µ¥
 					{
-						sh.ReqOrderAction_Ordinary();//æ’¤é”€ä¸Šä¸€ç¬”æŠ¥å•
+						sh.ReqOrderAction_Ordinary();//³·ÏúÉÏÒ»±Ê±¨µ¥
 						_getch();
 						break;
 					}
-					case 6://æŠ¥å…¥é¢„åŸ‹å•
+					case 6://±¨ÈëÔ¤Âñµ¥
 					{
-						sh.ReqParkedOrderInsert();//æŠ¥å…¥é¢„åŸ‹å•
+						sh.ReqParkedOrderInsert();//±¨ÈëÔ¤Âñµ¥
 						_getch();
 						break;
 					}
-					case 7://åˆ é™¤é¢„åŸ‹å•
+					case 7://É¾³ıÔ¤Âñµ¥
 					{
-						sh.ReqRemoveParkedOrder();//åˆ é™¤é¢„åŸ‹å•
+						sh.ReqRemoveParkedOrder();//É¾³ıÔ¤Âñµ¥
 						_getch();
 						break;
 					}
-					case 8://æŠ¥å…¥é¢„åŸ‹æ’¤å•
+					case 8://±¨ÈëÔ¤Âñ³·µ¥
 					{
-						sh.ReqParkedOrderAction();//æŠ¥å…¥é¢„åŸ‹æ’¤å•
+						sh.ReqParkedOrderAction();//±¨ÈëÔ¤Âñ³·µ¥
 						_getch();
 						break;
 					}
-					case 9://åˆ é™¤é¢„åŸ‹å•æ’¤å•
+					case 9://É¾³ıÔ¤Âñµ¥³·µ¥
 					{
-						sh.ReqRemoveParkedOrderAction();//åˆ é™¤é¢„åŸ‹å•æ’¤å•
+						sh.ReqRemoveParkedOrderAction();//É¾³ıÔ¤Âñµ¥³·µ¥
 						_getch();
 						break;
 					}
-					case 10://æŠ¥å…¥æ¡ä»¶å•
+					case 10://±¨ÈëÌõ¼şµ¥
 					{
-					it:LOG("1.æœ€æ–°ä»·å¤§äºæ¡ä»¶ä»·\n");
-						LOG("2.æœ€æ–°ä»·å¤§äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("3.æœ€æ–°ä»·å°äºæ¡ä»¶ä»·\n");
-						LOG("4.æœ€æ–°ä»·å°äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("5.å–ä¸€ä»·å¤§äºæ¡ä»¶ä»·\n");
-						LOG("6.å–ä¸€ä»·å¤§äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("7.å–ä¸€ä»·å°äºæ¡ä»¶ä»·\n");
-						LOG("8.å–ä¸€ä»·å°äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("9.ä¹°ä¸€ä»·å¤§äºæ¡ä»¶ä»·\n");
-						LOG("10.ä¹°ä¸€ä»·å¤§äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("11.ä¹°ä¸€ä»·å°äºæ¡ä»¶ä»·\n");
-						LOG("12.ä¹°ä¸€ä»·å°äºç­‰äºæ¡ä»¶ä»·\n");
-						LOG("13.è¿”å›ä¸Šä¸€å±‚\n");
-						LOG("è¯·è¾“å…¥ä½ éœ€è¦æŠ¥å…¥çš„æ¡ä»¶å•ç±»å‹:\n");
+					it:LOG("1.×îĞÂ¼Û´óÓÚÌõ¼ş¼Û\n");
+						LOG("2.×îĞÂ¼Û´óÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("3.×îĞÂ¼ÛĞ¡ÓÚÌõ¼ş¼Û\n");
+						LOG("4.×îĞÂ¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("5.ÂôÒ»¼Û´óÓÚÌõ¼ş¼Û\n");
+						LOG("6.ÂôÒ»¼Û´óÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("7.ÂôÒ»¼ÛĞ¡ÓÚÌõ¼ş¼Û\n");
+						LOG("8.ÂôÒ»¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("9.ÂòÒ»¼Û´óÓÚÌõ¼ş¼Û\n");
+						LOG("10.ÂòÒ»¼Û´óÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("11.ÂòÒ»¼ÛĞ¡ÓÚÌõ¼ş¼Û\n");
+						LOG("12.ÂòÒ»¼ÛĞ¡ÓÚµÈÓÚÌõ¼ş¼Û\n");
+						LOG("13.·µ»ØÉÏÒ»²ã\n");
+						LOG("ÇëÊäÈëÄãĞèÒª±¨ÈëµÄÌõ¼şµ¥ÀàĞÍ:\n");
 						int num;
 						cin >> num;
 						if (num < 1 || num>13)
 						{
-							LOG("è¾“å…¥çš„åºå·æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥.\n");
+							LOG("ÊäÈëµÄĞòºÅÓĞÎó,ÇëÖØĞÂÊäÈë.\n");
 							_getch();
 							goto it;
 						}
@@ -268,344 +268,344 @@ int main()
 						}
 						else
 						{
-							sh.ReqOrderInsert_Condition(num);//æŠ¥å…¥æ¡ä»¶å•
+							sh.ReqOrderInsert_Condition(num);//±¨ÈëÌõ¼şµ¥
 							_getch();
 							break;
 						}
 					}
-					case 11://æŠ¥å…¥æ¡ä»¶å•æ’¤å•
+					case 11://±¨ÈëÌõ¼şµ¥³·µ¥
 					{
-						sh.ReqOrderAction_Condition();//æŠ¥å…¥æ¡ä»¶å•æ’¤å•
+						sh.ReqOrderAction_Condition();//±¨ÈëÌõ¼şµ¥³·µ¥
 						_getch();
 						break;
 					}
 
-					case 25://å¤§å•†æ‰€æ­¢æŸå•
+					case 25://´óÉÌËùÖ¹Ëğµ¥
 					{
 						sh.ReqOrderInsert_Touch();
 						_getch();
 						break;
 					}
-					case 26://å¤§å•†æ‰€æ­¢ç›ˆå•
+					case 26://´óÉÌËùÖ¹Ó¯µ¥
 					{
 						sh.ReqOrderInsert_TouchProfit();
 						_getch();
 						break;
 					}
-					case 27://FOKå…¨æˆå…¨æ’¤
+					case 27://FOKÈ«³ÉÈ«³·
 					{
 						sh.ReqOrderInsert_VC_CV();
 						_getch();
 						break;
 					}
-					case 28://FAKéƒ¨æˆéƒ¨æ’¤
+					case 28://FAK²¿³É²¿³·
 					{
 						sh.ReqOrderInsert_VC_AV();
 						_getch();
 						break;
 					}
-					case 29://å¸‚ä»·å•
+					case 29://ÊĞ¼Ûµ¥
 					{
 						sh.ReqOrderInsert_AnyPrice();
 						_getch();
 						break;
 					}
-					case 30://å¥—åˆ©æŒ‡ä»¤
+					case 30://Ì×ÀûÖ¸Áî
 					{
 						sh.ReqOrderInsert_Arbitrage();
 						_getch();
 						break;
 					}
-					case 31://äº’æ¢å•
+					case 31://»¥»»µ¥
 					{
 						sh.ReqOrderInsert_IsSwapOrder();
 						_getch();
 						break;
 					}
-					case 32://ç”³è¯·ç»„åˆ
+					case 32://ÉêÇë×éºÏ
 					{
 						sh.ReqCombActionInsert();
 						_getch();
 						break;
 					}
 					default:
-						LOG("è¯·è¾“å…¥æ­£ç¡®çš„åºå·\n");
+						LOG("ÇëÊäÈëÕıÈ·µÄĞòºÅ\n");
 						_getch();
 						goto orderinsert;
 					}
 					goto orderinsert;
 				}
-				case 5://æŸ¥è¯¢ç•Œé¢
+				case 5://²éÑ¯½çÃæ
 				{
 				search:system("cls");
 					int choose_num;
-					LOG("4.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“é€šçŸ¥\n");
-					LOG("5.è¯·æ±‚æŸ¥è¯¢å®¢æˆ·é€šçŸ¥\n");
-					LOG("11.æŸ¥è¯¢æˆäº¤\n");
-					LOG("12.æŸ¥è¯¢é¢„åŸ‹å•\n");
-					LOG("13.æŸ¥è¯¢é¢„åŸ‹æ’¤å•\n");
-					LOG("14.æŸ¥è¯¢æŠ¥å•\n");
-					LOG("15.æ’¤å•å¯¹åº”æŸ¥è¯¢ç¼–å·\n");
-					LOG("16.è¯·æ±‚æŸ¥è¯¢èµ„é‡‘è´¦æˆ·\n");//ReqQryTradingAccount
-					LOG("17.è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“\n");//ReqQryInvestorPosition
-					LOG("18.è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“æ˜ç»†\n");//ReqQryInvestorPositionDetail
-					LOG("19.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“æ‰€ä¿è¯é‡‘ç‡\n");//ReqQryExchangeMarginRate
-					LOG("20.è¯·æ±‚æŸ¥è¯¢åˆçº¦ä¿è¯é‡‘ç‡\n");//ReqQryInstrumentMarginRate
-					LOG("21.è¯·æ±‚æŸ¥è¯¢åˆçº¦æ‰‹ç»­è´¹ç‡\n");//ReqQryInstrumentCommissionRate
-					LOG("22.è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†åˆçº¦æ‰‹ç»­è´¹ç‡\n");//ReqQryMMInstrumentCommissionRate
-					LOG("23.è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†æœŸæƒåˆçº¦æ‰‹ç»­è´¹\n"); //ReqQryMMOptionInstrCommRate
-					LOG("24.è¯·æ±‚æŸ¥è¯¢æŠ¥å•æ‰‹ç»­è´¹\n");//ReqQryInstrumentOrderCommRate
-					LOG("25.è¯·æ±‚æŸ¥è¯¢æœŸæƒåˆçº¦æ‰‹ç»­è´¹\n");//ReqQryOptionInstrCommRate
-					LOG("26.è¯·æ±‚æŸ¥è¯¢åˆçº¦\n");//ReqQryInstrument
-					LOG("27.è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…ç»“ç®—ç»“æœ\n");//ReqQrySettlementInfo
-					LOG("28.è¯·æ±‚æŸ¥è¯¢è½¬å¸æµæ°´\n");//ReqQryTransferSerial
-					LOG("29.è¯·æ±‚æŸ¥è¯¢è¯¢ä»·\n");
-					LOG("30.è¯·æ±‚æŸ¥è¯¢æŠ¥ä»·\n");
-					LOG("31.è¯·æ±‚æŸ¥è¯¢æ‰§è¡Œå®£å‘Š\n");
-					LOG("32.è¯·æ±‚æŸ¥è¯¢è½¬å¸é“¶è¡Œ\n");
-					LOG("33.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“é€šçŸ¥\n");
-					LOG("34.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“ç¼–ç \n");
-					LOG("35.è¯·æ±‚æŸ¥è¯¢ç»“ç®—ä¿¡æ¯ç¡®è®¤\n");
-					LOG("36.è¯·æ±‚æŸ¥è¯¢äº§å“ç»„\n");
-					LOG("37.è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…å•å…ƒ\n");
-					LOG("38.æœŸè´§å‘èµ·æŸ¥è¯¢é“¶è¡Œä½™é¢è¯·æ±‚\n");
-					LOG("39.è¯·æ±‚æŸ¥è¯¢ç»çºªå…¬å¸äº¤æ˜“å‚æ•°\n");
-					LOG("40.æŸ¥è¯¢æœ€å¤§æŠ¥å•æ•°é‡è¯·æ±‚\n");
-					LOG("41.è¯·æ±‚æŸ¥è¯¢åˆ†ç±»åˆçº¦\n");
-					LOG("42.è¯·æ±‚ç»„åˆä¼˜æƒ æ¯”ä¾‹\n");
-					LOG("43.è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…å“ç§/è·¨å“ç§ä¿è¯é‡‘\n");
-					LOG("44.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“æ‰€è°ƒæ•´ä¿è¯é‡‘ç‡\n");
-					LOG("45.æŠ•èµ„è€…é£é™©ç»“ç®—æŒä»“æŸ¥è¯¢\n");
-					LOG("46.é£é™©ç»“ç®—äº§å“æŸ¥è¯¢\n");
-					LOG("47.æŸ¥è¯¢é“¶æœŸç­¾çº¦å…³ç³»\n");
-					LOG("48.è¯·æ±‚æŸ¥è¯¢ç­¾çº¦é“¶è¡Œ\n");
-					LOG("49.æŸ¥è¯¢æ·±åº¦è¡Œæƒ…\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚\n");
-					LOG("è¯·è¾“å…¥é€‰æ‹©çš„åºå·:\n");
+					LOG("4.ÇëÇó²éÑ¯½»Ò×Í¨Öª\n");
+					LOG("5.ÇëÇó²éÑ¯¿Í»§Í¨Öª\n");
+					LOG("11.²éÑ¯³É½»\n");
+					LOG("12.²éÑ¯Ô¤Âñµ¥\n");
+					LOG("13.²éÑ¯Ô¤Âñ³·µ¥\n");
+					LOG("14.²éÑ¯±¨µ¥\n");
+					LOG("15.³·µ¥¶ÔÓ¦²éÑ¯±àºÅ\n");
+					LOG("16.ÇëÇó²éÑ¯×Ê½ğÕË»§\n");//ReqQryTradingAccount
+					LOG("17.ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²Ö\n");//ReqQryInvestorPosition
+					LOG("18.ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²ÖÃ÷Ï¸\n");//ReqQryInvestorPositionDetail
+					LOG("19.ÇëÇó²éÑ¯½»Ò×Ëù±£Ö¤½ğÂÊ\n");//ReqQryExchangeMarginRate
+					LOG("20.ÇëÇó²éÑ¯ºÏÔ¼±£Ö¤½ğÂÊ\n");//ReqQryInstrumentMarginRate
+					LOG("21.ÇëÇó²éÑ¯ºÏÔ¼ÊÖĞø·ÑÂÊ\n");//ReqQryInstrumentCommissionRate
+					LOG("22.ÇëÇó²éÑ¯×öÊĞÉÌºÏÔ¼ÊÖĞø·ÑÂÊ\n");//ReqQryMMInstrumentCommissionRate
+					LOG("23.ÇëÇó²éÑ¯×öÊĞÉÌÆÚÈ¨ºÏÔ¼ÊÖĞø·Ñ\n"); //ReqQryMMOptionInstrCommRate
+					LOG("24.ÇëÇó²éÑ¯±¨µ¥ÊÖĞø·Ñ\n");//ReqQryInstrumentOrderCommRate
+					LOG("25.ÇëÇó²éÑ¯ÆÚÈ¨ºÏÔ¼ÊÖĞø·Ñ\n");//ReqQryOptionInstrCommRate
+					LOG("26.ÇëÇó²éÑ¯ºÏÔ¼\n");//ReqQryInstrument
+					LOG("27.ÇëÇó²éÑ¯Í¶×ÊÕß½áËã½á¹û\n");//ReqQrySettlementInfo
+					LOG("28.ÇëÇó²éÑ¯×ªÕÊÁ÷Ë®\n");//ReqQryTransferSerial
+					LOG("29.ÇëÇó²éÑ¯Ñ¯¼Û\n");
+					LOG("30.ÇëÇó²éÑ¯±¨¼Û\n");
+					LOG("31.ÇëÇó²éÑ¯Ö´ĞĞĞû¸æ\n");
+					LOG("32.ÇëÇó²éÑ¯×ªÕÊÒøĞĞ\n");
+					LOG("33.ÇëÇó²éÑ¯½»Ò×Í¨Öª\n");
+					LOG("34.ÇëÇó²éÑ¯½»Ò×±àÂë\n");
+					LOG("35.ÇëÇó²éÑ¯½áËãĞÅÏ¢È·ÈÏ\n");
+					LOG("36.ÇëÇó²éÑ¯²úÆ·×é\n");
+					LOG("37.ÇëÇó²éÑ¯Í¶×ÊÕßµ¥Ôª\n");
+					LOG("38.ÆÚ»õ·¢Æğ²éÑ¯ÒøĞĞÓà¶îÇëÇó\n");
+					LOG("39.ÇëÇó²éÑ¯¾­¼Í¹«Ë¾½»Ò×²ÎÊı\n");
+					LOG("40.²éÑ¯×î´ó±¨µ¥ÊıÁ¿ÇëÇó\n");
+					LOG("41.ÇëÇó²éÑ¯·ÖÀàºÏÔ¼\n");
+					LOG("42.ÇëÇó×éºÏÓÅ»İ±ÈÀı\n");
+					LOG("43.ÇëÇó²éÑ¯Í¶×ÊÕßÆ·ÖÖ/¿çÆ·ÖÖ±£Ö¤½ğ\n");
+					LOG("44.ÇëÇó²éÑ¯½»Ò×Ëùµ÷Õû±£Ö¤½ğÂÊ\n");
+					LOG("45.Í¶×ÊÕß·çÏÕ½áËã³Ö²Ö²éÑ¯\n");
+					LOG("46.·çÏÕ½áËã²úÆ·²éÑ¯\n");
+					LOG("47.²éÑ¯ÒøÆÚÇ©Ô¼¹ØÏµ\n");
+					LOG("48.ÇëÇó²éÑ¯Ç©Ô¼ÒøĞĞ\n");
+					LOG("49.²éÑ¯Éî¶ÈĞĞÇé\n");
+					LOG("0.·µ»ØÉÏÒ»²ã\n");
+					LOG("ÇëÊäÈëÑ¡ÔñµÄĞòºÅ:\n");
 					cin >> choose_num;
 					switch (choose_num)
 					{
 					case 4:
 					{
-						sh.ReqQryTradingNotice();//è¯·æ±‚æŸ¥è¯¢äº¤æ˜“é€šçŸ¥
+						sh.ReqQryTradingNotice();//ÇëÇó²éÑ¯½»Ò×Í¨Öª
 						_getch();
 						break;
 					}
 					case 5:
 					{
-						sh.ReqQryNotice();//è¯·æ±‚æŸ¥è¯¢å®¢æˆ·é€šçŸ¥
+						sh.ReqQryNotice();//ÇëÇó²éÑ¯¿Í»§Í¨Öª
 						_getch();
 						break;
 					}
-					case 11://è¯·æ±‚æŸ¥è¯¢æˆäº¤
+					case 11://ÇëÇó²éÑ¯³É½»
 					{
-						sh.ReqQryTrade();//è¯·æ±‚æŸ¥è¯¢æˆäº¤
+						sh.ReqQryTrade();//ÇëÇó²éÑ¯³É½»
 						_getch();
 						break;
 					}
-					case 12://è¯·æ±‚æŸ¥è¯¢æœåŠ¡å™¨é¢„åŸ‹å•
+					case 12://ÇëÇó²éÑ¯·şÎñÆ÷Ô¤Âñµ¥
 					{
-						sh.ReqQryParkedOrder();//è¯·æ±‚æŸ¥è¯¢æœåŠ¡å™¨é¢„åŸ‹å•
+						sh.ReqQryParkedOrder();//ÇëÇó²éÑ¯·şÎñÆ÷Ô¤Âñµ¥
 						_getch();
 						break;
 					}
-					case 13://è¯·æ±‚æŸ¥è¯¢æœåŠ¡å™¨é¢„åŸ‹æ’¤å•
+					case 13://ÇëÇó²éÑ¯·şÎñÆ÷Ô¤Âñ³·µ¥
 					{
-						sh.ReqQryParkedOrderAction();//è¯·æ±‚æŸ¥è¯¢æœåŠ¡å™¨é¢„åŸ‹æ’¤å•
+						sh.ReqQryParkedOrderAction();//ÇëÇó²éÑ¯·şÎñÆ÷Ô¤Âñ³·µ¥
 						_getch();
 						break;
 					}
-					case 14://è¯·æ±‚æŸ¥è¯¢æŠ¥å•
+					case 14://ÇëÇó²éÑ¯±¨µ¥
 					{
-						sh.ReqQryOrder();//è¯·æ±‚æŸ¥è¯¢æŠ¥å•
+						sh.ReqQryOrder();//ÇëÇó²éÑ¯±¨µ¥
 						_getch();
 						break;
 					}
-					case 15://æ’¤é”€æŸ¥è¯¢çš„æŠ¥å•å›æŠ¥
+					case 15://³·Ïú²éÑ¯µÄ±¨µ¥»Ø±¨
 					{
 					action:int action_num;
-						LOG("è¯·è¾“å…¥éœ€è¦æ’¤å•çš„åºå·ï¼š\n");
+						LOG("ÇëÊäÈëĞèÒª³·µ¥µÄĞòºÅ£º\n");
 						cin >> action_num;
 						LOG("%d\n", action_num);
 						if (action_num < 1 || action_num > vector_OrderSysID.size())
 						{
-							LOG("è¾“å…¥çš„åºå·æœ‰è¯¯,è¯·é‡æ–°è¾“å…¥.\n");
+							LOG("ÊäÈëµÄĞòºÅÓĞÎó,ÇëÖØĞÂÊäÈë.\n");
 							_getch();
 							goto action;
 						}
-						sh.ReqOrderAction_forqry(action_num);//æ’¤é”€æŸ¥è¯¢çš„æŠ¥å•å›æŠ¥
+						sh.ReqOrderAction_forqry(action_num);//³·Ïú²éÑ¯µÄ±¨µ¥»Ø±¨
 						_getch();
 						break;
 					}
-					case 16://è¯·æ±‚æŸ¥è¯¢èµ„é‡‘è´¦æˆ·
+					case 16://ÇëÇó²éÑ¯×Ê½ğÕË»§
 					{
-						sh.ReqQryTradingAccount();//è¯·æ±‚æŸ¥è¯¢èµ„é‡‘è´¦æˆ·
+						sh.ReqQryTradingAccount();//ÇëÇó²éÑ¯×Ê½ğÕË»§
 						_getch();
 						break;
 					}
-					case 17://è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“
+					case 17://ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²Ö
 					{
-						sh.ReqQryInvestorPosition();//è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“
+						sh.ReqQryInvestorPosition();//ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²Ö
 						_getch();
 						break;
 					}
-					case 18://è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“æ˜ç»†
+					case 18://ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²ÖÃ÷Ï¸
 					{
-						sh.ReqQryInvestorPositionDetail();//è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…æŒä»“æ˜ç»†
+						sh.ReqQryInvestorPositionDetail();//ÇëÇó²éÑ¯Í¶×ÊÕß³Ö²ÖÃ÷Ï¸
 						_getch();
 						break;
 					}
-					case 19://è¯·æ±‚æŸ¥è¯¢äº¤æ˜“æ‰€ä¿è¯é‡‘ç‡
+					case 19://ÇëÇó²éÑ¯½»Ò×Ëù±£Ö¤½ğÂÊ
 					{
-						sh.ReqQryExchangeMarginRate();//è¯·æ±‚æŸ¥è¯¢äº¤æ˜“æ‰€ä¿è¯é‡‘ç‡
+						sh.ReqQryExchangeMarginRate();//ÇëÇó²éÑ¯½»Ò×Ëù±£Ö¤½ğÂÊ
 						_getch();
 						break;
 					}
-					case 20://è¯·æ±‚æŸ¥è¯¢åˆçº¦ä¿è¯é‡‘ç‡
+					case 20://ÇëÇó²éÑ¯ºÏÔ¼±£Ö¤½ğÂÊ
 					{
-						sh.ReqQryInstrumentMarginRate();//è¯·æ±‚æŸ¥è¯¢åˆçº¦ä¿è¯é‡‘ç‡
+						sh.ReqQryInstrumentMarginRate();//ÇëÇó²éÑ¯ºÏÔ¼±£Ö¤½ğÂÊ
 						_getch();
 						break;
 					}
-					case 21://è¯·æ±‚æŸ¥è¯¢åˆçº¦æ‰‹ç»­è´¹ç‡
+					case 21://ÇëÇó²éÑ¯ºÏÔ¼ÊÖĞø·ÑÂÊ
 					{
-						sh.ReqQryInstrumentCommissionRate();//è¯·æ±‚æŸ¥è¯¢åˆçº¦æ‰‹ç»­è´¹ç‡
+						sh.ReqQryInstrumentCommissionRate();//ÇëÇó²éÑ¯ºÏÔ¼ÊÖĞø·ÑÂÊ
 						_getch();
 						break;
 					}
-					case 22://è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†åˆçº¦æ‰‹ç»­è´¹ç‡
+					case 22://ÇëÇó²éÑ¯×öÊĞÉÌºÏÔ¼ÊÖĞø·ÑÂÊ
 					{
-						sh.ReqQryMMInstrumentCommissionRate();//è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†åˆçº¦æ‰‹ç»­è´¹ç‡
+						sh.ReqQryMMInstrumentCommissionRate();//ÇëÇó²éÑ¯×öÊĞÉÌºÏÔ¼ÊÖĞø·ÑÂÊ
 						_getch();
 						break;
 					}
-					case 23://è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†æœŸæƒåˆçº¦æ‰‹ç»­è´¹
+					case 23://ÇëÇó²éÑ¯×öÊĞÉÌÆÚÈ¨ºÏÔ¼ÊÖĞø·Ñ
 					{
-						sh.ReqQryMMOptionInstrCommRate();//è¯·æ±‚æŸ¥è¯¢åšå¸‚å•†åˆçº¦æ‰‹ç»­è´¹ç‡
+						sh.ReqQryMMOptionInstrCommRate();//ÇëÇó²éÑ¯×öÊĞÉÌºÏÔ¼ÊÖĞø·ÑÂÊ
 						_getch();
 						break;
 					}
-					case 24://è¯·æ±‚æŸ¥è¯¢æŠ¥å•æ‰‹ç»­è´¹
+					case 24://ÇëÇó²éÑ¯±¨µ¥ÊÖĞø·Ñ
 					{
-						sh.ReqQryInstrumentOrderCommRate();//è¯·æ±‚æŸ¥è¯¢æŠ¥å•æ‰‹ç»­è´¹
+						sh.ReqQryInstrumentOrderCommRate();//ÇëÇó²éÑ¯±¨µ¥ÊÖĞø·Ñ
 						_getch();
 						break;
 					}
-					case 25://è¯·æ±‚æŸ¥è¯¢æœŸæƒåˆçº¦æ‰‹ç»­è´¹
+					case 25://ÇëÇó²éÑ¯ÆÚÈ¨ºÏÔ¼ÊÖĞø·Ñ
 					{
-						sh.ReqQryOptionInstrCommRate();//è¯·æ±‚æŸ¥è¯¢æœŸæƒåˆçº¦æ‰‹ç»­è´¹
+						sh.ReqQryOptionInstrCommRate();//ÇëÇó²éÑ¯ÆÚÈ¨ºÏÔ¼ÊÖĞø·Ñ
 						_getch();
 						break;
 					}
-					case 26://è¯·æ±‚æŸ¥è¯¢åˆçº¦
+					case 26://ÇëÇó²éÑ¯ºÏÔ¼
 					{
-						sh.ReqQryInstrument();//è¯·æ±‚æŸ¥è¯¢åˆçº¦
+						sh.ReqQryInstrument();//ÇëÇó²éÑ¯ºÏÔ¼
 						_getch();
 						break;
 					}
-					case 27://è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…ç»“ç®—ç»“æœ
+					case 27://ÇëÇó²éÑ¯Í¶×ÊÕß½áËã½á¹û
 					{
-						sh.ReqQrySettlementInfo();//è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…ç»“ç®—ç»“æœ
+						sh.ReqQrySettlementInfo();//ÇëÇó²éÑ¯Í¶×ÊÕß½áËã½á¹û
 						_getch();
 						break;
 					}
-					case 28://è¯·æ±‚æŸ¥è¯¢è½¬å¸æµæ°´
+					case 28://ÇëÇó²éÑ¯×ªÕÊÁ÷Ë®
 					{
-						sh.ReqQryTransferSerial();//è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…ç»“ç®—ç»“æœ
+						sh.ReqQryTransferSerial();//ÇëÇó²éÑ¯Í¶×ÊÕß½áËã½á¹û
 						_getch();
 						break;
 					}
-					case 29://è¯·æ±‚æŸ¥è¯¢è¯¢ä»·
+					case 29://ÇëÇó²éÑ¯Ñ¯¼Û
 					{
-						sh.ReqQryForQuote();//è¯·æ±‚æŸ¥è¯¢è¯¢ä»·
+						sh.ReqQryForQuote();//ÇëÇó²éÑ¯Ñ¯¼Û
 						_getch();
 						break;
 					}
-					case 30://è¯·æ±‚æŸ¥è¯¢æŠ¥ä»·
+					case 30://ÇëÇó²éÑ¯±¨¼Û
 					{
-						sh.ReqQryQuote();//è¯·æ±‚æŸ¥è¯¢æŠ¥ä»·
+						sh.ReqQryQuote();//ÇëÇó²éÑ¯±¨¼Û
 						_getch();
 						break;
 					}
-					case 31://è¯·æ±‚æŸ¥è¯¢æ‰§è¡Œå®£å‘Š
+					case 31://ÇëÇó²éÑ¯Ö´ĞĞĞû¸æ
 					{
-						sh.ReqQryExecOrder();//è¯·æ±‚æŸ¥è¯¢æ‰§è¡Œå®£å‘Š
+						sh.ReqQryExecOrder();//ÇëÇó²éÑ¯Ö´ĞĞĞû¸æ
 						_getch();
 						break;
 					}
-					case 32://è¯·æ±‚æŸ¥è¯¢è½¬å¸é“¶è¡Œ
+					case 32://ÇëÇó²éÑ¯×ªÕÊÒøĞĞ
 					{
 						sh.ReqQryTransferBank();
 						_getch();
 						break;
 					}
-					case 33://è¯·æ±‚æŸ¥è¯¢äº¤æ˜“é€šçŸ¥
+					case 33://ÇëÇó²éÑ¯½»Ò×Í¨Öª
 					{
 						sh.ReqQryTradingNotice();
 						_getch();
 						break;
 					}
-					case 34://è¯·æ±‚æŸ¥è¯¢äº¤æ˜“ç¼–ç 
+					case 34://ÇëÇó²éÑ¯½»Ò×±àÂë
 					{
 						sh.ReqQryTradingCode();
 						_getch();
 						break;
 					}
-					case 35://è¯·æ±‚æŸ¥è¯¢ç»“ç®—ä¿¡æ¯ç¡®è®¤
+					case 35://ÇëÇó²éÑ¯½áËãĞÅÏ¢È·ÈÏ
 					{
 						sh.ReqQrySettlementInfoConfirm();
 						_getch();
 						break;
 					}
-					case 36://è¯·æ±‚æŸ¥è¯¢äº§å“ç»„
+					case 36://ÇëÇó²éÑ¯²úÆ·×é
 					{
 						sh.ReqQryProductGroup();
 						_getch();
 						break;
 					}
-					case 37://è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…å•å…ƒ
+					case 37://ÇëÇó²éÑ¯Í¶×ÊÕßµ¥Ôª
 					{
 						sh.ReqQryInvestUnit();
 						_getch();
 						break;
 					}
-					case 38://æœŸè´§å‘èµ·æŸ¥è¯¢é“¶è¡Œä½™é¢è¯·æ±‚
+					case 38://ÆÚ»õ·¢Æğ²éÑ¯ÒøĞĞÓà¶îÇëÇó
 					{
 						sh.ReqQueryBankAccountMoneyByFuture();
 						_getch();
 						break;
 					}
-					case 39://è¯·æ±‚æŸ¥è¯¢ç»çºªå…¬å¸äº¤æ˜“å‚æ•°
+					case 39://ÇëÇó²éÑ¯¾­¼Í¹«Ë¾½»Ò×²ÎÊı
 					{
 						sh.ReqQryBrokerTradingParams();
 						_getch();
 						break;
 					}
-					case 40://æŸ¥è¯¢æœ€å¤§æŠ¥å•æ•°é‡è¯·æ±‚
+					case 40://²éÑ¯×î´ó±¨µ¥ÊıÁ¿ÇëÇó
 					{
 						sh.ReqQryMaxOrderVolume();
 						_getch();
 						break;
 					}
-					case 41://è¯·æ±‚æŸ¥è¯¢åˆ†ç±»åˆçº¦
+					case 41://ÇëÇó²éÑ¯·ÖÀàºÏÔ¼
 					{
 						sh.ReqQryClassifiedInstrument();
 						_getch();
 						break;
 					}
-					case 42://è¯·æ±‚ç»„åˆä¼˜æƒ æ¯”ä¾‹
+					case 42://ÇëÇó×éºÏÓÅ»İ±ÈÀı
 					{
 						sh.ReqQryCombPromotionParam();
 						_getch();
 						break;
 					}
-					case 43://è¯·æ±‚æŸ¥è¯¢æŠ•èµ„è€…å“ç§/è·¨å“ç§ä¿è¯é‡‘
+					case 43://ÇëÇó²éÑ¯Í¶×ÊÕßÆ·ÖÖ/¿çÆ·ÖÖ±£Ö¤½ğ
 					{
 						sh.ReqQryInvestorProductGroupMargin();
 						_getch();
 						break;
 					}
-					case 44://è¯·æ±‚æŸ¥è¯¢äº¤æ˜“æ‰€è°ƒæ•´ä¿è¯é‡‘ç‡
+					case 44://ÇëÇó²éÑ¯½»Ò×Ëùµ÷Õû±£Ö¤½ğÂÊ
 					{
 						sh.ReqQryExchangeMarginRateAdjust();
 						_getch();
@@ -623,7 +623,7 @@ int main()
 						_getch();
 						break;
 					}
-					case 47://æŸ¥è¯¢é“¶æœŸç­¾çº¦å…³ç³»
+					case 47://²éÑ¯ÒøÆÚÇ©Ô¼¹ØÏµ
 					{
 						sh.ReqQryAccountregister();
 						_getch();
@@ -646,47 +646,47 @@ int main()
 						goto loop;
 					}
 					default: {
-						LOG("è¯·è¾“å…¥æ­£ç¡®çš„åºå·\n");
+						LOG("ÇëÊäÈëÕıÈ·µÄĞòºÅ\n");
 						_getch();
 						goto search;
 					}
 					}
 					goto search;
 				}
-				case 6://è¡Œæƒ&åšå¸‚å•†
+				case 6://ĞĞÈ¨&×öÊĞÉÌ
 				{
 				Exec:system("cls");
 					int num_xingquan;
-					LOG("32.æ‰§è¡Œå®£å‘Šå½•å…¥è¯·æ±‚\n");
-					LOG("33.æ‰§è¡Œå®£å‘Šæ“ä½œè¯·æ±‚\n");
-					LOG("34.æ”¾å¼ƒè¡Œæƒ\n");
-					LOG("35.è¯¢ä»·å½•å…¥è¯·æ±‚\n");
-					LOG("36.åšå¸‚å•†æŠ¥ä»·å½•å…¥è¯·æ±‚\n");
-					LOG("37.åšå¸‚å•†æŠ¥ä»·æ’¤é”€è¯·æ±‚\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚")
-						LOG("è¯·é€‰æ‹©ä½ éœ€è¦çš„ç¼–ç ");
+					LOG("32.Ö´ĞĞĞû¸æÂ¼ÈëÇëÇó\n");
+					LOG("33.Ö´ĞĞĞû¸æ²Ù×÷ÇëÇó\n");
+					LOG("34.·ÅÆúĞĞÈ¨\n");
+					LOG("35.Ñ¯¼ÛÂ¼ÈëÇëÇó\n");
+					LOG("36.×öÊĞÉÌ±¨¼ÛÂ¼ÈëÇëÇó\n");
+					LOG("37.×öÊĞÉÌ±¨¼Û³·ÏúÇëÇó\n");
+					LOG("0.·µ»ØÉÏÒ»²ã")
+						LOG("ÇëÑ¡ÔñÄãĞèÒªµÄ±àÂë");
 					cin >> num_xingquan;
 					switch (num_xingquan)
 					{
-					case 32://æ‰§è¡Œå®£å‘Šå½•å…¥è¯·æ±‚
+					case 32://Ö´ĞĞĞû¸æÂ¼ÈëÇëÇó
 					{
 						sh.ReqExecOrderInsert(0);
 						_getch();
 						break;
 					}
-					case 33://æ‰§è¡Œå®£å‘Šæ“ä½œè¯·æ±‚
+					case 33://Ö´ĞĞĞû¸æ²Ù×÷ÇëÇó
 					{
 						sh.ReqExecOrderAction();
 						_getch();
 						break;
 					}
-					case 34://æ”¾å¼ƒè¡Œæƒ
+					case 34://·ÅÆúĞĞÈ¨
 					{
 						sh.ReqExecOrderInsert(1);
 						_getch();
 						break;
 					}
-					case 35://è¯¢ä»·å½•å…¥è¯·æ±‚
+					case 35://Ñ¯¼ÛÂ¼ÈëÇëÇó
 					{
 						string g_chFrontMdaddr = getConfig("config", "FrontMdAddr");
 						cout << "g_chFrontMdaddr = " << g_chFrontMdaddr << "\n" << endl;
@@ -699,19 +699,19 @@ int main()
 						WaitForSingleObject(xinhao, INFINITE);
 						ash.ReqUserLogin();
 						WaitForSingleObject(xinhao, INFINITE);
-						ash.SubscribeMarketData();//è¡Œæƒ…è®¢é˜…è¯¢ä»·è¯·æ±‚
-						sh.ReqForQuoteInsert();//äº¤æ˜“è¯·æ±‚è¯¢ä»·
+						ash.SubscribeMarketData();//ĞĞÇé¶©ÔÄÑ¯¼ÛÇëÇó
+						sh.ReqForQuoteInsert();//½»Ò×ÇëÇóÑ¯¼Û
 						_getch();
 						pUserMdApi->Release();
 						break;
 					}
-					case 36://åšå¸‚å•†æŠ¥ä»·å½•å…¥è¯·æ±‚
+					case 36://×öÊĞÉÌ±¨¼ÛÂ¼ÈëÇëÇó
 					{
 						sh.ReqQuoteInsert();
 						_getch();
 						break;
 					}
-					case 37://åšå¸‚å•†æŠ¥ä»·æ’¤é”€è¯·æ±‚
+					case 37://×öÊĞÉÌ±¨¼Û³·ÏúÇëÇó
 					{
 						sh.ReqQuoteAction();
 						_getch();
@@ -722,29 +722,29 @@ int main()
 						goto loop;
 					}
 					default:
-						LOG("è¾“å…¥çš„ç¼–ç æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+						LOG("ÊäÈëµÄ±àÂëÓĞÎó£¬ÇëÖØĞÂÊäÈë\n");
 						_getch();
 					}
 					goto Exec;
 				}
-				case 7://æœŸè´§èµ„é‡‘è½¬è´¦
+				case 7://ÆÚ»õ×Ê½ğ×ªÕË
 				{
 				futrue:system("cls");
 					int num_future;
-					LOG("38.æœŸè´§å‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§è¯·æ±‚\n");
-					LOG("39.æœŸè´§å‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œè¯·æ±‚\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚\n");
-					LOG("è¯·è¾“å…¥ä½ éœ€è¦çš„æ“ä½œåºå·ï¼š");
+					LOG("38.ÆÚ»õ·¢ÆğÒøĞĞ×Ê½ğ×ªÆÚ»õÇëÇó\n");
+					LOG("39.ÆÚ»õ·¢ÆğÆÚ»õ×Ê½ğ×ªÒøĞĞÇëÇó\n");
+					LOG("0.·µ»ØÉÏÒ»²ã\n");
+					LOG("ÇëÊäÈëÄãĞèÒªµÄ²Ù×÷ĞòºÅ£º");
 					cin >> num_future;
 					switch (num_future)
 					{
-					case 38://æœŸè´§å‘èµ·é“¶è¡Œèµ„é‡‘è½¬æœŸè´§è¯·æ±‚
+					case 38://ÆÚ»õ·¢ÆğÒøĞĞ×Ê½ğ×ªÆÚ»õÇëÇó
 					{
 						sh.ReqFromBankToFutureByFuture();
 						_getch();
 						break;
 					}
-					case 39://æœŸè´§å‘èµ·æœŸè´§èµ„é‡‘è½¬é“¶è¡Œè¯·æ±‚
+					case 39://ÆÚ»õ·¢ÆğÆÚ»õ×Ê½ğ×ªÒøĞĞÇëÇó
 					{
 						sh.ReqFromFutureToBankByFuture();
 						_getch();
@@ -755,21 +755,21 @@ int main()
 						goto loop;
 					}
 					default:
-						LOG("è¾“å…¥çš„ç¼–ç æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+						LOG("ÊäÈëµÄ±àÂëÓĞÎó£¬ÇëÖØĞÂÊäÈë\n");
 						_getch();
 					}
 					goto futrue;
 				}
-				case 8://é“œæœŸæƒæµ‹è¯•
+				case 8://Í­ÆÚÈ¨²âÊÔ
 				{
 				qiquan:system("cls");
 					int num_qiquan;
-					LOG("//////////////é“œæœŸæƒæµ‹è¯•////////////\n");
-					LOG("1.æœŸæƒè‡ªå¯¹å†²å½•å…¥è¯·æ±‚\n");
-					LOG("2.æœŸæƒè‡ªå¯¹å†²æ“ä½œè¯·æ±‚\n");
-					LOG("3.è¯·æ±‚æŸ¥è¯¢æœŸæƒè‡ªå¯¹å†²\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚\n");
-					LOG("è¯·é€‰æ‹©ä½ éœ€è¦çš„ç¼–ç :\n");
+					LOG("//////////////Í­ÆÚÈ¨²âÊÔ////////////\n");
+					LOG("1.ÆÚÈ¨×Ô¶Ô³åÂ¼ÈëÇëÇó\n");
+					LOG("2.ÆÚÈ¨×Ô¶Ô³å²Ù×÷ÇëÇó\n");
+					LOG("3.ÇëÇó²éÑ¯ÆÚÈ¨×Ô¶Ô³å\n");
+					LOG("0.·µ»ØÉÏÒ»²ã\n");
+					LOG("ÇëÑ¡ÔñÄãĞèÒªµÄ±àÂë:\n");
 					cin >> num_qiquan;
 					switch (num_qiquan)
 					{
@@ -795,24 +795,24 @@ int main()
 						goto loop;
 						break;
 					default:
-						LOG("è¾“å…¥çš„åºå·æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚\n\n");
+						LOG("ÊäÈëµÄĞòºÅÓĞÎó£¬ÇëÖØĞÂÊäÈë¡£\n\n");
 						_getch();
 					}
 					goto qiquan;
 				}
-				case 9://ç‰ˆæœ¬6.6.5æ–°åŠ æ¥å£
+				case 9://°æ±¾6.6.5ĞÂ¼Ó½Ó¿Ú
 				{
 				NewVersion:
 					system("cls");
 					int num_Newversion;
-					LOG("æ–°ç‰ˆæœ¬æµ‹è¯•\n");
-					LOG("1.è¯·æ±‚æŸ¥è¯¢äº¤æ˜“å‘˜æŠ¥ç›˜æœº\n");
-					LOG("0.è¿”å›ä¸Šä¸€å±‚\n");
-					LOG("è¯·é€‰æ‹©ä½ éœ€è¦çš„ç¼–ç :\n");
+					LOG("ĞÂ°æ±¾²âÊÔ\n");
+					LOG("1.ÇëÇó²éÑ¯½»Ò×Ô±±¨ÅÌ»ú\n");
+					LOG("0.·µ»ØÉÏÒ»²ã\n");
+					LOG("ÇëÑ¡ÔñÄãĞèÒªµÄ±àÂë:\n");
 					cin >> num_Newversion;
 					switch (num_Newversion)
 					{
-					case 1://æŸ¥è¯¢ç”¨æˆ·å½“å‰æ”¯æŒçš„è®¤è¯æ¨¡å¼
+					case 1://²éÑ¯ÓÃ»§µ±Ç°Ö§³ÖµÄÈÏÖ¤Ä£Ê½
 					{
 						sh.ReqQryTraderOffer();
 						_getch();
@@ -822,7 +822,7 @@ int main()
 						goto loop;
 						break;
 					default:
-						LOG("è¾“å…¥çš„åºå·æœ‰è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚\n\n");
+						LOG("ÊäÈëµÄĞòºÅÓĞÎó£¬ÇëÖØĞÂÊäÈë¡£\n\n");
 						_getch();
 						goto NewVersion;
 					}
@@ -839,7 +839,7 @@ int main()
 			return 0;
 		}
 		default: {
-			LOG("è¯·è¾“å…¥æ­£ç¡®çš„åºå·ã€‚/n");
+			LOG("ÇëÊäÈëÕıÈ·µÄĞòºÅ¡£/n");
 			_getch();
 		}
 		}

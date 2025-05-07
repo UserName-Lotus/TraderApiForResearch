@@ -1,11 +1,11 @@
-//é«˜è¿›åº¦è®¡æ—¶å™¨//å¾®å¦™çº§
+//¸ß½ø¶È¼ÆÊ±Æ÷//Î¢Ãî¼¶
 #pragma once
 #include <windows.h>
 class timing
 {
 public:
 	timing(void);
-	~timing(void);//ææ„å‡½æ•°
+	~timing(void);//Îö¹¹º¯Êı
 
 private:
 	LARGE_INTEGER time_begin;
