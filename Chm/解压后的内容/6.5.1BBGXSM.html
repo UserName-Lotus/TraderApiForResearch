@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 <title>
-6.5.1版本更新说明</title>
+6.5.1鐗堟湰鏇存柊璇存槑</title>
 <meta name="info" content="6.5.1BBGXSM.md" >
 <meta name="viewport" content="width=device-width, user-scalable=yes" />
 <meta http-equiv="Content-Type" content="text/html;charset=gb18030">
@@ -127,7 +127,7 @@ function LoadUserSelectedTheme()
 </script>
 </head>
 <body onLoad="ShowPage()">
-<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>6.5.1版本更新说明</p><hr class="headerline"/><div id="content"><script src="jquery-1.7.0.min.js"></script><script src="menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
+<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>6.5.1鐗堟湰鏇存柊璇存槑</p><hr class="headerline"/><div id="content"><script src="jquery-1.7.0.min.js"></script><script src="menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
 {
 var qTitle=document.getElementById(questionTitleId);
 var qChoiceText0="",qChoiceText1="",qChoiceText2="",qChoiceText3="";var qChoice0=document.getElementById(questionChoice0Id);
@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,228 +151,206 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#ba498874-a2d6-4ad0-a936-9c924d0744c6">1. 兼容性</a></p><p><a href="#3b186c67-088e-418f-9744-a451c32f7959">2. 运行环境</a></p><p><a href="#9f329c7b-e7d7-475c-9906-84c331230540">3. API变动</a></p><p>　<a href="#4a1ac8fc-b6a2-4e91-ac54-f8cdd0ed6e53">3.1. InstrumentID字段增长</a></p><p>　<a href="#9d6cd735-d5f4-42cb-bb4d-f0c45bfc3c20">3.2. IPAddress字段增长</a></p><p>　<a href="#e2e17c80-9a35-4f51-8fe7-f5e0520f1079">3.3. 新增查询大商所组合优惠参数接口</a></p><p>　<a href="#a293f53c-a92b-453a-bc44-7d7696d2cdc4">3.4. 新增组合枚举值</a></p><p>　<a href="#f7632f2c-22a1-4b46-862e-ee6cf03d603b">3.5. 新增公有流可订阅和取消的功能</a></p><p>　<a href="#f27f55c8-2add-431d-ae7a-79fa3ac5ae59">3.6. 新增查询分类合约的接口</a></p><p>　<a href="#02a0fa5a-6a31-48f2-8575-80f76b1b8fb7">3.7. 查询最大报单数量的接口名称修改</a></p><p>　<a href="#64cd74f9-f821-4349-9d0c-2184da4d9314">3.8. 请求查询报价接口逻辑优化</a></p><p><a href="#bafd993e-7062-4443-8de7-9f499fc7d567">4. 看穿式采集库说明</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="GXLS.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.5.1BBGXSMBCSM.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>版本号：v6.5.1_20200908_traderapi</p>
-<span id="ba498874-a2d6-4ad0-a936-9c924d0744c6" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1. 兼容性</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
-<p>V6.3.X的API可以访问6.3.X~6.5.X及其以上的CTP后台系统，但无法支持大商所长合约期权组合，无法支持IPv6；</p>
-<p>V6.5.X的API<strong>只能访问</strong>6.5.X及其以上的CTP后台系统，支持大商所长合约期权组合，支持IPv6；</p>
-<p>注意：6.5.1API引入的新函数只有在接入6.5.1及以上后台的时候才会有响应，接入6.5.0时无响应。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="3b186c67-088e-418f-9744-a451c32f7959" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2. 运行环境</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
-<p>Linux操作系统版本为Redhat5.8及以上。</p>
-<p>Windows为vista及以上的操作系统，支持32位和64位。</p>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#ba498874-a2d6-4ad0-a936-9c924d0744c6">1. 鍏煎鎬?/a></p><p><a href="#3b186c67-088e-418f-9744-a451c32f7959">2. 杩愯鐜</a></p><p><a href="#9f329c7b-e7d7-475c-9906-84c331230540">3. API鍙樺姩</a></p><p>銆€<a href="#4a1ac8fc-b6a2-4e91-ac54-f8cdd0ed6e53">3.1. InstrumentID瀛楁澧為暱</a></p><p>銆€<a href="#9d6cd735-d5f4-42cb-bb4d-f0c45bfc3c20">3.2. IPAddress瀛楁澧為暱</a></p><p>銆€<a href="#e2e17c80-9a35-4f51-8fe7-f5e0520f1079">3.3. 鏂板鏌ヨ澶у晢鎵€缁勫悎浼樻儬鍙傛暟鎺ュ彛</a></p><p>銆€<a href="#a293f53c-a92b-453a-bc44-7d7696d2cdc4">3.4. 鏂板缁勫悎鏋氫妇鍊?/a></p><p>銆€<a href="#f7632f2c-22a1-4b46-862e-ee6cf03d603b">3.5. 鏂板鍏湁娴佸彲璁㈤槄鍜屽彇娑堢殑鍔熻兘</a></p><p>銆€<a href="#f27f55c8-2add-431d-ae7a-79fa3ac5ae59">3.6. 鏂板鏌ヨ鍒嗙被鍚堢害鐨勬帴鍙?/a></p><p>銆€<a href="#02a0fa5a-6a31-48f2-8575-80f76b1b8fb7">3.7. 鏌ヨ鏈€澶ф姤鍗曟暟閲忕殑鎺ュ彛鍚嶇О淇敼</a></p><p>銆€<a href="#64cd74f9-f821-4349-9d0c-2184da4d9314">3.8. 璇锋眰鏌ヨ鎶ヤ环鎺ュ彛閫昏緫浼樺寲</a></p><p><a href="#bafd993e-7062-4443-8de7-9f499fc7d567">4. 鐪嬬┛寮忛噰闆嗗簱璇存槑</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="GXLS.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="6.5.1BBGXSMBCSM.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>鐗堟湰鍙凤細v6.5.1_20200908_traderapi</p>
+<span id="ba498874-a2d6-4ad0-a936-9c924d0744c6" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1. 鍏煎鎬?/h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
+<p>V6.3.X鐨凙PI鍙互璁块棶6.3.X~6.5.X鍙婂叾浠ヤ笂鐨凜TP鍚庡彴绯荤粺锛屼絾鏃犳硶鏀寔澶у晢鎵€闀垮悎绾︽湡鏉冪粍鍚堬紝鏃犳硶鏀寔IPv6锛?/p>
+<p>V6.5.X鐨凙PI<strong>鍙兘璁块棶</strong>6.5.X鍙婂叾浠ヤ笂鐨凜TP鍚庡彴绯荤粺锛屾敮鎸佸ぇ鍟嗘墍闀垮悎绾︽湡鏉冪粍鍚堬紝鏀寔IPv6锛?/p>
+<p>娉ㄦ剰锛?.5.1API寮曞叆鐨勬柊鍑芥暟鍙湁鍦ㄦ帴鍏?.5.1鍙婁互涓婂悗鍙扮殑鏃跺€欐墠浼氭湁鍝嶅簲锛屾帴鍏?.5.0鏃舵棤鍝嶅簲銆?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="3b186c67-088e-418f-9744-a451c32f7959" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2. 杩愯鐜</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>Linux鎿嶄綔绯荤粺鐗堟湰涓篟edhat5.8鍙婁互涓娿€?/p>
+<p>Windows涓簐ista鍙婁互涓婄殑鎿嶄綔绯荤粺锛屾敮鎸?2浣嶅拰64浣嶃€?/p>
 <blockquote>
-  <p>只支持vista及以上的操作系统是由于本次更新支持IPv6，涉及函数只能在vista及以上版本使用。</p>
+  <p>鍙敮鎸乿ista鍙婁互涓婄殑鎿嶄綔绯荤粺鏄敱浜庢湰娆℃洿鏂版敮鎸両Pv6锛屾秹鍙婂嚱鏁板彧鑳藉湪vista鍙婁互涓婄増鏈娇鐢ㄣ€?/p>
 </blockquote>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="9f329c7b-e7d7-475c-9906-84c331230540" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3. API变动</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<span id="4a1ac8fc-b6a2-4e91-ac54-f8cdd0ed6e53" class="anchor"></span><h2 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>3.1. InstrumentID字段增长</h2><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h2' id='panel4'>
-<p>为了支持大商所的超长组合合约，原先的合约字段30个字节已经不够长，所以需要对合约字段进行扩长。</p>
-<p>新增合约代码类型为80字节。</p>
-<pre><code>///TFtdcInstrumentIDType是一个合约代码类型
-/////////////////////////////////////////////////////////////////////////
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="9f329c7b-e7d7-475c-9906-84c331230540" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3. API鍙樺姩</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<span id="4a1ac8fc-b6a2-4e91-ac54-f8cdd0ed6e53" class="anchor"></span><h2 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>3.1. InstrumentID瀛楁澧為暱</h2><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h2' id='panel4'>
+<p>涓轰簡鏀寔澶у晢鎵€鐨勮秴闀跨粍鍚堝悎绾︼紝鍘熷厛鐨勫悎绾﹀瓧娈?0涓瓧鑺傚凡缁忎笉澶熼暱锛屾墍浠ラ渶瑕佸鍚堢害瀛楁杩涜鎵╅暱銆?/p>
+<p>鏂板鍚堢害浠ｇ爜绫诲瀷涓?0瀛楄妭銆?/p>
+<pre><code>///TFtdcInstrumentIDType鏄竴涓悎绾︿唬鐮佺被鍨?/////////////////////////////////////////////////////////////////////////
 typedef char TThostFtdcInstrumentIDType[81];
 </code></pre>
-<p>原来的合约代码类型改为TThostFtdcOldInstrumentIDType，并且原来的合约代码类型对应的字段改成保留字段且不用填写（填写系统会忽略）。</p>
+<p>鍘熸潵鐨勫悎绾︿唬鐮佺被鍨嬫敼涓篢ThostFtdcOldInstrumentIDType锛屽苟涓斿師鏉ョ殑鍚堢害浠ｇ爜绫诲瀷瀵瑰簲鐨勫瓧娈垫敼鎴愪繚鐣欏瓧娈典笖涓嶇敤濉啓锛堝～鍐欑郴缁熶細蹇界暐锛夈€?/p>
 <pre><code>/////////////////////////////////////////////////////////////////////////
-///TFtdcOldInstrumentIDType是一个合约代码类型
-/////////////////////////////////////////////////////////////////////////
+///TFtdcOldInstrumentIDType鏄竴涓悎绾︿唬鐮佺被鍨?/////////////////////////////////////////////////////////////////////////
 typedef char TThostFtdcOldInstrumentIDType[31];
-TThostFtdcOldInstrumentIDType   reserve1；
-TThostFtdcOldExchangeInstIDType reserve2;
-TThostFtdcOldInstrumentIDType   reserve3；
-</code></pre>
-<span id="9d6cd735-d5f4-42cb-bb4d-f0c45bfc3c20" class="anchor"></span></div><h2 class='title' id='title5' title='点击展开/折叠'><span id='header_span5' class='header_span'>◇ </span>3.2. IPAddress字段增长</h2><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('◆ ');}else{$("#header_span5").html('◇ ');}});});</script><div class='panel_title_h2' id='panel5'>
-<p>为了支持以后IPv6的ip地址长度，对ip地址进行扩长，新增IP地址类型为32字节。</p>
+TThostFtdcOldInstrumentIDType   reserve1锛?TThostFtdcOldExchangeInstIDType reserve2;
+TThostFtdcOldInstrumentIDType   reserve3锛?</code></pre>
+<span id="9d6cd735-d5f4-42cb-bb4d-f0c45bfc3c20" class="anchor"></span></div><h2 class='title' id='title5' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span5' class='header_span'>鈼?</span>3.2. IPAddress瀛楁澧為暱</h2><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('鈼?');}else{$("#header_span5").html('鈼?');}});});</script><div class='panel_title_h2' id='panel5'>
+<p>涓轰簡鏀寔浠ュ悗IPv6鐨刬p鍦板潃闀垮害锛屽ip鍦板潃杩涜鎵╅暱锛屾柊澧濱P鍦板潃绫诲瀷涓?2瀛楄妭銆?/p>
 <pre><code>/////////////////////////////////////////////////////////////////////////
-///TFtdcIPAddressType是一个IP地址类型
+///TFtdcIPAddressType鏄竴涓狪P鍦板潃绫诲瀷
 /////////////////////////////////////////////////////////////////////////
 typedef char TThostFtdcIPAddressType[33];
 </code></pre>
-<p>原来的ip地址类型改为TThostFtdcOldIPAddressType，原来的ip地址类型对应的字段改成保留字段且不用填写（填写系统会忽略）。</p>
+<p>鍘熸潵鐨刬p鍦板潃绫诲瀷鏀逛负TThostFtdcOldIPAddressType锛屽師鏉ョ殑ip鍦板潃绫诲瀷瀵瑰簲鐨勫瓧娈垫敼鎴愪繚鐣欏瓧娈典笖涓嶇敤濉啓锛堝～鍐欑郴缁熶細蹇界暐锛夈€?/p>
 <pre><code>/////////////////////////////////////////////////////////////////////////
-///TFtdcOldIPAddressType是一个IP地址类型
+///TFtdcOldIPAddressType鏄竴涓狪P鍦板潃绫诲瀷
 /////////////////////////////////////////////////////////////////////////
 typedef char TThostFtdcOldIPAddressType[16];
 TThostFtdcOldIPAddressType  reserve2
 </code></pre>
-<p>凡是接口中涉及IPAdress要手动填写的（如<a href="JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a>）按照如下规则：</p>
+<p>鍑℃槸鎺ュ彛涓秹鍙奍PAdress瑕佹墜鍔ㄥ～鍐欑殑锛堝<a href="JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a>锛夋寜鐓у涓嬭鍒欙細</p>
 <pre><code>strcpy(address, "127.0.0.1")
 strcpy(address, "AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH")
 </code></pre>
 <blockquote>
-  <p>ipv6要转成非零压缩地址，即原始地址，同时要去掉冒号，例如：AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH</p>
+  <p>ipv6瑕佽浆鎴愰潪闆跺帇缂╁湴鍧€锛屽嵆鍘熷鍦板潃锛屽悓鏃惰鍘绘帀鍐掑彿锛屼緥濡傦細AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH</p>
 </blockquote>
-<p><a href="HQJK/CTHOSTFTDCMDAPI/REGISTERFRONT.html">RegisterFront</a>和<a href="HQJK/CTHOSTFTDCMDAPI/REGISTERNAMESERVER.html">RegisterNameServer</a>函数按照如下规则填写：</p>
+<p><a href="HQJK/CTHOSTFTDCMDAPI/REGISTERFRONT.html">RegisterFront</a>鍜?a href="HQJK/CTHOSTFTDCMDAPI/REGISTERNAMESERVER.html">RegisterNameServer</a>鍑芥暟鎸夌収濡備笅瑙勫垯濉啓锛?/p>
 <pre><code>FrontAddress=tcp://172.24.121.51:35001
 FrontAddress=tcp6://fe80::20f8:aa9b:7d59:887d:35001
 </code></pre>
-<span id="e2e17c80-9a35-4f51-8fe7-f5e0520f1079" class="anchor"></span></div><h2 class='title' id='title6' title='点击展开/折叠'><span id='header_span6' class='header_span'>◇ </span>3.3. 新增查询大商所组合优惠参数接口</h2><script>$(document).ready(function(){$("#title6").click(function(){$("#panel6").toggle();if($("#panel6").is(":hidden")){$("#header_span6").html('◆ ');}else{$("#header_span6").html('◇ ');}});});</script><div class='panel_title_h2' id='panel6'>
-<p>大商所的期权对锁组合（OPL），买入期权垂直价差组合（BLS），卖出期权垂直价差组合（BES），日历价差组合（CAS）和买入期权期货组合（BFO）的保证金计算公式中需要乘以保证金优惠比例。</p>
-<p>该比例参数由交易所给出，终端如果需要计算如上组合的保证金，可以通过本接口查询组合合约的组合优惠参数X值，由于优惠参数目前不区分投机套保，因此查询返回域投保标志<code>CombHedgeFlag</code>字段默认为投机类型。</p>
-<p>保证金计算公式如下：</p>
+<span id="e2e17c80-9a35-4f51-8fe7-f5e0520f1079" class="anchor"></span></div><h2 class='title' id='title6' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span6' class='header_span'>鈼?</span>3.3. 鏂板鏌ヨ澶у晢鎵€缁勫悎浼樻儬鍙傛暟鎺ュ彛</h2><script>$(document).ready(function(){$("#title6").click(function(){$("#panel6").toggle();if($("#panel6").is(":hidden")){$("#header_span6").html('鈼?');}else{$("#header_span6").html('鈼?');}});});</script><div class='panel_title_h2' id='panel6'>
+<p>澶у晢鎵€鐨勬湡鏉冨閿佺粍鍚堬紙OPL锛夛紝涔板叆鏈熸潈鍨傜洿浠峰樊缁勫悎锛圔LS锛夛紝鍗栧嚭鏈熸潈鍨傜洿浠峰樊缁勫悎锛圔ES锛夛紝鏃ュ巻浠峰樊缁勫悎锛圕AS锛夊拰涔板叆鏈熸潈鏈熻揣缁勫悎锛圔FO锛夌殑淇濊瘉閲戣绠楀叕寮忎腑闇€瑕佷箻浠ヤ繚璇侀噾浼樻儬姣斾緥銆?/p>
+<p>璇ユ瘮渚嬪弬鏁扮敱浜ゆ槗鎵€缁欏嚭锛岀粓绔鏋滈渶瑕佽绠楀涓婄粍鍚堢殑淇濊瘉閲戯紝鍙互閫氳繃鏈帴鍙ｆ煡璇㈢粍鍚堝悎绾︾殑缁勫悎浼樻儬鍙傛暟X鍊硷紝鐢变簬浼樻儬鍙傛暟鐩墠涓嶅尯鍒嗘姇鏈哄淇濓紝鍥犳鏌ヨ杩斿洖鍩熸姇淇濇爣蹇?code>CombHedgeFlag</code>瀛楁榛樿涓烘姇鏈虹被鍨嬨€?/p>
+<p>淇濊瘉閲戣绠楀叕寮忓涓嬶細</p>
 <ul>
-<li><p>期权对锁（OPL），保证金收取为X*卖期权保证金</p></li>
-<li><p>买入期权垂直价差组合（BLS），保证金收取为X*卖期权保证金</p></li>
-<li><p>卖出期权垂直价差组合（BES），保证金收取为min(执行价格之差*交易单位，空头期权保证金)</p></li>
-<li><p>日历价差组合（CAS），保证金收取为X*卖出期权保证金</p></li>
-<li><p>买入期权期货组合（BFO），保证金收取为X*期货保证金</p></li>
+<li><p>鏈熸潈瀵归攣锛圤PL锛夛紝淇濊瘉閲戞敹鍙栦负X*鍗栨湡鏉冧繚璇侀噾</p></li>
+<li><p>涔板叆鏈熸潈鍨傜洿浠峰樊缁勫悎锛圔LS锛夛紝淇濊瘉閲戞敹鍙栦负X*鍗栨湡鏉冧繚璇侀噾</p></li>
+<li><p>鍗栧嚭鏈熸潈鍨傜洿浠峰樊缁勫悎锛圔ES锛夛紝淇濊瘉閲戞敹鍙栦负min(鎵ц浠锋牸涔嬪樊*浜ゆ槗鍗曚綅锛岀┖澶存湡鏉冧繚璇侀噾)</p></li>
+<li><p>鏃ュ巻浠峰樊缁勫悎锛圕AS锛夛紝淇濊瘉閲戞敹鍙栦负X*鍗栧嚭鏈熸潈淇濊瘉閲?/p></li>
+<li><p>涔板叆鏈熸潈鏈熻揣缁勫悎锛圔FO锛夛紝淇濊瘉閲戞敹鍙栦负X*鏈熻揣淇濊瘉閲?/p></li>
 </ul>
-<p>新增查询大商所组合优惠参数接口如下，合约代码需要填组合合约代码：</p>
-<pre><code>///请求组合优惠比例
+<p>鏂板鏌ヨ澶у晢鎵€缁勫悎浼樻儬鍙傛暟鎺ュ彛濡備笅锛屽悎绾︿唬鐮侀渶瑕佸～缁勫悎鍚堢害浠ｇ爜锛?/p>
+<pre><code>///璇锋眰缁勫悎浼樻儬姣斾緥
 virtual int ReqQryCombPromotionParam(CThostFtdcQryCombPromotionParamField *pQryCombPromotionParam, int nRequestID);
-///查询组合优惠比例
+///鏌ヨ缁勫悎浼樻儬姣斾緥
 struct CThostFtdcQryCombPromotionParamField
 {
-     ///交易所代码
+     ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType ExchangeID;
-     ///合约代码
+     ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType InstrumentID;
 };
-///请求组合优惠比例响应
+///璇锋眰缁勫悎浼樻儬姣斾緥鍝嶅簲
 virtual void OnRspQryCombPromotionParam(CThostFtdcCombPromotionParamField *pCombPromotionParam, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};
-///组合优惠比例
+///缁勫悎浼樻儬姣斾緥
 struct CThostFtdcCombPromotionParamField
 {
-     ///交易所代码
+     ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType ExchangeID;
-     ///合约代码
+     ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType InstrumentID;
-     ///投机套保标志
+     ///鎶曟満濂椾繚鏍囧織
     TThostFtdcCombHedgeFlagType CombHedgeFlag;
-     ///期权组合保证金比例
-    TThostFtdcDiscountRatioType Xparameter;
+     ///鏈熸潈缁勫悎淇濊瘉閲戞瘮渚?    TThostFtdcDiscountRatioType Xparameter;
 };
 </code></pre>
-<span id="a293f53c-a92b-453a-bc44-7d7696d2cdc4" class="anchor"></span></div><h2 class='title' id='title7' title='点击展开/折叠'><span id='header_span7' class='header_span'>◇ </span>3.4. 新增组合枚举值</h2><script>$(document).ready(function(){$("#title7").click(function(){$("#panel7").toggle();if($("#panel7").is(":hidden")){$("#header_span7").html('◆ ');}else{$("#header_span7").html('◇ ');}});});</script><div class='panel_title_h2' id='panel7'>
-<pre><code>///TFtdcCombinationTypeType是一个组合类型类型
-/////////////////////////////////////////////////////////////////////////
-    ///期货组合
+<span id="a293f53c-a92b-453a-bc44-7d7696d2cdc4" class="anchor"></span></div><h2 class='title' id='title7' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span7' class='header_span'>鈼?</span>3.4. 鏂板缁勫悎鏋氫妇鍊?/h2><script>$(document).ready(function(){$("#title7").click(function(){$("#panel7").toggle();if($("#panel7").is(":hidden")){$("#header_span7").html('鈼?');}else{$("#header_span7").html('鈼?');}});});</script><div class='panel_title_h2' id='panel7'>
+<pre><code>///TFtdcCombinationTypeType鏄竴涓粍鍚堢被鍨嬬被鍨?/////////////////////////////////////////////////////////////////////////
+    ///鏈熻揣缁勫悎
     #define THOST_FTDC_COMBT_Future '0'
-    ///垂直价差BUL
+    ///鍨傜洿浠峰樊BUL
     #define THOST_FTDC_COMBT_BUL '1'
-    ///垂直价差BER
+    ///鍨傜洿浠峰樊BER
     #define THOST_FTDC_COMBT_BER '2'
-    ///跨式组合
+    ///璺ㄥ紡缁勫悎
     #define THOST_FTDC_COMBT_STD '3'
-    ///宽跨式组合
-    #define THOST_FTDC_COMBT_STG '4'
-    ///备兑组合
+    ///瀹借法寮忕粍鍚?    #define THOST_FTDC_COMBT_STG '4'
+    ///澶囧厬缁勫悎
     #define THOST_FTDC_COMBT_PRT '5'
-    ///时间价差组合
+    ///鏃堕棿浠峰樊缁勫悎
     #define THOST_FTDC_COMBT_CAS '6'
-    ///期权对锁组合
+    ///鏈熸潈瀵归攣缁勫悎
     #define THOST_FTDC_COMBT_OPL '7'
-    ///买备兑组合
-    #define THOST_FTDC_COMBT_BFO '8'
-    ///买入期权垂直价差组合
+    ///涔板鍏戠粍鍚?    #define THOST_FTDC_COMBT_BFO '8'
+    ///涔板叆鏈熸潈鍨傜洿浠峰樊缁勫悎
     #define THOST_FTDC_COMBT_BLS '9'
-    ///卖出期权垂直价差组合
+    ///鍗栧嚭鏈熸潈鍨傜洿浠峰樊缁勫悎
     #define THOST_FTDC_COMBT_BES 'a'
 </code></pre>
-<p>对大商所组合进行申请和拆分时，合约填写规则如下：</p>
-<p>期权跨式组合合约申请和拆分（STD m1905-c-2700&amp;m1905-p-2700）</p>
-<p>期权宽跨式组合合约申请和拆分（STG m1905-p-2400&amp;m1905-c-2700）</p>
-<p>备兑组合合约申请和拆分（PRT m1905-c-2400&amp;m1905）</p>
-<p>期货跨期组合合约申请和拆分（SP a1903&amp;a1905）</p>
-<p>期货跨品种组合合约申请和拆分（SPC c1903&amp;cs1909）</p>
-<p>期货对锁组合合约申请和拆分（SP a1903&amp; a1903）</p>
-<p>期权对锁组合合约申请和拆分（OPL m1809-P-3150&amp;m1809-P-3150）</p>
-<p>期权买入垂直价差组合申请和拆分（BLS m1809-P-3150&amp;m1809-P-3100）</p>
-<p>期权卖出垂直价差组合申请和拆分（BES m1809-P-3350&amp;m1809-P-3150）</p>
-<p>期权日历价差组合申请和拆分（CAS m1807-P-3150&amp;m1809-P-3150）</p>
-<p>买入期权期货组合申请和拆分（BFO m1809-P-3150&amp;m1809）</p>
-<span id="f7632f2c-22a1-4b46-862e-ee6cf03d603b" class="anchor"></span></div><h2 class='title' id='title8' title='点击展开/折叠'><span id='header_span8' class='header_span'>◇ </span>3.5. 新增公有流可订阅和取消的功能</h2><script>$(document).ready(function(){$("#title8").click(function(){$("#panel8").toggle();if($("#panel8").is(":hidden")){$("#header_span8").html('◆ ');}else{$("#header_span8").html('◇ ');}});});</script><div class='panel_title_h2' id='panel8'>
-<p>增加取消订阅公共流的枚举<code>THOST_TERT_NONE</code>，不调用<a href="JYJK/CTHOSTFTDCTRADERAPI/SUBSCRIBEPUBLICTOPIC.html">SubscribePublicTopic</a>时默认从本交易日开始订阅，调用<a href="JYJK/CTHOSTFTDCTRADERAPI/SUBSCRIBEPUBLICTOPIC.html">SubscribePublicTopic</a>则以传参为准，同订阅私有流，在登录之前调用。</p>
-<pre><code>///订阅公共流。
-virtual void SubscribePublicTopic(THOST_TE_RESUME_TYPE nResumeType) = 0;
-///@param nResumeType 公共流重传方式  
-///        THOST_TERT_RESTART:从本交易日开始重传
-///        THOST_TERT_RESUME:从上次收到的续传
-///        THOST_TERT_QUICK:只传送登录后公共流的内容
-///        THOST_TERT_NONE:取消订阅公共流
-///@remark 该方法要在Init方法前调用。若不调用则不会收到公共流的数据。
-</code></pre>
-<span id="f27f55c8-2add-431d-ae7a-79fa3ac5ae59" class="anchor"></span></div><h2 class='title' id='title9' title='点击展开/折叠'><span id='header_span9' class='header_span'>◇ </span>3.6. 新增查询分类合约的接口</h2><script>$(document).ready(function(){$("#title9").click(function(){$("#panel9").toggle();if($("#panel9").is(":hidden")){$("#header_span9").html('◆ ');}else{$("#header_span9").html('◇ ');}});});</script><div class='panel_title_h2' id='panel9'>
-<p>CTP合约信息可分为可交易合约和非交易合约，非交易合约数据量占比较大。</p>
+<p>瀵瑰ぇ鍟嗘墍缁勫悎杩涜鐢宠鍜屾媶鍒嗘椂锛屽悎绾﹀～鍐欒鍒欏涓嬶細</p>
+<p>鏈熸潈璺ㄥ紡缁勫悎鍚堢害鐢宠鍜屾媶鍒嗭紙STD m1905-c-2700&amp;m1905-p-2700锛?/p>
+<p>鏈熸潈瀹借法寮忕粍鍚堝悎绾︾敵璇峰拰鎷嗗垎锛圫TG m1905-p-2400&amp;m1905-c-2700锛?/p>
+<p>澶囧厬缁勫悎鍚堢害鐢宠鍜屾媶鍒嗭紙PRT m1905-c-2400&amp;m1905锛?/p>
+<p>鏈熻揣璺ㄦ湡缁勫悎鍚堢害鐢宠鍜屾媶鍒嗭紙SP a1903&amp;a1905锛?/p>
+<p>鏈熻揣璺ㄥ搧绉嶇粍鍚堝悎绾︾敵璇峰拰鎷嗗垎锛圫PC c1903&amp;cs1909锛?/p>
+<p>鏈熻揣瀵归攣缁勫悎鍚堢害鐢宠鍜屾媶鍒嗭紙SP a1903&amp; a1903锛?/p>
+<p>鏈熸潈瀵归攣缁勫悎鍚堢害鐢宠鍜屾媶鍒嗭紙OPL m1809-P-3150&amp;m1809-P-3150锛?/p>
+<p>鏈熸潈涔板叆鍨傜洿浠峰樊缁勫悎鐢宠鍜屾媶鍒嗭紙BLS m1809-P-3150&amp;m1809-P-3100锛?/p>
+<p>鏈熸潈鍗栧嚭鍨傜洿浠峰樊缁勫悎鐢宠鍜屾媶鍒嗭紙BES m1809-P-3350&amp;m1809-P-3150锛?/p>
+<p>鏈熸潈鏃ュ巻浠峰樊缁勫悎鐢宠鍜屾媶鍒嗭紙CAS m1807-P-3150&amp;m1809-P-3150锛?/p>
+<p>涔板叆鏈熸潈鏈熻揣缁勫悎鐢宠鍜屾媶鍒嗭紙BFO m1809-P-3150&amp;m1809锛?/p>
+<span id="f7632f2c-22a1-4b46-862e-ee6cf03d603b" class="anchor"></span></div><h2 class='title' id='title8' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span8' class='header_span'>鈼?</span>3.5. 鏂板鍏湁娴佸彲璁㈤槄鍜屽彇娑堢殑鍔熻兘</h2><script>$(document).ready(function(){$("#title8").click(function(){$("#panel8").toggle();if($("#panel8").is(":hidden")){$("#header_span8").html('鈼?');}else{$("#header_span8").html('鈼?');}});});</script><div class='panel_title_h2' id='panel8'>
+<p>澧炲姞鍙栨秷璁㈤槄鍏叡娴佺殑鏋氫妇<code>THOST_TERT_NONE</code>锛屼笉璋冪敤<a href="JYJK/CTHOSTFTDCTRADERAPI/SUBSCRIBEPUBLICTOPIC.html">SubscribePublicTopic</a>鏃堕粯璁や粠鏈氦鏄撴棩寮€濮嬭闃咃紝璋冪敤<a href="JYJK/CTHOSTFTDCTRADERAPI/SUBSCRIBEPUBLICTOPIC.html">SubscribePublicTopic</a>鍒欎互浼犲弬涓哄噯锛屽悓璁㈤槄绉佹湁娴侊紝鍦ㄧ櫥褰曚箣鍓嶈皟鐢ㄣ€?/p>
+<pre><code>///璁㈤槄鍏叡娴併€?virtual void SubscribePublicTopic(THOST_TE_RESUME_TYPE nResumeType) = 0;
+///@param nResumeType 鍏叡娴侀噸浼犳柟寮? 
+///        THOST_TERT_RESTART:浠庢湰浜ゆ槗鏃ュ紑濮嬮噸浼?///        THOST_TERT_RESUME:浠庝笂娆℃敹鍒扮殑缁紶
+///        THOST_TERT_QUICK:鍙紶閫佺櫥褰曞悗鍏叡娴佺殑鍐呭
+///        THOST_TERT_NONE:鍙栨秷璁㈤槄鍏叡娴?///@remark 璇ユ柟娉曡鍦↖nit鏂规硶鍓嶈皟鐢ㄣ€傝嫢涓嶈皟鐢ㄥ垯涓嶄細鏀跺埌鍏叡娴佺殑鏁版嵁銆?</code></pre>
+<span id="f27f55c8-2add-431d-ae7a-79fa3ac5ae59" class="anchor"></span></div><h2 class='title' id='title9' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span9' class='header_span'>鈼?</span>3.6. 鏂板鏌ヨ鍒嗙被鍚堢害鐨勬帴鍙?/h2><script>$(document).ready(function(){$("#title9").click(function(){$("#panel9").toggle();if($("#panel9").is(":hidden")){$("#header_span9").html('鈼?');}else{$("#header_span9").html('鈼?');}});});</script><div class='panel_title_h2' id='panel9'>
+<p>CTP鍚堢害淇℃伅鍙垎涓哄彲浜ゆ槗鍚堢害鍜岄潪浜ゆ槗鍚堢害锛岄潪浜ゆ槗鍚堢害鏁版嵁閲忓崰姣旇緝澶с€?/p>
 <blockquote>
-  <p>大商所只可申请组合的合约为非交易合约</p>
+  <p>澶у晢鎵€鍙彲鐢宠缁勫悎鐨勫悎绾︿负闈炰氦鏄撳悎绾?/p>
 </blockquote>
-<p>新增查询分类合约接口可依据查询请求域交易类型<code>TradingType</code>字段查询指定合约信息。</p>
-<pre><code>///请求查询分类合约：
-virtual int ReqQryClassifiedInstrument(CThostFtdcQryClassifiedInstrumentField *pQryClassifiedInstrument, int nRequestID) = 0;
-///请求查询分类合约响应：
-virtual void OnRspQryClassifiedInstrument(CThostFtdcInstrumentField *pInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
-///查询分类合约
+<p>鏂板鏌ヨ鍒嗙被鍚堢害鎺ュ彛鍙緷鎹煡璇㈣姹傚煙浜ゆ槗绫诲瀷<code>TradingType</code>瀛楁鏌ヨ鎸囧畾鍚堢害淇℃伅銆?/p>
+<pre><code>///璇锋眰鏌ヨ鍒嗙被鍚堢害锛?virtual int ReqQryClassifiedInstrument(CThostFtdcQryClassifiedInstrumentField *pQryClassifiedInstrument, int nRequestID) = 0;
+///璇锋眰鏌ヨ鍒嗙被鍚堢害鍝嶅簲锛?virtual void OnRspQryClassifiedInstrument(CThostFtdcInstrumentField *pInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast)
+///鏌ヨ鍒嗙被鍚堢害
 struct CThostFtdcQryClassifiedInstrumentField
 {
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约在交易所的代码
-    TThostFtdcExchangeInstIDType    ExchangeInstID;
-    ///产品代码
+    ///鍚堢害鍦ㄤ氦鏄撴墍鐨勪唬鐮?    TThostFtdcExchangeInstIDType    ExchangeInstID;
+    ///浜у搧浠ｇ爜
     TThostFtdcInstrumentIDType  ProductID;
-    ///合约交易状态
-    TThostFtdcTradingTypeType   TradingType;
-    ///合约分类类型
+    ///鍚堢害浜ゆ槗鐘舵€?    TThostFtdcTradingTypeType   TradingType;
+    ///鍚堢害鍒嗙被绫诲瀷
     TThostFtdcClassTypeType ClassType;
 };
 </code></pre>
-<p>其中合约类型TradingType的枚举值为：</p>
-<pre><code>///所有状态
-#define TD_ALL '0'
-///交易
+<p>鍏朵腑鍚堢害绫诲瀷TradingType鐨勬灇涓惧€间负锛?/p>
+<pre><code>///鎵€鏈夌姸鎬?#define TD_ALL '0'
+///浜ゆ槗
 #define TD_TRADE '1'
-///非交易
-#define TD_UNTRADE '2'
+///闈炰氦鏄?#define TD_UNTRADE '2'
 </code></pre>
-<p>分类类型ClassType的枚举值为：</p>
-<pre><code>///所有合约
-#define INS_ALL '0'
-///期货、即期、期转现、Tas、金属指数合约
-#define INS_FUTURE '1'
-///期货期权、现货期权合约
-#define INS_OPTION '2'
-///组合合约
-#define INS_COMB '3' //对应产品类型字段Productclass 为组合类型
-</code></pre>
-<span id="02a0fa5a-6a31-48f2-8575-80f76b1b8fb7" class="anchor"></span></div><h2 class='title' id='title10' title='点击展开/折叠'><span id='header_span10' class='header_span'>◇ </span>3.7. 查询最大报单数量的接口名称修改</h2><script>$(document).ready(function(){$("#title10").click(function(){$("#panel10").toggle();if($("#panel10").is(":hidden")){$("#header_span10").html('◆ ');}else{$("#header_span10").html('◇ ');}});});</script><div class='panel_title_h2' id='panel10'>
-<p>查询最大报单数量请求'的接口名字由'ReqQueryMaxOrderVolume'修改为'<a href="JYJK/CTHOSTFTDCTRADERAPI/REQQUERYMAXORDERVOLUME.html">ReqQryMaxOrderVolume</a>'，‘OnRspQueryMaxOrderVolume’修改为‘<a href="JYJK/CTHOSTFTDCTRADERSPI/OnRspQryMaxOrderVolume.html">OnRspQryMaxOrderVolume</a>’。</p>
-<p>该名称修改不影响旧版本（V6.5.1以下版本）API使用，旧版本API接入6.5.1后台，仍可使用原有名称；CTPV6.5.1后台系统兼容线上旧版本API接入。</p>
-<p>查询最大报单数量请求</p>
+<p>鍒嗙被绫诲瀷ClassType鐨勬灇涓惧€间负锛?/p>
+<pre><code>///鎵€鏈夊悎绾?#define INS_ALL '0'
+///鏈熻揣銆佸嵆鏈熴€佹湡杞幇銆乀as銆侀噾灞炴寚鏁板悎绾?#define INS_FUTURE '1'
+///鏈熻揣鏈熸潈銆佺幇璐ф湡鏉冨悎绾?#define INS_OPTION '2'
+///缁勫悎鍚堢害
+#define INS_COMB '3' //瀵瑰簲浜у搧绫诲瀷瀛楁Productclass 涓虹粍鍚堢被鍨?</code></pre>
+<span id="02a0fa5a-6a31-48f2-8575-80f76b1b8fb7" class="anchor"></span></div><h2 class='title' id='title10' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span10' class='header_span'>鈼?</span>3.7. 鏌ヨ鏈€澶ф姤鍗曟暟閲忕殑鎺ュ彛鍚嶇О淇敼</h2><script>$(document).ready(function(){$("#title10").click(function(){$("#panel10").toggle();if($("#panel10").is(":hidden")){$("#header_span10").html('鈼?');}else{$("#header_span10").html('鈼?');}});});</script><div class='panel_title_h2' id='panel10'>
+<p>鏌ヨ鏈€澶ф姤鍗曟暟閲忚姹?鐨勬帴鍙ｅ悕瀛楃敱'ReqQueryMaxOrderVolume'淇敼涓?<a href="JYJK/CTHOSTFTDCTRADERAPI/REQQUERYMAXORDERVOLUME.html">ReqQryMaxOrderVolume</a>'锛屸€極nRspQueryMaxOrderVolume鈥欎慨鏀逛负鈥?a href="JYJK/CTHOSTFTDCTRADERSPI/OnRspQryMaxOrderVolume.html">OnRspQryMaxOrderVolume</a>鈥欍€?/p>
+<p>璇ュ悕绉颁慨鏀逛笉褰卞搷鏃х増鏈紙V6.5.1浠ヤ笅鐗堟湰锛堿PI浣跨敤锛屾棫鐗堟湰API鎺ュ叆6.5.1鍚庡彴锛屼粛鍙娇鐢ㄥ師鏈夊悕绉帮紱CTPV6.5.1鍚庡彴绯荤粺鍏煎绾夸笂鏃х増鏈珹PI鎺ュ叆銆?/p>
+<p>鏌ヨ鏈€澶ф姤鍗曟暟閲忚姹?/p>
 <pre><code>virtual int ReqQueryMaxOrderVolume(CThostFtdcQueryMaxOrderVolumeField *pQueryMaxOrderVolume, int nRequestID) = 0;
 </code></pre>
-<p>修改为：</p>
+<p>淇敼涓猴細</p>
 <pre><code>virtual int ReqQryMaxOrderVolume (CThostFtdcQryMaxOrderVolumeField *pQryMaxOrderVolume, int nRequestID) = 0;
 </code></pre>
-<p>查询最大报单数量响应</p>
+<p>鏌ヨ鏈€澶ф姤鍗曟暟閲忓搷搴?/p>
 <pre><code>virtual void OnRspQueryMaxOrderVolume(CThostFtdcQueryMaxOrderVolumeField *pQueryMaxOrderVolume, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};
 </code></pre>
-<p>修改为：</p>
+<p>淇敼涓猴細</p>
 <pre><code>virtual void OnRspQryMaxOrderVolume(CThostFtdcQryMaxOrderVolumeField *pQryMaxOrderVolume, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};
 </code></pre>
-<span id="64cd74f9-f821-4349-9d0c-2184da4d9314" class="anchor"></span></div><h2 class='title' id='title11' title='点击展开/折叠'><span id='header_span11' class='header_span'>◇ </span>3.8. 请求查询报价接口逻辑优化</h2><script>$(document).ready(function(){$("#title11").click(function(){$("#panel11").toggle();if($("#panel11").is(":hidden")){$("#header_span11").html('◆ ');}else{$("#header_span11").html('◇ ');}});});</script><div class='panel_title_h2' id='panel11'>
-<p>如果查询请求有指定QuoteSysID(填空则返回全部)，后台会根据QuoteSysID返回相应的报价信息，旧版本后台不支持根据QuoteSysID进行过滤返回。</p>
-<pre><code>///请求查询报价
+<span id="64cd74f9-f821-4349-9d0c-2184da4d9314" class="anchor"></span></div><h2 class='title' id='title11' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span11' class='header_span'>鈼?</span>3.8. 璇锋眰鏌ヨ鎶ヤ环鎺ュ彛閫昏緫浼樺寲</h2><script>$(document).ready(function(){$("#title11").click(function(){$("#panel11").toggle();if($("#panel11").is(":hidden")){$("#header_span11").html('鈼?');}else{$("#header_span11").html('鈼?');}});});</script><div class='panel_title_h2' id='panel11'>
+<p>濡傛灉鏌ヨ璇锋眰鏈夋寚瀹歈uoteSysID(濉┖鍒欒繑鍥炲叏閮?锛屽悗鍙颁細鏍规嵁QuoteSysID杩斿洖鐩稿簲鐨勬姤浠蜂俊鎭紝鏃х増鏈悗鍙颁笉鏀寔鏍规嵁QuoteSysID杩涜杩囨护杩斿洖銆?/p>
+<pre><code>///璇锋眰鏌ヨ鎶ヤ环
 virtual int ReqQryQuote(CThostFtdcQryQuoteField *pQryQuote, int nRequestID) = 0;
 </code></pre>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="bafd993e-7062-4443-8de7-9f499fc7d567" class="anchor"></span></div></div><h1 class='title' id='title12' title='点击展开/折叠'><span id='header_span12' class='header_span'>◇ </span>4. 看穿式采集库说明</h1><script>$(document).ready(function(){$("#title12").click(function(){$("#panel12").toggle();if($("#panel12").is(":hidden")){$("#header_span12").html('◆ ');}else{$("#header_span12").html('◇ ');}});});</script><div class='panel_title_h1' id='panel12'>
-<p>本次更新没有变动采集库，采集库暂时只采集IPv4地址。</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="bafd993e-7062-4443-8de7-9f499fc7d567" class="anchor"></span></div></div><h1 class='title' id='title12' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span12' class='header_span'>鈼?</span>4. 鐪嬬┛寮忛噰闆嗗簱璇存槑</h1><script>$(document).ready(function(){$("#title12").click(function(){$("#panel12").toggle();if($("#panel12").is(":hidden")){$("#header_span12").html('鈼?');}else{$("#header_span12").html('鈼?');}});});</script><div class='panel_title_h1' id='panel12'>
+<p>鏈鏇存柊娌℃湁鍙樺姩閲囬泦搴擄紝閲囬泦搴撴殏鏃跺彧閲囬泦IPv4鍦板潃銆?/p>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="GXLS.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.5.1BBGXSMBCSM.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="GXLS.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="6.5.1BBGXSMBCSM.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='GXLS.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='6.5.1BBGXSMBCSM.html';
 return;
 }

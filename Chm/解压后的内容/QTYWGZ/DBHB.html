@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 <title>
-报单回调规则</title>
+鎶ュ崟鍥炶皟瑙勫垯</title>
 <meta name="info" content="DBHB.md" >
 <meta name="viewport" content="width=device-width, user-scalable=yes" />
 <meta http-equiv="Content-Type" content="text/html;charset=gb18030">
@@ -127,7 +127,7 @@ function LoadUserSelectedTheme()
 </script>
 </head>
 <body onLoad="ShowPage()">
-<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>报单回调规则</p><hr class="headerline"/><div id="content"><script src="../jquery-1.7.0.min.js"></script><script src="../menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
+<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>鎶ュ崟鍥炶皟瑙勫垯</p><hr class="headerline"/><div id="content"><script src="../jquery-1.7.0.min.js"></script><script src="../menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
 {
 var qTitle=document.getElementById(questionTitleId);
 var qChoiceText0="",qChoiceText1="",qChoiceText2="",qChoiceText3="";var qChoice0=document.getElementById(questionChoice0Id);
@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,270 +151,270 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#a19ee1fe-0385-44d8-abfa-0ed3e92a5464">1.术语说明</a></p><p><a href="#e670a216-2d27-4e52-888e-2795304ccc75">2.回调规则</a></p><p><a href="#5366f578-becc-4935-a20a-17133b16f1fb">3.大商所特殊回调规则</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="BJHXJ.html" alt="←">&lt; 前页</a> <a href="../_index.html" alt="Ctrl+I">回目录</a> <a href="DCEZB.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>本文例举了一些常用的报单操作所对应的回调规则。在给定交易所报单回报顺序的前提下，CTP返回给API的回调顺序是固定的。</p>
-<p>目前大商所的回报比较特殊，当一笔委托全部成交后，大商所直接返回该笔委托的成交回报，而不返回状态为全部成交的报单回报，对于这种情况，CTP会补一个状态为全部成交的报单回报，下文会举例说明。</p>
-<span id="a19ee1fe-0385-44d8-abfa-0ed3e92a5464" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.术语说明</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#a19ee1fe-0385-44d8-abfa-0ed3e92a5464">1.鏈璇存槑</a></p><p><a href="#e670a216-2d27-4e52-888e-2795304ccc75">2.鍥炶皟瑙勫垯</a></p><p><a href="#5366f578-becc-4935-a20a-17133b16f1fb">3.澶у晢鎵€鐗规畩鍥炶皟瑙勫垯</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="BJHXJ.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="DCEZB.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>鏈枃渚嬩妇浜嗕竴浜涘父鐢ㄧ殑鎶ュ崟鎿嶄綔鎵€瀵瑰簲鐨勫洖璋冭鍒欍€傚湪缁欏畾浜ゆ槗鎵€鎶ュ崟鍥炴姤椤哄簭鐨勫墠鎻愪笅锛孋TP杩斿洖缁橝PI鐨勫洖璋冮『搴忔槸鍥哄畾鐨勩€?/p>
+<p>鐩墠澶у晢鎵€鐨勫洖鎶ユ瘮杈冪壒娈婏紝褰撲竴绗斿鎵樺叏閮ㄦ垚浜ゅ悗锛屽ぇ鍟嗘墍鐩存帴杩斿洖璇ョ瑪濮旀墭鐨勬垚浜ゅ洖鎶ワ紝鑰屼笉杩斿洖鐘舵€佷负鍏ㄩ儴鎴愪氦鐨勬姤鍗曞洖鎶ワ紝瀵逛簬杩欑鎯呭喌锛孋TP浼氳ˉ涓€涓姸鎬佷负鍏ㄩ儴鎴愪氦鐨勬姤鍗曞洖鎶ワ紝涓嬫枃浼氫妇渚嬭鏄庛€?/p>
+<span id="a19ee1fe-0385-44d8-abfa-0ed3e92a5464" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.鏈璇存槑</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
 <ul>
-<li>报单回报</li>
+<li>鎶ュ崟鍥炴姤</li>
 </ul>
-<p>指报单的状态回报，有未知单报单回报、未成交报单回报、部分成交报单回报、全部成交报单回报和撤单回报。对应回调函数<a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>，以OrderStatus字段区分。</p>
+<p>鎸囨姤鍗曠殑鐘舵€佸洖鎶ワ紝鏈夋湭鐭ュ崟鎶ュ崟鍥炴姤銆佹湭鎴愪氦鎶ュ崟鍥炴姤銆侀儴鍒嗘垚浜ゆ姤鍗曞洖鎶ャ€佸叏閮ㄦ垚浜ゆ姤鍗曞洖鎶ュ拰鎾ゅ崟鍥炴姤銆傚搴斿洖璋冨嚱鏁?a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛屼互OrderStatus瀛楁鍖哄垎銆?/p>
 <ul>
-<li>成交回报</li>
+<li>鎴愪氦鍥炴姤</li>
 </ul>
-<p>指报单成交后推送的成交回报，对应回调函数<a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a>。</p>
+<p>鎸囨姤鍗曟垚浜ゅ悗鎺ㄩ€佺殑鎴愪氦鍥炴姤锛屽搴斿洖璋冨嚱鏁?a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a>銆?/p>
 <ul>
-<li>错单响应</li>
+<li>閿欏崟鍝嶅簲</li>
 </ul>
-<p>指报单被CTP拒绝后返回的响应通知，对应回调函数<a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRSPORDERINSERT.html">OnRspOrderInsert</a>，其中ErrorID和ErrorMsg指明了错误原因。</p>
+<p>鎸囨姤鍗曡CTP鎷掔粷鍚庤繑鍥炵殑鍝嶅簲閫氱煡锛屽搴斿洖璋冨嚱鏁?a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRSPORDERINSERT.html">OnRspOrderInsert</a>锛屽叾涓璄rrorID鍜孍rrorMsg鎸囨槑浜嗛敊璇師鍥犮€?/p>
 <ul>
-<li>错单回报</li>
+<li>閿欏崟鍥炴姤</li>
 </ul>
-<p>指报单被CTP或交易所拒绝后的报单的状态回报。对应回调函数<a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERINSERT.html">OnErrRtnOrderInsert</a>。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="e670a216-2d27-4e52-888e-2795304ccc75" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.回调规则</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>鎸囨姤鍗曡CTP鎴栦氦鏄撴墍鎷掔粷鍚庣殑鎶ュ崟鐨勭姸鎬佸洖鎶ャ€傚搴斿洖璋冨嚱鏁?a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERINSERT.html">OnErrRtnOrderInsert</a>銆?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="e670a216-2d27-4e52-888e-2795304ccc75" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2.鍥炶皟瑙勫垯</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
 <ul>
-<li>测试场景1</li>
+<li>娴嬭瘯鍦烘櫙1</li>
 </ul>
-<p>报单合约ag1207，报入1手，到交易所先未成交，后全部成交1手。</p>
+<p>鎶ュ崟鍚堢害ag1207锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛屽悗鍏ㄩ儴鎴愪氦1鎵嬨€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p>回调顺序：</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单） </p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP接收到交易所的成交回报和全部成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （全部成交）</p>
+<p>鍥炶皟椤哄簭锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?</p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶ュ拰鍏ㄩ儴鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝叏閮ㄦ垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景2</li>
+<li>娴嬭瘯鍦烘櫙2</li>
 </ul>
-<p>报单合约ag1207，报入1手，到交易所立即全部成交1手。（注意，此案例没有收到交易所的未成交回报状态，而是直接收到全部成交状态）</p>
+<p>鎶ュ崟鍚堢害ag1207锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍绔嬪嵆鍏ㄩ儴鎴愪氦1鎵嬨€傦紙娉ㄦ剰锛屾妗堜緥娌℃湁鏀跺埌浜ゆ槗鎵€鐨勬湭鎴愪氦鍥炴姤鐘舵€侊紝鑰屾槸鐩存帴鏀跺埌鍏ㄩ儴鎴愪氦鐘舵€侊級</p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的成交回报和成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （全部成交报单已提交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶ュ拰鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝叏閮ㄦ垚浜ゆ姤鍗曞凡鎻愪氦锛?/p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景3</li>
+<li>娴嬭瘯鍦烘櫙3</li>
 </ul>
-<p>报单合约ag1207，报入1手，到交易所先未成交，然后撤单1手。</p>
+<p>鎶ュ崟鍚堢害ag1207锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛岀劧鍚庢挙鍗?鎵嬨€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（未成交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堟湭鎴愪氦锛?/p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERACTION.html">ReqOrderAction</a></p>
-<p>此时CTP接收到交易所的撤单报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（已撤单）</p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬挙鍗曟姤鍗曞洖鎶?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堝凡鎾ゅ崟锛?/p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景4</li>
+<li>娴嬭瘯鍦烘櫙4</li>
 </ul>
-<p>报单合约ag1207，报入10手，到交易所先未成交，然后成交3手，然后剩余全部成交7手。</p>
+<p>鎶ュ崟鍚堢害ag1207锛屾姤鍏?0鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛岀劧鍚庢垚浜?鎵嬶紝鐒跺悗鍓╀綑鍏ㄩ儴鎴愪氦7鎵嬨€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP接收到交易所的成交回报和部分成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （部分成交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶ュ拰閮ㄥ垎鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堥儴鍒嗘垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
-<p>此时CTP接收到交易所的成交回报和全部成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （部分成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （全部成交）</p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶ュ拰鍏ㄩ儴鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堥儴鍒嗘垚浜わ級</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝叏閮ㄦ垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景5</li>
+<li>娴嬭瘯鍦烘櫙5</li>
 </ul>
-<p>报单合约ag1207，报入10手，到交易所先未成交，然后成交4手，然后剩余全部撤单6手。</p>
+<p>鎶ュ崟鍚堢害ag1207锛屾姤鍏?0鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛岀劧鍚庢垚浜?鎵嬶紝鐒跺悗鍓╀綑鍏ㄩ儴鎾ゅ崟6鎵嬨€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP接收到交易所的成交回报和部分成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （部分成交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶ュ拰閮ㄥ垎鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堥儴鍒嗘垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
-<p>发起撤单</p>
+<p>鍙戣捣鎾ゅ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERACTION.html">ReqOrderAction</a></p>
-<p>此时CTP接收到交易所的撤单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（部分成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>（已撤单）</p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬挙鍗曞洖鎶?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堥儴鍒嗘垚浜わ級</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>锛堝凡鎾ゅ崟锛?/p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景6</li>
+<li>娴嬭瘯鍦烘櫙6</li>
 </ul>
-<p>对一笔已经撤单的委托单再次撤单。</p>
+<p>瀵逛竴绗斿凡缁忔挙鍗曠殑濮旀墭鍗曞啀娆℃挙鍗曘€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>对一笔已撤单再次撤单</p>
+<p>瀵逛竴绗斿凡鎾ゅ崟鍐嶆鎾ゅ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERACTION.html">ReqOrderAction</a></p>
-<p>触发撤单错误响应</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRSPORDERACTION.html">OnRspOrderAction</a> （CTP:报单已全成交或已撤销，不能再撤）</p>
-<p>触发撤单错误回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERACTION.html">OnErrRtnOrderAction</a> （CTP:报单已全成交或已撤销，不能再撤）</p>
+<p>瑙﹀彂鎾ゅ崟閿欒鍝嶅簲</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRSPORDERACTION.html">OnRspOrderAction</a> 锛圕TP:鎶ュ崟宸插叏鎴愪氦鎴栧凡鎾ら攢锛屼笉鑳藉啀鎾わ級</p>
+<p>瑙﹀彂鎾ゅ崟閿欒鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERACTION.html">OnErrRtnOrderAction</a> 锛圕TP:鎶ュ崟宸插叏鎴愪氦鎴栧凡鎾ら攢锛屼笉鑳藉啀鎾わ級</p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景7</li>
+<li>娴嬭瘯鍦烘櫙7</li>
 </ul>
-<p>对一笔未成交委托进行撤单，因为委托号填写错误导致撤单失败</p>
+<p>瀵逛竴绗旀湭鎴愪氦濮旀墭杩涜鎾ゅ崟锛屽洜涓哄鎵樺彿濉啓閿欒瀵艰嚧鎾ゅ崟澶辫触</p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>撤一笔不存在的委托</p>
+<p>鎾や竴绗斾笉瀛樺湪鐨勫鎵?/p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERACTION.html">ReqOrderAction</a></p>
-<p>触发撤单错误响应（CTP:撤单找不到相应报单）</p>
+<p>瑙﹀彂鎾ゅ崟閿欒鍝嶅簲锛圕TP:鎾ゅ崟鎵句笉鍒扮浉搴旀姤鍗曪級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRSPORDERACTION.html">OnRspOrderAction</a></p>
-<p>触发撤单错误回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERACTION.html">OnErrRtnOrderAction</a> （CTP:撤单找不到相应报单）</p>
+<p>瑙﹀彂鎾ゅ崟閿欒鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONERRRTNORDERACTION.html">OnErrRtnOrderAction</a> 锛圕TP:鎾ゅ崟鎵句笉鍒扮浉搴旀姤鍗曪級</p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景8</li>
+<li>娴嬭瘯鍦烘櫙8</li>
 </ul>
-<p>报入上期所FAK单子，报入后部分成交部分撤单。</p>
+<p>鎶ュ叆涓婃湡鎵€FAK鍗曞瓙锛屾姤鍏ュ悗閮ㄥ垎鎴愪氦閮ㄥ垎鎾ゅ崟銆?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报入上期所FAK</p>
+<p>鎶ュ叆涓婃湡鎵€FAK</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP收到了交易所推送的撤单状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （已撤单，回报中VolumeTraded字段此时已有值）</p>
-<p>此时CTP收到了交易所推送的成交回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （已撤单）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鎾ゅ崟鐘舵€佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝凡鎾ゅ崟锛屽洖鎶ヤ腑VolumeTraded瀛楁姝ゆ椂宸叉湁鍊硷級</p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鎴愪氦鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝凡鎾ゅ崟锛?/p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
-<p>相同场景下，能源中心和中金所FAK的回报与上期所一致。</p>
+<p>鐩稿悓鍦烘櫙涓嬶紝鑳芥簮涓績鍜屼腑閲戞墍FAK鐨勫洖鎶ヤ笌涓婃湡鎵€涓€鑷淬€?/p>
 <ul>
-<li>测试场景9</li>
+<li>娴嬭瘯鍦烘櫙9</li>
 </ul>
-<p>报入大商所FAK单子，报入后部分成交部分撤单</p>
+<p>鎶ュ叆澶у晢鎵€FAK鍗曞瓙锛屾姤鍏ュ悗閮ㄥ垎鎴愪氦閮ㄥ垎鎾ゅ崟</p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报入大商所FAK</p>
+<p>鎶ュ叆澶у晢鎵€FAK</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP收到了交易所推送的未成交状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP收到了交易所推送的成交回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （部分成交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鏈垚浜ょ姸鎬佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鎴愪氦鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堥儴鍒嗘垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
-<p>此时CTP收到了交易所推送的撤单状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （已撤单）</p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鎾ゅ崟鐘舵€佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝凡鎾ゅ崟锛?/p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
-<p>相同场景下，广期所FAK的回报与大商所一致。</p>
+<p>鐩稿悓鍦烘櫙涓嬶紝骞挎湡鎵€FAK鐨勫洖鎶ヤ笌澶у晢鎵€涓€鑷淬€?/p>
 <ul>
-<li>测试场景10</li>
+<li>娴嬭瘯鍦烘櫙10</li>
 </ul>
-<p>报入郑商所FAK单子，报入后部分成交部分撤单</p>
+<p>鎶ュ叆閮戝晢鎵€FAK鍗曞瓙锛屾姤鍏ュ悗閮ㄥ垎鎴愪氦閮ㄥ垎鎾ゅ崟</p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报入郑商所FAK</p>
+<p>鎶ュ叆閮戝晢鎵€FAK</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP收到了交易所推送的未成交状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP收到了交易所推送的部分成交状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （部分成交）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鏈垚浜ょ姸鎬佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑閮ㄥ垎鎴愪氦鐘舵€佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堥儴鍒嗘垚浜わ級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
-<p>此时CTP收到了交易所推送的撤单状态的报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （已撤单）</p>
+<p>姝ゆ椂CTP鏀跺埌浜嗕氦鏄撴墍鎺ㄩ€佺殑鎾ゅ崟鐘舵€佺殑鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝凡鎾ゅ崟锛?/p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="5366f578-becc-4935-a20a-17133b16f1fb" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3.大商所特殊回调规则</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<p>目前大商所的回报比较特殊，当一笔委托全部成交后，大商所直接返回该笔委托的成交回报，而不返回状态为全部成交的报单回报，对于这种情况，CTP会补一个状态为全部成交的报单回报。</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="5366f578-becc-4935-a20a-17133b16f1fb" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3.澶у晢鎵€鐗规畩鍥炶皟瑙勫垯</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<p>鐩墠澶у晢鎵€鐨勫洖鎶ユ瘮杈冪壒娈婏紝褰撲竴绗斿鎵樺叏閮ㄦ垚浜ゅ悗锛屽ぇ鍟嗘墍鐩存帴杩斿洖璇ョ瑪濮旀墭鐨勬垚浜ゅ洖鎶ワ紝鑰屼笉杩斿洖鐘舵€佷负鍏ㄩ儴鎴愪氦鐨勬姤鍗曞洖鎶ワ紝瀵逛簬杩欑鎯呭喌锛孋TP浼氳ˉ涓€涓姸鎬佷负鍏ㄩ儴鎴愪氦鐨勬姤鍗曞洖鎶ャ€?/p>
 <ul>
-<li>测试场景1</li>
+<li>娴嬭瘯鍦烘櫙1</li>
 </ul>
-<p>报单合约c1911-C-1760，报入1手，到交易所先未成交，后全部成交1手。</p>
+<p>鎶ュ崟鍚堢害c1911-C-1760锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛屽悗鍏ㄩ儴鎴愪氦1鎵嬨€?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP接收到交易所的成交回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （全部成交）（CTP补充生成，且不重复推送前一状态）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
-
-</div></td><td class="square-block-right"/></tr></tbody></table>
-<ul>
-<li>测试场景2</li>
-</ul>
-<p>报单合约c1911-C-1760，报入1手，到交易所立即全部成交1手。注意，大商所不管会不会立即成交，只要委托进入报单簿后都会返回一笔未成交报单回报给到CTP。</p>
-<table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
-
-<p>报单</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>此时CTP接收到交易所的成交回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （全部成交）（CTP补充生成，且不重复推送前一状态）</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝叏閮ㄦ垚浜わ級锛圕TP琛ュ厖鐢熸垚锛屼笖涓嶉噸澶嶆帹閫佸墠涓€鐘舵€侊級</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 <ul>
-<li>测试场景3</li>
+<li>娴嬭瘯鍦烘櫙2</li>
 </ul>
-<p>报单合约c1911-C-1760，报入1手，到交易所先未成交，然后撤单1手。</p>
+<p>鎶ュ崟鍚堢害c1911-C-1760锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍绔嬪嵆鍏ㄩ儴鎴愪氦1鎵嬨€傛敞鎰忥紝澶у晢鎵€涓嶇浼氫笉浼氱珛鍗虫垚浜わ紝鍙濮旀墭杩涘叆鎶ュ崟绨垮悗閮戒細杩斿洖涓€绗旀湭鎴愪氦鎶ュ崟鍥炴姤缁欏埌CTP銆?/p>
 <table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
 
-<p>报单</p>
+<p>鎶ュ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未知单）</p>
-<p>此时CTP接收到交易所的未成交报单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p>发起撤单</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬垚浜ゅ洖鎶?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝叏閮ㄦ垚浜わ級锛圕TP琛ュ厖鐢熸垚锛屼笖涓嶉噸澶嶆帹閫佸墠涓€鐘舵€侊級</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a></p>
+
+</div></td><td class="square-block-right"/></tr></tbody></table>
+<ul>
+<li>娴嬭瘯鍦烘櫙3</li>
+</ul>
+<p>鎶ュ崟鍚堢害c1911-C-1760锛屾姤鍏?鎵嬶紝鍒颁氦鏄撴墍鍏堟湭鎴愪氦锛岀劧鍚庢挙鍗?鎵嬨€?/p>
+<table id="" border="0" cellspacing="0" class="square-block"><tbody border="0"><tr border="0"><td class="square-block-left"/><td class="square-block-content"><div>
+
+<p>鎶ュ崟</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERINSERT.html">ReqOrderInsert</a></p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鐭ュ崟锛?/p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬湭鎴愪氦鎶ュ崟鍥炴姤</p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p>鍙戣捣鎾ゅ崟</p>
 <p><a href="../JYJK/CTHOSTFTDCTRADERAPI/REQORDERACTION.html">ReqOrderAction</a></p>
-<p>此时CTP接收到交易所的撤单回报</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （未成交）</p>
-<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> （已撤单）</p>
+<p>姝ゆ椂CTP鎺ユ敹鍒颁氦鏄撴墍鐨勬挙鍗曞洖鎶?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堟湭鎴愪氦锛?/p>
+<p><a href="../JYJK/CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a> 锛堝凡鎾ゅ崟锛?/p>
 
 </div></td><td class="square-block-right"/></tr></tbody></table>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="BJHXJ.html" alt="←">&lt; 前页</a> <a href="../_index.html" alt="Ctrl+I">回目录</a> <a href="DCEZB.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="BJHXJ.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="DCEZB.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='BJHXJ.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='../_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='DCEZB.html';
 return;
 }

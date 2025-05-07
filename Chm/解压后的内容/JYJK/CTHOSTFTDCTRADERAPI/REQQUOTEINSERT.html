@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,179 +151,179 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#b0c12c5c-f597-4282-bc3b-5e0a2266a119">1.函数原型</a></p><p><a href="#0eff6efa-9ba1-4083-88f6-fde591cc9cdb">2.参数</a></p><p><a href="#dce45c91-bb95-4740-b3d6-e07b1a84f773">3.返回</a></p><p><a href="#f80de27f-cab9-4dce-8728-dae55934204c">4.示例调用</a></p><p><a href="#62085bf6-d32f-4f85-b2b3-3b7ec7162216">5.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="REQQUOTEACTION.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="REQREMOVEPARKEDORDER.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>报价录入请求，如果出错，则返回响应<a href="../CTHOSTFTDCTRADERSPI/ONRSPQUOTEINSERT.html">OnRspQuoteInsert</a>和<a href="../CTHOSTFTDCTRADERSPI/ONERRRTNQUOTEINSERT.html">OnErrRtnQuoteInsert</a>；正确则推送<a href="../CTHOSTFTDCTRADERSPI/ONRTNQUOTE.html">OnRtnQuote</a>、<a href="../CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>和<a href="../CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a>。</p>
-<p>单边报价和双边报价，都是用一个接口 ReqQuoteInsert。</p>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#b0c12c5c-f597-4282-bc3b-5e0a2266a119">1.鍑芥暟鍘熷瀷</a></p><p><a href="#0eff6efa-9ba1-4083-88f6-fde591cc9cdb">2.鍙傛暟</a></p><p><a href="#dce45c91-bb95-4740-b3d6-e07b1a84f773">3.杩斿洖</a></p><p><a href="#f80de27f-cab9-4dce-8728-dae55934204c">4.绀轰緥璋冪敤</a></p><p><a href="#62085bf6-d32f-4f85-b2b3-3b7ec7162216">5.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="REQQUOTEACTION.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="REQREMOVEPARKEDORDER.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>鎶ヤ环褰曞叆璇锋眰锛屽鏋滃嚭閿欙紝鍒欒繑鍥炲搷搴?a href="../CTHOSTFTDCTRADERSPI/ONRSPQUOTEINSERT.html">OnRspQuoteInsert</a>鍜?a href="../CTHOSTFTDCTRADERSPI/ONERRRTNQUOTEINSERT.html">OnErrRtnQuoteInsert</a>锛涙纭垯鎺ㄩ€?a href="../CTHOSTFTDCTRADERSPI/ONRTNQUOTE.html">OnRtnQuote</a>銆?a href="../CTHOSTFTDCTRADERSPI/ONRTNORDER.html">OnRtnOrder</a>鍜?a href="../CTHOSTFTDCTRADERSPI/ONRTNTRADE.html">OnRtnTrade</a>銆?/p>
+<p>鍗曡竟鎶ヤ环鍜屽弻杈规姤浠凤紝閮芥槸鐢ㄤ竴涓帴鍙?ReqQuoteInsert銆?/p>
 <blockquote>
-  <p>在<code>单边报价</code>的时候，只需要另一边的数量填0，交易核心就能区分开。另外，无论是单边还是双边，Ask/BidOrderRef都是要填的。</p>
+  <p>鍦?code>鍗曡竟鎶ヤ环</code>鐨勬椂鍊欙紝鍙渶瑕佸彟涓€杈圭殑鏁伴噺濉?锛屼氦鏄撴牳蹇冨氨鑳藉尯鍒嗗紑銆傚彟澶栵紝鏃犺鏄崟杈硅繕鏄弻杈癸紝Ask/BidOrderRef閮芥槸瑕佸～鐨勩€?/p>
   
-  <p>除上期所的期货合约使用<a href="REQORDERINSERT.html">ReqOrderInsert</a>接口报价，其他交易所均使用本接口报价。</p>
+  <p>闄や笂鏈熸墍鐨勬湡璐у悎绾︿娇鐢?a href="REQORDERINSERT.html">ReqOrderInsert</a>鎺ュ彛鎶ヤ环锛屽叾浠栦氦鏄撴墍鍧囦娇鐢ㄦ湰鎺ュ彛鎶ヤ环銆?/p>
 </blockquote>
-<span id="b0c12c5c-f597-4282-bc3b-5e0a2266a119" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.函数原型</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+<span id="b0c12c5c-f597-4282-bc3b-5e0a2266a119" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.鍑芥暟鍘熷瀷</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
 <p>virtual int ReqQuoteInsert(CThostFtdcInputQuoteField *pInputQuote, int nRequestID) = 0;</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="0eff6efa-9ba1-4083-88f6-fde591cc9cdb" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.参数</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
-<p>pInputQuote：输入的报价</p>
-<table><tr><th style="TEXT-ALIGN: center;">字段类型</th><th style="TEXT-ALIGN: center;">字段名称</th><th style="TEXT-ALIGN: center;">含义</th><th style="TEXT-ALIGN: center;">值</th></tr><tr><td style="TEXT-ALIGN: left;">TThostFtdcBrokerIDType</td>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="0eff6efa-9ba1-4083-88f6-fde591cc9cdb" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2.鍙傛暟</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>pInputQuote锛氳緭鍏ョ殑鎶ヤ环</p>
+<table><tr><th style="TEXT-ALIGN: center;">瀛楁绫诲瀷</th><th style="TEXT-ALIGN: center;">瀛楁鍚嶇О</th><th style="TEXT-ALIGN: center;">鍚箟</th><th style="TEXT-ALIGN: center;">鍊?/th></tr><tr><td style="TEXT-ALIGN: left;">TThostFtdcBrokerIDType</td>
 <td style="TEXT-ALIGN: left;">BrokerID</td>
-<td style="TEXT-ALIGN: left;">经纪公司代码</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">缁忕邯鍏徃浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcInvestorIDType</td>
 <td style="TEXT-ALIGN: left;">InvestorID</td>
-<td style="TEXT-ALIGN: left;">投资者代码</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鎶曡祫鑰呬唬鐮?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcInstrumentIDType</td>
 <td style="TEXT-ALIGN: left;">InstrumentID</td>
-<td style="TEXT-ALIGN: left;">合约代码</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鍚堢害浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderRefType</td>
 <td style="TEXT-ALIGN: left;">QuoteRef</td>
-<td style="TEXT-ALIGN: left;">报价引用</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">鎶ヤ环寮曠敤</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcUserIDType</td>
 <td style="TEXT-ALIGN: left;">UserID</td>
-<td style="TEXT-ALIGN: left;">用户代码</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">鐢ㄦ埛浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcBusinessUnitType</td>
 <td style="TEXT-ALIGN: left;">BusinessUnit</td>
-<td style="TEXT-ALIGN: left;">业务单元</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">涓氬姟鍗曞厓</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderRefType</td>
 <td style="TEXT-ALIGN: left;">AskOrderRef</td>
-<td style="TEXT-ALIGN: left;">衍生卖报单引用</td>
-<td style="TEXT-ALIGN: left;">选填</td>
+<td style="TEXT-ALIGN: left;">琛嶇敓鍗栨姤鍗曞紩鐢?/td>
+<td style="TEXT-ALIGN: left;">閫夊～</td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderRefType</td>
 <td style="TEXT-ALIGN: left;">BidOrderRef</td>
-<td style="TEXT-ALIGN: left;">衍生买报单引用</td>
-<td style="TEXT-ALIGN: left;">选填</td>
+<td style="TEXT-ALIGN: left;">琛嶇敓涔版姤鍗曞紩鐢?/td>
+<td style="TEXT-ALIGN: left;">閫夊～</td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderSysIDType</td>
 <td style="TEXT-ALIGN: left;">ForQuoteSysID</td>
-<td style="TEXT-ALIGN: left;">应价编号</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">搴斾环缂栧彿</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcExchangeIDType</td>
 <td style="TEXT-ALIGN: left;">ExchangeID</td>
-<td style="TEXT-ALIGN: left;">交易所代码</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">浜ゆ槗鎵€浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcInvestUnitIDType</td>
 <td style="TEXT-ALIGN: left;">InvestUnitID</td>
-<td style="TEXT-ALIGN: left;">投资单元代码</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">鎶曡祫鍗曞厓浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcClientIDType</td>
 <td style="TEXT-ALIGN: left;">ClientID</td>
-<td style="TEXT-ALIGN: left;">客户代码</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">瀹㈡埛浠ｇ爜</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcIPAddressType</td>
 <td style="TEXT-ALIGN: left;">IPAddress</td>
-<td style="TEXT-ALIGN: left;">IP地址</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">IP鍦板潃</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcMacAddressType</td>
 <td style="TEXT-ALIGN: left;">MacAddress</td>
-<td style="TEXT-ALIGN: left;">Mac地址</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">Mac鍦板潃</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcVolumeType</td>
 <td style="TEXT-ALIGN: left;">AskVolume</td>
-<td style="TEXT-ALIGN: left;">卖数量</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鍗栨暟閲?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcVolumeType</td>
 <td style="TEXT-ALIGN: left;">BidVolume</td>
-<td style="TEXT-ALIGN: left;">买数量</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">涔版暟閲?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcRequestIDType</td>
 <td style="TEXT-ALIGN: left;">RequestID</td>
-<td style="TEXT-ALIGN: left;">请求编号</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">璇锋眰缂栧彿</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOffsetFlagType</td>
 <td style="TEXT-ALIGN: left;">AskOffsetFlag</td>
-<td style="TEXT-ALIGN: left;">卖开平标志</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鍗栧紑骞虫爣蹇?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOffsetFlagType</td>
 <td style="TEXT-ALIGN: left;">BidOffsetFlag</td>
-<td style="TEXT-ALIGN: left;">买开平标志</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">涔板紑骞虫爣蹇?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcHedgeFlagType</td>
 <td style="TEXT-ALIGN: left;">AskHedgeFlag</td>
-<td style="TEXT-ALIGN: left;">卖投机套保标志</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">投机</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鍗栨姇鏈哄淇濇爣蹇?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">鎶曟満</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcHedgeFlagType</td>
 <td style="TEXT-ALIGN: left;">BidHedgeFlag</td>
-<td style="TEXT-ALIGN: left;">买投机套保标志</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">投机</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">涔版姇鏈哄淇濇爣蹇?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">鎶曟満</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcPriceType</td>
 <td style="TEXT-ALIGN: left;">AskPrice</td>
-<td style="TEXT-ALIGN: left;">卖价格</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">鍗栦环鏍?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcPriceType</td>
 <td style="TEXT-ALIGN: left;">BidPrice</td>
-<td style="TEXT-ALIGN: left;">买价格</td>
-<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">必填</font color="#FF0000"></strong></td>
+<td style="TEXT-ALIGN: left;">涔颁环鏍?/td>
+<td style="TEXT-ALIGN: left;"><strong><font color="#FF0000">蹇呭～</font color="#FF0000"></strong></td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOldInstrumentIDType</td>
 <td style="TEXT-ALIGN: left;">reserve1</td>
-<td style="TEXT-ALIGN: left;">保留的无效字段</td>
-<td style="TEXT-ALIGN: left;">否</td>
+<td style="TEXT-ALIGN: left;">淇濈暀鐨勬棤鏁堝瓧娈?/td>
+<td style="TEXT-ALIGN: left;">鍚?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOldIPAddressType</td>
 <td style="TEXT-ALIGN: left;">reserve2</td>
-<td style="TEXT-ALIGN: left;">保留的无效字段</td>
-<td style="TEXT-ALIGN: left;">否</td>
+<td style="TEXT-ALIGN: left;">淇濈暀鐨勬棤鏁堝瓧娈?/td>
+<td style="TEXT-ALIGN: left;">鍚?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderSysIDType</td>
 <td style="TEXT-ALIGN: left;">ReplaceSysID</td>
-<td style="TEXT-ALIGN: left;">被顶单编号</td>
-<td style="TEXT-ALIGN: left;">否</td>
+<td style="TEXT-ALIGN: left;">琚《鍗曠紪鍙?/td>
+<td style="TEXT-ALIGN: left;">鍚?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcTimeConditionType</td>
 <td style="TEXT-ALIGN: left;">TimeCondition</td>
-<td style="TEXT-ALIGN: left;">有效期类型</td>
-<td style="TEXT-ALIGN: left;">否</td>
+<td style="TEXT-ALIGN: left;">鏈夋晥鏈熺被鍨?/td>
+<td style="TEXT-ALIGN: left;">鍚?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcOrderMemoType</td>
 <td style="TEXT-ALIGN: left;">OrderMemo</td>
-<td style="TEXT-ALIGN: left;">报单回显字段</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">鎶ュ崟鍥炴樉瀛楁</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 <tr><td style="TEXT-ALIGN: left;">TThostFtdcSequenceNo12Type</td>
 <td style="TEXT-ALIGN: left;">SessionReqSeq</td>
-<td style="TEXT-ALIGN: left;">session上请求计数 api自动维护</td>
-<td style="TEXT-ALIGN: left;">无</td>
+<td style="TEXT-ALIGN: left;">session涓婅姹傝鏁?api鑷姩缁存姢</td>
+<td style="TEXT-ALIGN: left;">鏃?/td>
 </tr>
 </table>
-<p>ForQuoteSysID：询价编号，用于唯一定位一笔询价，需要纯数字递增</p>
-<p>AskOrderRef：需要纯数字递增</p>
-<p>BidOrderRef：要比AskOrderRef大，需要纯数字递增</p>
-<p>IPAddress：手工填写本机IP地址，不自动获取。填写规则如下：ipv4原样填写，ipv6要转成非零压缩地址，即原始地址，同时要去掉冒号，eg：AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHH</p>
-<p>OrderMemo:报单回显字段，OrderMemo字段可供终端厂商标记订单使用，CTP不做处理，即终端填写什么CTP就返回什么</p>
-<p>nRequestID：请求ID，对应响应里的nRequestID，无递增规则，由用户自行维护。</p>
-<p>SessionReqSeq：一个session中，一笔业务流程周期中唯一序号，此序号由API自动填写，客户维护无效。</p>
-<p>OrderMemo：该字段CTP不做任何处理，即终端填写什么CTP就返回什么。可以用来给多账户系统做标记用。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="dce45c91-bb95-4740-b3d6-e07b1a84f773" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3.返回</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<p>0，代表成功。</p>
-<p>-1，表示网络连接失败；</p>
-<p>-2，表示未处理请求超过许可数；</p>
-<p>-3，表示每秒发送请求数超过许可数。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="f80de27f-cab9-4dce-8728-dae55934204c" class="anchor"></span></div><h1 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>4.示例调用</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h1' id='panel4'>
+<p>ForQuoteSysID锛氳浠风紪鍙凤紝鐢ㄤ簬鍞竴瀹氫綅涓€绗旇浠凤紝闇€瑕佺函鏁板瓧閫掑</p>
+<p>AskOrderRef锛氶渶瑕佺函鏁板瓧閫掑</p>
+<p>BidOrderRef锛氳姣擜skOrderRef澶э紝闇€瑕佺函鏁板瓧閫掑</p>
+<p>IPAddress锛氭墜宸ュ～鍐欐湰鏈篒P鍦板潃锛屼笉鑷姩鑾峰彇銆傚～鍐欒鍒欏涓嬶細ipv4鍘熸牱濉啓锛宨pv6瑕佽浆鎴愰潪闆跺帇缂╁湴鍧€锛屽嵆鍘熷鍦板潃锛屽悓鏃惰鍘绘帀鍐掑彿锛宔g锛欰AAABBBBCCCCDDDDEEEEFFFFGGGGHHHH</p>
+<p>OrderMemo:鎶ュ崟鍥炴樉瀛楁锛孫rderMemo瀛楁鍙緵缁堢鍘傚晢鏍囪璁㈠崟浣跨敤锛孋TP涓嶅仛澶勭悊锛屽嵆缁堢濉啓浠€涔圕TP灏辫繑鍥炰粈涔?/p>
+<p>nRequestID锛氳姹侷D锛屽搴斿搷搴旈噷鐨刵RequestID锛屾棤閫掑瑙勫垯锛岀敱鐢ㄦ埛鑷缁存姢銆?/p>
+<p>SessionReqSeq锛氫竴涓猻ession涓紝涓€绗斾笟鍔℃祦绋嬪懆鏈熶腑鍞竴搴忓彿锛屾搴忓彿鐢盇PI鑷姩濉啓锛屽鎴风淮鎶ゆ棤鏁堛€?/p>
+<p>OrderMemo锛氳瀛楁CTP涓嶅仛浠讳綍澶勭悊锛屽嵆缁堢濉啓浠€涔圕TP灏辫繑鍥炰粈涔堛€傚彲浠ョ敤鏉ョ粰澶氳处鎴风郴缁熷仛鏍囪鐢ㄣ€?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="dce45c91-bb95-4740-b3d6-e07b1a84f773" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3.杩斿洖</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<p>0锛屼唬琛ㄦ垚鍔熴€?/p>
+<p>-1锛岃〃绀虹綉缁滆繛鎺ュけ璐ワ紱</p>
+<p>-2锛岃〃绀烘湭澶勭悊璇锋眰瓒呰繃璁稿彲鏁帮紱</p>
+<p>-3锛岃〃绀烘瘡绉掑彂閫佽姹傛暟瓒呰繃璁稿彲鏁般€?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="f80de27f-cab9-4dce-8728-dae55934204c" class="anchor"></span></div><h1 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>4.绀轰緥璋冪敤</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h1' id='panel4'>
 <pre><code>CThostFtdcInputQuoteField t = { 0 };
 strcpy_s(t.BrokerID, "9999");
 strcpy_s(t.InvestorID, "1000001");
@@ -334,28 +334,22 @@ t.AskPrice = 200;
 t.BidPrice = 150;
 t.AskVolume = 1;
 t.BidVolume = 1;
-t.AskOffsetFlag = THOST_FTDC_OF_Open;///卖开平标志
-t.BidOffsetFlag = THOST_FTDC_OF_Open;///买开平标志
-t.AskHedgeFlag = THOST_FTDC_HF_Hedge;///卖投机套保标志
-t.BidHedgeFlag = THOST_FTDC_HF_Hedge;///买投机套保标志
-_itoa_s(OrderRef, t.AskOrderRef, 10);///衍生卖报单引用
-OrderRef++;
-_itoa_s(OrderRef, t.BidOrderRef, 10);///衍生买报单引用
-OrderRef++; 
+t.AskOffsetFlag = THOST_FTDC_OF_Open;///鍗栧紑骞虫爣蹇?t.BidOffsetFlag = THOST_FTDC_OF_Open;///涔板紑骞虫爣蹇?t.AskHedgeFlag = THOST_FTDC_HF_Hedge;///鍗栨姇鏈哄淇濇爣蹇?t.BidHedgeFlag = THOST_FTDC_HF_Hedge;///涔版姇鏈哄淇濇爣蹇?_itoa_s(OrderRef, t.AskOrderRef, 10);///琛嶇敓鍗栨姤鍗曞紩鐢?OrderRef++;
+_itoa_s(OrderRef, t.BidOrderRef, 10);///琛嶇敓涔版姤鍗曞紩鐢?OrderRef++; 
 m_pUserApi-&gt;ReqQuoteInsert(&amp;t, nRequestID++);
 </code></pre>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="62085bf6-d32f-4f85-b2b3-3b7ec7162216" class="anchor"></span></div><h1 class='title' id='title5' title='点击展开/折叠'><span id='header_span5' class='header_span'>◇ </span>5.FAQ</h1><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('◆ ');}else{$("#header_span5").html('◇ ');}});});</script><div class='panel_title_h1' id='panel5'>
-<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>询价时报：“没有该合约的做市商”？</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
-<p>这是因为询价合约不对，目前期权合约可以参加询价。</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="62085bf6-d32f-4f85-b2b3-3b7ec7162216" class="anchor"></span></div><h1 class='title' id='title5' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span5' class='header_span'>鈼?</span>5.FAQ</h1><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('鈼?');}else{$("#header_span5").html('鈼?');}});});</script><div class='panel_title_h1' id='panel5'>
+<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>璇环鏃舵姤锛氣€滄病鏈夎鍚堢害鐨勫仛甯傚晢鈥濓紵</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
+<p>杩欐槸鍥犱负璇环鍚堢害涓嶅锛岀洰鍓嶆湡鏉冨悎绾﹀彲浠ュ弬鍔犺浠枫€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_1'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_1').click(function() {$('#region_panel_1').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>询价时报：“CTP：当前时间禁止询价”？</p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
-<p>这是因为期货公司一般把询价限制时间设置为60秒询价一次，周期内不能多次询价。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>璇环鏃舵姤锛氣€淐TP锛氬綋鍓嶆椂闂寸姝㈣浠封€濓紵</p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
+<p>杩欐槸鍥犱负鏈熻揣鍏徃涓€鑸妸璇环闄愬埗鏃堕棿璁剧疆涓?0绉掕浠蜂竴娆★紝鍛ㄦ湡鍐呬笉鑳藉娆¤浠枫€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_2'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_2').click(function() {$('#region_panel_2').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_3' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>询价时报：“CTP：当前价差禁止询价”？</p><div class='region_panel' id='region_panel_3' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_3').click(function() {$('#region_panel_3').toggle();});}); </script>
-<p>交易所有询价价差的限制，期货公司可以在柜台上进行设置，一般如下：</p>
-<table><tr><th style="TEXT-ALIGN: center;">经纪公司代码</th><th style="TEXT-ALIGN: center;">合约代码</th><th style="TEXT-ALIGN: center;">交易所代码</th><th style="TEXT-ALIGN: center;">最新价</th><th style="TEXT-ALIGN: center;">价差</th></tr><tr><td style="TEXT-ALIGN: left;">1008</td>
+<p><div class='region_i'><p class='region_header' id='region_header_3' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>璇环鏃舵姤锛氣€淐TP锛氬綋鍓嶄环宸姝㈣浠封€濓紵</p><div class='region_panel' id='region_panel_3' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_3').click(function() {$('#region_panel_3').toggle();});}); </script>
+<p>浜ゆ槗鎵€鏈夎浠蜂环宸殑闄愬埗锛屾湡璐у叕鍙稿彲浠ュ湪鏌滃彴涓婅繘琛岃缃紝涓€鑸涓嬶細</p>
+<table><tr><th style="TEXT-ALIGN: center;">缁忕邯鍏徃浠ｇ爜</th><th style="TEXT-ALIGN: center;">鍚堢害浠ｇ爜</th><th style="TEXT-ALIGN: center;">浜ゆ槗鎵€浠ｇ爜</th><th style="TEXT-ALIGN: center;">鏈€鏂颁环</th><th style="TEXT-ALIGN: center;">浠峰樊</th></tr><tr><td style="TEXT-ALIGN: left;">1008</td>
 <td style="TEXT-ALIGN: left;">SRC</td>
 <td style="TEXT-ALIGN: left;">CZCE</td>
 <td style="TEXT-ALIGN: left;">0</td>
@@ -392,44 +386,44 @@ m_pUserApi-&gt;ReqQuoteInsert(&amp;t, nRequestID++);
 <td style="TEXT-ALIGN: left;">75</td>
 </tr>
 </table>
-<p>询价价差的判断过程</p>
-<p>1）看最新价对应于上面的哪一档次，确定价差的最小值</p>
-<p>2）计算买价和卖价的价差，看是否大于设置的价差（等于也不行）</p>
-<p>如果2）通过，那么询价单报入交易所，否则会被CTP直接拒绝。</p>
+<p>璇环浠峰樊鐨勫垽鏂繃绋?/p>
+<p>1锛夌湅鏈€鏂颁环瀵瑰簲浜庝笂闈㈢殑鍝竴妗ｆ锛岀‘瀹氫环宸殑鏈€灏忓€?/p>
+<p>2锛夎绠椾拱浠峰拰鍗栦环鐨勪环宸紝鐪嬫槸鍚﹀ぇ浜庤缃殑浠峰樊锛堢瓑浜庝篃涓嶈锛?/p>
+<p>濡傛灉2锛夐€氳繃锛岄偅涔堣浠峰崟鎶ュ叆浜ゆ槗鎵€锛屽惁鍒欎細琚獵TP鐩存帴鎷掔粷銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_3'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_3').click(function() {$('#region_panel_3').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_4' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>“非法的做市商响应”是什么原因？</p><div class='region_panel' id='region_panel_4' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_4').click(function() {$('#region_panel_4').toggle();});}); </script>
-<p>这可能是所用交易编码非做市商专用所致。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_4' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鈥滈潪娉曠殑鍋氬競鍟嗗搷搴斺€濇槸浠€涔堝師鍥狅紵</p><div class='region_panel' id='region_panel_4' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_4').click(function() {$('#region_panel_4').toggle();});}); </script>
+<p>杩欏彲鑳芥槸鎵€鐢ㄤ氦鏄撶紪鐮侀潪鍋氬競鍟嗕笓鐢ㄦ墍鑷淬€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_4'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_4').click(function() {$('#region_panel_4').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_5' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>各家交易所第二次报价是否会撤销第一次报价？</p><div class='region_panel' id='region_panel_5' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_5').click(function() {$('#region_panel_5').toggle();});}); </script>
-<p>中金所：不会撤销</p>
-<p>大商所：不会撤销</p>
-<p>郑商所：会撤销</p>
-<p>上期所：会撤销</p>
+<p><div class='region_i'><p class='region_header' id='region_header_5' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鍚勫浜ゆ槗鎵€绗簩娆℃姤浠锋槸鍚︿細鎾ら攢绗竴娆℃姤浠凤紵</p><div class='region_panel' id='region_panel_5' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_5').click(function() {$('#region_panel_5').toggle();});}); </script>
+<p>涓噾鎵€锛氫笉浼氭挙閿€</p>
+<p>澶у晢鎵€锛氫笉浼氭挙閿€</p>
+<p>閮戝晢鎵€锛氫細鎾ら攢</p>
+<p>涓婃湡鎵€锛氫細鎾ら攢</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_5'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_5').click(function() {$('#region_panel_5').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_6' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>各家交易所使用的报价接口是否一样？</p><div class='region_panel' id='region_panel_6' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_6').click(function() {$('#region_panel_6').toggle();});}); </script>
-<p>中金所：只有期权做市商,使用ReqQuoteInsert</p>
-<p>大商所：使用ReqQuoteInsert</p>
-<p>郑商所：使用ReqQuoteInsert</p>
-<p>上期所：期货合约使用<a href="REQORDERINSERT.html">ReqOrderInsert</a>，期权合约使用ReqQuoteInsert</p>
+<p><div class='region_i'><p class='region_header' id='region_header_6' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鍚勫浜ゆ槗鎵€浣跨敤鐨勬姤浠锋帴鍙ｆ槸鍚︿竴鏍凤紵</p><div class='region_panel' id='region_panel_6' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_6').click(function() {$('#region_panel_6').toggle();});}); </script>
+<p>涓噾鎵€锛氬彧鏈夋湡鏉冨仛甯傚晢,浣跨敤ReqQuoteInsert</p>
+<p>澶у晢鎵€锛氫娇鐢≧eqQuoteInsert</p>
+<p>閮戝晢鎵€锛氫娇鐢≧eqQuoteInsert</p>
+<p>涓婃湡鎵€锛氭湡璐у悎绾︿娇鐢?a href="REQORDERINSERT.html">ReqOrderInsert</a>锛屾湡鏉冨悎绾︿娇鐢≧eqQuoteInsert</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_6'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_6').click(function() {$('#region_panel_6').toggle();});}); </script></p>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="REQQUOTEACTION.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="REQREMOVEPARKEDORDER.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="REQQUOTEACTION.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="REQREMOVEPARKEDORDER.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='REQQUOTEACTION.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='../../_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='REQREMOVEPARKEDORDER.html';
 return;
 }

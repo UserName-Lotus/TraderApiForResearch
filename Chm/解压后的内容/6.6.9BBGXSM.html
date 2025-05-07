@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=8"/>
 <title>
-6.6.9版本更新说明</title>
+6.6.9鐗堟湰鏇存柊璇存槑</title>
 <meta name="info" content="6.6.9BBGXSM.md" >
 <meta name="viewport" content="width=device-width, user-scalable=yes" />
 <meta http-equiv="Content-Type" content="text/html;charset=gb18030">
@@ -127,7 +127,7 @@ function LoadUserSelectedTheme()
 </script>
 </head>
 <body onLoad="ShowPage()">
-<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>6.6.9版本更新说明</p><hr class="headerline"/><div id="content"><script src="jquery-1.7.0.min.js"></script><script src="menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
+<p style="visibility: collapse;"><span id="__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__" class="anchor"></span></p><div style="text-align:right"><span class="pageheader"></span><a onclick="print()" style="visibility: hidden"></a></div><div id="printArea"><p class='fileheader' id='file_header'>6.6.9鐗堟湰鏇存柊璇存槑</p><hr class="headerline"/><div id="content"><script src="jquery-1.7.0.min.js"></script><script src="menu_light.js"></script><script language="javascript">function print() {$("#printArea").jqprint({importCSS: true});}</script><script>function getHeight(){return document.body.scrollHeight;}</script><script>function copyChoiceQuestion(examDiv,questionTitleId,questionChoice0Id,questionChoice1Id,questionChoice2Id,questionChoice3Id)
 {
 var qTitle=document.getElementById(questionTitleId);
 var qChoiceText0="",qChoiceText1="",qChoiceText2="",qChoiceText3="";var qChoice0=document.getElementById(questionChoice0Id);
@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,375 +151,337 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#4aa66744-8a2b-44df-8810-a1dca86d649d">1.API变动</a></p><p>　<a href="#23c5ea3a-218f-4588-b569-18d421df4359">1.1.新增接口：SPBM期货合约参数查询（查询对冲参数X、Y、Z）</a></p><p>　<a href="#14e6b82d-8ec9-4a3d-80a6-80870c8373b9">1.2.新增接口：SPBM期权合约参数查询</a></p><p>　<a href="#342051ad-da20-41f8-a5bb-8c7fbb432084">1.3.新增接口：SPBM品种内对锁仓折扣参数查询</a></p><p>　<a href="#43096b5c-22de-4552-b02d-609928aa12f6">1.4.新增接口：SPBM跨品种抵扣参数查询</a></p><p>　<a href="#6e0c2004-94d9-4b19-a9a3-5fdc0a2306ef">1.5.新增接口：SPBM组合保证金套餐查询</a></p><p>　<a href="#97a4d318-e0e3-4385-a7da-0b5df83fae5b">1.6.新增接口：投资者SPBM套餐选择查询（操作员可以查所有投资者，投资者只能查自己的）</a></p><p>　<a href="#b995f877-1e6f-4999-9778-0756f241c08c">1.7.新增接口：投资者SPBM组合保证金系数查询</a></p><p>　<a href="#2b39b115-01ac-4119-bee9-77b3990eab38">1.8.新增接口：投资者产品SPBM明细查询</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="6.6.8BBGXSM.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.7.0BBGXSM.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>版本号：v6.6.9_20220914_traderapi</p>
-<p>后台版本：V6.6.9</p>
-<p>注意：此版本为支持郑商所SPBM组保业务而变更，新增8个交易查询接口。</p>
-<p>变更说明：（请各终端厂商根据自身情况进行开发）</p>
-<span id="4aa66744-8a2b-44df-8810-a1dca86d649d" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.API变动</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
-<span id="23c5ea3a-218f-4588-b569-18d421df4359" class="anchor"></span><h2 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>1.1.新增接口：SPBM期货合约参数查询（查询对冲参数X、Y、Z）</h2><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h2' id='panel2'>
-<p>（1）查询请求</p>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#4aa66744-8a2b-44df-8810-a1dca86d649d">1.API鍙樺姩</a></p><p>銆€<a href="#23c5ea3a-218f-4588-b569-18d421df4359">1.1.鏂板鎺ュ彛锛歋PBM鏈熻揣鍚堢害鍙傛暟鏌ヨ锛堟煡璇㈠鍐插弬鏁癤銆乊銆乑锛?/a></p><p>銆€<a href="#14e6b82d-8ec9-4a3d-80a6-80870c8373b9">1.2.鏂板鎺ュ彛锛歋PBM鏈熸潈鍚堢害鍙傛暟鏌ヨ</a></p><p>銆€<a href="#342051ad-da20-41f8-a5bb-8c7fbb432084">1.3.鏂板鎺ュ彛锛歋PBM鍝佺鍐呭閿佷粨鎶樻墸鍙傛暟鏌ヨ</a></p><p>銆€<a href="#43096b5c-22de-4552-b02d-609928aa12f6">1.4.鏂板鎺ュ彛锛歋PBM璺ㄥ搧绉嶆姷鎵ｅ弬鏁版煡璇?/a></p><p>銆€<a href="#6e0c2004-94d9-4b19-a9a3-5fdc0a2306ef">1.5.鏂板鎺ュ彛锛歋PBM缁勫悎淇濊瘉閲戝椁愭煡璇?/a></p><p>銆€<a href="#97a4d318-e0e3-4385-a7da-0b5df83fae5b">1.6.鏂板鎺ュ彛锛氭姇璧勮€匰PBM濂楅閫夋嫨鏌ヨ锛堟搷浣滃憳鍙互鏌ユ墍鏈夋姇璧勮€咃紝鎶曡祫鑰呭彧鑳芥煡鑷繁鐨勶級</a></p><p>銆€<a href="#b995f877-1e6f-4999-9778-0756f241c08c">1.7.鏂板鎺ュ彛锛氭姇璧勮€匰PBM缁勫悎淇濊瘉閲戠郴鏁版煡璇?/a></p><p>銆€<a href="#2b39b115-01ac-4119-bee9-77b3990eab38">1.8.鏂板鎺ュ彛锛氭姇璧勮€呬骇鍝丼PBM鏄庣粏鏌ヨ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="6.6.8BBGXSM.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="6.7.0BBGXSM.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>鐗堟湰鍙凤細v6.6.9_20220914_traderapi</p>
+<p>鍚庡彴鐗堟湰锛歏6.6.9</p>
+<p>娉ㄦ剰锛氭鐗堟湰涓烘敮鎸侀儜鍟嗘墍SPBM缁勪繚涓氬姟鑰屽彉鏇达紝鏂板8涓氦鏄撴煡璇㈡帴鍙ｃ€?/p>
+<p>鍙樻洿璇存槑锛氾紙璇峰悇缁堢鍘傚晢鏍规嵁鑷韩鎯呭喌杩涜寮€鍙戯級</p>
+<span id="4aa66744-8a2b-44df-8810-a1dca86d649d" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.API鍙樺姩</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
+<span id="23c5ea3a-218f-4588-b569-18d421df4359" class="anchor"></span><h2 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>1.1.鏂板鎺ュ彛锛歋PBM鏈熻揣鍚堢害鍙傛暟鏌ヨ锛堟煡璇㈠鍐插弬鏁癤銆乊銆乑锛?/h2><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h2' id='panel2'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_1' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_1'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
-<p>///SPBM期货合约参数查询</p>
+<p>///SPBM鏈熻揣鍚堢害鍙傛暟鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMFUTUREPARAMETER.html">ReqQrySPBMFutureParameter</a>(CThostFtdcQrySPBMFutureParameterField *pQrySPBMFutureParameter, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_1'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_1').click(function() {$('#region_panel_1').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMFutureParameterField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_2' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_2'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
-<p>///SPBM期货合约参数查询响应</p>
+<p>///SPBM鏈熻揣鍚堢害鍙傛暟鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMFUTUREPARAMETER.html">OnRspQrySPBMFutureParameter</a>(CThostFtdcSPBMFutureParameterField *pSPBMFutureParameter, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_2'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_2').click(function() {$('#region_panel_2').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcSPBMFutureParameterField
 {
-    ///交易日
-    TThostFtdcDateType  TradingDay;
-    ///交易所代码
+    ///浜ゆ槗鏃?    TThostFtdcDateType  TradingDay;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
-    ///期货合约因子
+    ///鏈熻揣鍚堢害鍥犲瓙
     TThostFtdcVolumeMultipleType    Cvf;
-    ///阶段标识
+    ///闃舵鏍囪瘑
     TThostFtdcTimeRangeType TimeRange;
-    ///品种保证金标准
-    TThostFtdcRatioType MarginRate;
-    ///期货合约内部对锁仓费率折扣比例
-    TThostFtdcRatioType LockRateX;
-    ///提高保证金标准
-    TThostFtdcRatioType AddOnRate;
-    ///昨结算价
+    ///鍝佺淇濊瘉閲戞爣鍑?    TThostFtdcRatioType MarginRate;
+    ///鏈熻揣鍚堢害鍐呴儴瀵归攣浠撹垂鐜囨姌鎵ｆ瘮渚?    TThostFtdcRatioType LockRateX;
+    ///鎻愰珮淇濊瘉閲戞爣鍑?    TThostFtdcRatioType AddOnRate;
+    ///鏄ㄧ粨绠椾环
     TThostFtdcPriceType PreSettlementPrice;
 };
 </code></pre>
-<span id="14e6b82d-8ec9-4a3d-80a6-80870c8373b9" class="anchor"></span></div><h2 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>1.2.新增接口：SPBM期权合约参数查询</h2><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h2' id='panel3'>
-<p>（1）查询请求</p>
+<span id="14e6b82d-8ec9-4a3d-80a6-80870c8373b9" class="anchor"></span></div><h2 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>1.2.鏂板鎺ュ彛锛歋PBM鏈熸潈鍚堢害鍙傛暟鏌ヨ</h2><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h2' id='panel3'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_3' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_3'><table><tr><td><script>$(document).ready(function() {$('#region_header_3').click(function() {$('#region_panel_3').toggle();});}); </script>
-<p>///SPBM期权合约参数查询</p>
+<p>///SPBM鏈熸潈鍚堢害鍙傛暟鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMOPTIONPARAMETER.html">ReqQrySPBMOptionParameter</a>(CThostFtdcQrySPBMOptionParameterField *pQrySPBMOptionParameter, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_3'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_3').click(function() {$('#region_panel_3').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMOptionParameterField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_4' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_4'><table><tr><td><script>$(document).ready(function() {$('#region_header_4').click(function() {$('#region_panel_4').toggle();});}); </script>
-<p>///SPBM期权合约参数查询响应</p>
+<p>///SPBM鏈熸潈鍚堢害鍙傛暟鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMOPTIONPARAMETER.html">OnRspQrySPBMOptionParameter</a>(CThostFtdcSPBMOptionParameterField *pSPBMOptionParameter, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_4'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_4').click(function() {$('#region_panel_4').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcSPBMOptionParameterField
 {
-    ///交易日
-    TThostFtdcDateType  TradingDay;
-    ///交易所代码
+    ///浜ゆ槗鏃?    TThostFtdcDateType  TradingDay;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
-    ///期权合约因子
+    ///鏈熸潈鍚堢害鍥犲瓙
     TThostFtdcVolumeMultipleType    Cvf;
-    ///期权冲抵价格
+    ///鏈熸潈鍐叉姷浠锋牸
     TThostFtdcPriceType DownPrice;
-    ///Delta值
-    TThostFtdcDeltaType Delta;
-    ///卖方期权风险转换最低值
-    TThostFtdcDeltaType SlimiDelta;
-    ///昨结算价
+    ///Delta鍊?    TThostFtdcDeltaType Delta;
+    ///鍗栨柟鏈熸潈椋庨櫓杞崲鏈€浣庡€?    TThostFtdcDeltaType SlimiDelta;
+    ///鏄ㄧ粨绠椾环
     TThostFtdcPriceType PreSettlementPrice;
 };
 </code></pre>
-<span id="342051ad-da20-41f8-a5bb-8c7fbb432084" class="anchor"></span></div><h2 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>1.3.新增接口：SPBM品种内对锁仓折扣参数查询</h2><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h2' id='panel4'>
-<p>（1）查询请求</p>
+<span id="342051ad-da20-41f8-a5bb-8c7fbb432084" class="anchor"></span></div><h2 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>1.3.鏂板鎺ュ彛锛歋PBM鍝佺鍐呭閿佷粨鎶樻墸鍙傛暟鏌ヨ</h2><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h2' id='panel4'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_5' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_5'><table><tr><td><script>$(document).ready(function() {$('#region_header_5').click(function() {$('#region_panel_5').toggle();});}); </script>
-<p>///SPBM品种内对锁仓折扣参数查询</p>
+<p>///SPBM鍝佺鍐呭閿佷粨鎶樻墸鍙傛暟鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMINTRAPARAMETER.html">ReqQrySPBMIntraParameter</a>(CThostFtdcQrySPBMIntraParameterField *pQrySPBMIntraParameter, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_5'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_5').click(function() {$('#region_panel_5').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMIntraParameterField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_6' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_6'><table><tr><td><script>$(document).ready(function() {$('#region_header_6').click(function() {$('#region_panel_6').toggle();});}); </script>
-<p>///SPBM品种内对锁仓折扣参数查询响应</p>
+<p>///SPBM鍝佺鍐呭閿佷粨鎶樻墸鍙傛暟鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMINTRAPARAMETER.html">OnRspQrySPBMIntraParameter</a>(CThostFtdcSPBMIntraParameterField *pSPBMIntraParameter, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_6'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_6').click(function() {$('#region_panel_6').toggle();});}); </script></p>
-<pre><code>///SPBM品种内对锁仓折扣参数
+<pre><code>///SPBM鍝佺鍐呭閿佷粨鎶樻墸鍙傛暟
 struct CThostFtdcSPBMIntraParameterField
 {
-    ///交易日
-    TThostFtdcDateType  TradingDay;
-    ///交易所代码
+    ///浜ゆ槗鏃?    TThostFtdcDateType  TradingDay;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///品种代码
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
-    ///品种内合约间对锁仓费率折扣比例
-    TThostFtdcRatioType IntraRateY;
+    ///鍝佺鍐呭悎绾﹂棿瀵归攣浠撹垂鐜囨姌鎵ｆ瘮渚?    TThostFtdcRatioType IntraRateY;
 };
 </code></pre>
-<span id="43096b5c-22de-4552-b02d-609928aa12f6" class="anchor"></span></div><h2 class='title' id='title5' title='点击展开/折叠'><span id='header_span5' class='header_span'>◇ </span>1.4.新增接口：SPBM跨品种抵扣参数查询</h2><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('◆ ');}else{$("#header_span5").html('◇ ');}});});</script><div class='panel_title_h2' id='panel5'>
-<p>（1）查询请求</p>
+<span id="43096b5c-22de-4552-b02d-609928aa12f6" class="anchor"></span></div><h2 class='title' id='title5' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span5' class='header_span'>鈼?</span>1.4.鏂板鎺ュ彛锛歋PBM璺ㄥ搧绉嶆姷鎵ｅ弬鏁版煡璇?/h2><script>$(document).ready(function(){$("#title5").click(function(){$("#panel5").toggle();if($("#panel5").is(":hidden")){$("#header_span5").html('鈼?');}else{$("#header_span5").html('鈼?');}});});</script><div class='panel_title_h2' id='panel5'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_7' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_7'><table><tr><td><script>$(document).ready(function() {$('#region_header_7').click(function() {$('#region_panel_7').toggle();});}); </script>
-<p>///SPBM跨品种抵扣参数查询</p>
+<p>///SPBM璺ㄥ搧绉嶆姷鎵ｅ弬鏁版煡璇?/p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMINTERPARAMETER.html">ReqQrySPBMInterParameter</a>(CThostFtdcQrySPBMInterParameterField *pQrySPBMInterParameter, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_7'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_7').click(function() {$('#region_panel_7').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMInterParameterField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///第一腿构成品种
-    TThostFtdcInstrumentIDType  Leg1ProdFamilyCode;
-    ///第二腿构成品种
-    TThostFtdcInstrumentIDType  Leg2ProdFamilyCode;
+    ///绗竴鑵挎瀯鎴愬搧绉?    TThostFtdcInstrumentIDType  Leg1ProdFamilyCode;
+    ///绗簩鑵挎瀯鎴愬搧绉?    TThostFtdcInstrumentIDType  Leg2ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_8' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_8'><table><tr><td><script>$(document).ready(function() {$('#region_header_8').click(function() {$('#region_panel_8').toggle();});}); </script>
-<p>///SPBM跨品种抵扣参数查询响应</p>
+<p>///SPBM璺ㄥ搧绉嶆姷鎵ｅ弬鏁版煡璇㈠搷搴?/p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMINTERPARAMETER.html">OnRspQrySPBMInterParameter</a>(CThostFtdcSPBMInterParameterField *pSPBMInterParameter, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_8'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_8').click(function() {$('#region_panel_8').toggle();});}); </script></p>
-<pre><code>///SPBM跨品种抵扣参数
-struct CThostFtdcSPBMInterParameterField
+<pre><code>///SPBM璺ㄥ搧绉嶆姷鎵ｅ弬鏁?struct CThostFtdcSPBMInterParameterField
 {
-    ///交易日
-    TThostFtdcDateType  TradingDay;
-    ///交易所代码
+    ///浜ゆ槗鏃?    TThostFtdcDateType  TradingDay;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///优先级
-    TThostFtdcSpreadIdType  SpreadId;
-    ///品种间对锁仓费率折扣比例
+    ///浼樺厛绾?    TThostFtdcSpreadIdType  SpreadId;
+    ///鍝佺闂村閿佷粨璐圭巼鎶樻墸姣斾緥
     TThostFtdcRatioType InterRateZ;
-    ///第一腿构成品种
-    TThostFtdcInstrumentIDType  Leg1ProdFamilyCode;
-    ///第二腿构成品种
-    TThostFtdcInstrumentIDType  Leg2ProdFamilyCode;
+    ///绗竴鑵挎瀯鎴愬搧绉?    TThostFtdcInstrumentIDType  Leg1ProdFamilyCode;
+    ///绗簩鑵挎瀯鎴愬搧绉?    TThostFtdcInstrumentIDType  Leg2ProdFamilyCode;
 };
 </code></pre>
-<span id="6e0c2004-94d9-4b19-a9a3-5fdc0a2306ef" class="anchor"></span></div><h2 class='title' id='title6' title='点击展开/折叠'><span id='header_span6' class='header_span'>◇ </span>1.5.新增接口：SPBM组合保证金套餐查询</h2><script>$(document).ready(function(){$("#title6").click(function(){$("#panel6").toggle();if($("#panel6").is(":hidden")){$("#header_span6").html('◆ ');}else{$("#header_span6").html('◇ ');}});});</script><div class='panel_title_h2' id='panel6'>
-<p>（1）查询请求</p>
+<span id="6e0c2004-94d9-4b19-a9a3-5fdc0a2306ef" class="anchor"></span></div><h2 class='title' id='title6' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span6' class='header_span'>鈼?</span>1.5.鏂板鎺ュ彛锛歋PBM缁勫悎淇濊瘉閲戝椁愭煡璇?/h2><script>$(document).ready(function(){$("#title6").click(function(){$("#panel6").toggle();if($("#panel6").is(":hidden")){$("#header_span6").html('鈼?');}else{$("#header_span6").html('鈼?');}});});</script><div class='panel_title_h2' id='panel6'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_9' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_9'><table><tr><td><script>$(document).ready(function() {$('#region_header_9').click(function() {$('#region_panel_9').toggle();});}); </script>
-<p>///SPBM组合保证金套餐查询</p>
+<p>///SPBM缁勫悎淇濊瘉閲戝椁愭煡璇?/p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMPORTFDEFINITION.html">ReqQrySPBMPortfDefinition</a>(CThostFtdcQrySPBMPortfDefinitionField *pQrySPBMPortfDefinition, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_9'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_9').click(function() {$('#region_panel_9').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMPortfDefinitionField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///组合保证金套餐代码
-    TThostFtdcPortfolioDefIDType    PortfolioDefID;
-    ///品种代码
+    ///缁勫悎淇濊瘉閲戝椁愪唬鐮?    TThostFtdcPortfolioDefIDType    PortfolioDefID;
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_10' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_10'><table><tr><td><script>$(document).ready(function() {$('#region_header_10').click(function() {$('#region_panel_10').toggle();});}); </script>
-<p>///SPBM组合保证金套餐查询响应</p>
+<p>///SPBM缁勫悎淇濊瘉閲戝椁愭煡璇㈠搷搴?/p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMPORTFDEFINITION.html">OnRspQrySPBMPortfDefinition</a>(CThostFtdcSPBMPortfDefinitionField *pSPBMPortfDefinition, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_10'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_10').click(function() {$('#region_panel_10').toggle();});}); </script></p>
-<pre><code>///组合保证金套餐
-struct CThostFtdcSPBMPortfDefinitionField
+<pre><code>///缁勫悎淇濊瘉閲戝椁?struct CThostFtdcSPBMPortfDefinitionField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///组合保证金套餐代码
-    TThostFtdcPortfolioDefIDType    PortfolioDefID;
-    ///品种代码
+    ///缁勫悎淇濊瘉閲戝椁愪唬鐮?    TThostFtdcPortfolioDefIDType    PortfolioDefID;
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
-    ///是否启用SPBM
+    ///鏄惁鍚敤SPBM
     TThostFtdcBoolType  IsSPBM;
 };
 </code></pre>
-<span id="97a4d318-e0e3-4385-a7da-0b5df83fae5b" class="anchor"></span></div><h2 class='title' id='title7' title='点击展开/折叠'><span id='header_span7' class='header_span'>◇ </span>1.6.新增接口：投资者SPBM套餐选择查询（操作员可以查所有投资者，投资者只能查自己的）</h2><script>$(document).ready(function(){$("#title7").click(function(){$("#panel7").toggle();if($("#panel7").is(":hidden")){$("#header_span7").html('◆ ');}else{$("#header_span7").html('◇ ');}});});</script><div class='panel_title_h2' id='panel7'>
-<p>（1）查询请求</p>
+<span id="97a4d318-e0e3-4385-a7da-0b5df83fae5b" class="anchor"></span></div><h2 class='title' id='title7' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span7' class='header_span'>鈼?</span>1.6.鏂板鎺ュ彛锛氭姇璧勮€匰PBM濂楅閫夋嫨鏌ヨ锛堟搷浣滃憳鍙互鏌ユ墍鏈夋姇璧勮€咃紝鎶曡祫鑰呭彧鑳芥煡鑷繁鐨勶級</h2><script>$(document).ready(function(){$("#title7").click(function(){$("#panel7").toggle();if($("#panel7").is(":hidden")){$("#header_span7").html('鈼?');}else{$("#header_span7").html('鈼?');}});});</script><div class='panel_title_h2' id='panel7'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_11' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_11'><table><tr><td><script>$(document).ready(function() {$('#region_header_11').click(function() {$('#region_panel_11').toggle();});}); </script>
-<p>///投资者SPBM套餐选择查询</p>
+<p>///鎶曡祫鑰匰PBM濂楅閫夋嫨鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYSPBMINVESTORPORTFDEF.html">ReqQrySPBMInvestorPortfDef</a>(CThostFtdcQrySPBMInvestorPortfDefField *pQrySPBMInvestorPortfDef, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_11'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_11').click(function() {$('#region_panel_11').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQrySPBMInvestorPortfDefField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///经纪公司代码
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_12' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_12'><table><tr><td><script>$(document).ready(function() {$('#region_header_12').click(function() {$('#region_panel_12').toggle();});}); </script>
-<p>///投资者SPBM套餐选择查询响应</p>
+<p>///鎶曡祫鑰匰PBM濂楅閫夋嫨鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYSPBMINVESTORPORTFDEF.html">OnRspQrySPBMInvestorPortfDef</a>(CThostFtdcSPBMInvestorPortfDefField *pSPBMInvestorPortfDef, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_12'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_12').click(function() {$('#region_panel_12').toggle();});}); </script></p>
-<pre><code>///投资者套餐选择
+<pre><code>///鎶曡祫鑰呭椁愰€夋嫨
 struct CThostFtdcSPBMInvestorPortfDefField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///经纪公司代码
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///组合保证金套餐代码
-    TThostFtdcPortfolioDefIDType    PortfolioDefID;
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///缁勫悎淇濊瘉閲戝椁愪唬鐮?    TThostFtdcPortfolioDefIDType    PortfolioDefID;
 };
 </code></pre>
-<span id="b995f877-1e6f-4999-9778-0756f241c08c" class="anchor"></span></div><h2 class='title' id='title8' title='点击展开/折叠'><span id='header_span8' class='header_span'>◇ </span>1.7.新增接口：投资者SPBM组合保证金系数查询</h2><script>$(document).ready(function(){$("#title8").click(function(){$("#panel8").toggle();if($("#panel8").is(":hidden")){$("#header_span8").html('◆ ');}else{$("#header_span8").html('◇ ');}});});</script><div class='panel_title_h2' id='panel8'>
-<p>（1）查询请求</p>
+<span id="b995f877-1e6f-4999-9778-0756f241c08c" class="anchor"></span></div><h2 class='title' id='title8' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span8' class='header_span'>鈼?</span>1.7.鏂板鎺ュ彛锛氭姇璧勮€匰PBM缁勫悎淇濊瘉閲戠郴鏁版煡璇?/h2><script>$(document).ready(function(){$("#title8").click(function(){$("#panel8").toggle();if($("#panel8").is(":hidden")){$("#header_span8").html('鈼?');}else{$("#header_span8").html('鈼?');}});});</script><div class='panel_title_h2' id='panel8'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_13' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_13'><table><tr><td><script>$(document).ready(function() {$('#region_header_13').click(function() {$('#region_panel_13').toggle();});}); </script>
-<p>///投资者新型组合保证金系数查询</p>
+<p>///鎶曡祫鑰呮柊鍨嬬粍鍚堜繚璇侀噾绯绘暟鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYINVESTORPORTFMARGINRATIO.html">ReqQryInvestorPortfMarginRatio</a>(CThostFtdcQryInvestorPortfMarginRatioField *pQryInvestorPortfMarginRatio, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_13'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_13').click(function() {$('#region_panel_13').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQryInvestorPortfMarginRatioField
 {
-    ///经纪公司代码
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///交易所代码
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_14' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_14'><table><tr><td><script>$(document).ready(function() {$('#region_header_14').click(function() {$('#region_panel_14').toggle();});}); </script>
-<p>///投资者新型组合保证金系数查询响应</p>
+<p>///鎶曡祫鑰呮柊鍨嬬粍鍚堜繚璇侀噾绯绘暟鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYINVESTORPORTFMARGINRATIO.html">OnRspQryInvestorPortfMarginRatio</a>(CThostFtdcInvestorPortfMarginRatioField *pInvestorPortfMarginRatio, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_14'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_14').click(function() {$('#region_panel_14').toggle();});}); </script></p>
-<pre><code>///投资者新型组合保证金系数
+<pre><code>///鎶曡祫鑰呮柊鍨嬬粍鍚堜繚璇侀噾绯绘暟
 struct CThostFtdcInvestorPortfMarginRatioField
 {
-    ///投资者范围
-    TThostFtdcInvestorRangeType InvestorRange;
-    ///经纪公司代码
+    ///鎶曡祫鑰呰寖鍥?    TThostFtdcInvestorRangeType InvestorRange;
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///交易所代码
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///会员对投资者收取的保证金和交易所对投资者收取的保证金的比例
+    ///浼氬憳瀵规姇璧勮€呮敹鍙栫殑淇濊瘉閲戝拰浜ゆ槗鎵€瀵规姇璧勮€呮敹鍙栫殑淇濊瘉閲戠殑姣斾緥
     TThostFtdcRatioType MarginRatio;
 };
 </code></pre>
-<span id="2b39b115-01ac-4119-bee9-77b3990eab38" class="anchor"></span></div><h2 class='title' id='title9' title='点击展开/折叠'><span id='header_span9' class='header_span'>◇ </span>1.8.新增接口：投资者产品SPBM明细查询</h2><script>$(document).ready(function(){$("#title9").click(function(){$("#panel9").toggle();if($("#panel9").is(":hidden")){$("#header_span9").html('◆ ');}else{$("#header_span9").html('◇ ');}});});</script><div class='panel_title_h2' id='panel9'>
-<p>（1）查询请求</p>
+<span id="2b39b115-01ac-4119-bee9-77b3990eab38" class="anchor"></span></div><h2 class='title' id='title9' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span9' class='header_span'>鈼?</span>1.8.鏂板鎺ュ彛锛氭姇璧勮€呬骇鍝丼PBM鏄庣粏鏌ヨ</h2><script>$(document).ready(function(){$("#title9").click(function(){$("#panel9").toggle();if($("#panel9").is(":hidden")){$("#header_span9").html('鈼?');}else{$("#header_span9").html('鈼?');}});});</script><div class='panel_title_h2' id='panel9'>
+<p>锛?锛夋煡璇㈣姹?/p>
 <p><div class='region'><p class='region_header' id='region_header_15' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_15'><table><tr><td><script>$(document).ready(function() {$('#region_header_15').click(function() {$('#region_panel_15').toggle();});}); </script>
-<p>///投资者产品SPBM明细查询</p>
+<p>///鎶曡祫鑰呬骇鍝丼PBM鏄庣粏鏌ヨ</p>
 <p>virtual int <a href="JYJK/CTHOSTFTDCTRADERAPI/REQQRYINVESTORPRODSPBMDETAIL.html">ReqQryInvestorProdSPBMDetail</a>(CThostFtdcQryInvestorProdSPBMDetailField *pQryInvestorProdSPBMDetail, int nRequestID) = 0;</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_15'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_15').click(function() {$('#region_panel_15').toggle();});}); </script></p>
 <pre><code>struct CThostFtdcQryInvestorProdSPBMDetailField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///经纪公司代码
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///品种代码
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
 };
 </code></pre>
-<p>（2）查询响应</p>
+<p>锛?锛夋煡璇㈠搷搴?/p>
 <p><div class='region'><p class='region_header' id='region_header_16' style='border-bottom-color:transparent;border-bottom-width:0;'></p><div class='region_panel' id='region_panel_16'><table><tr><td><script>$(document).ready(function() {$('#region_header_16').click(function() {$('#region_panel_16').toggle();});}); </script>
-<p>///投资者产品SPBM明细查询响应</p>
+<p>///鎶曡祫鑰呬骇鍝丼PBM鏄庣粏鏌ヨ鍝嶅簲</p>
 <p>virtual void <a href="JYJK/CTHOSTFTDCTRADERSPI/ONRSPQRYINVESTORPRODSPBMDETAIL.html">OnRspQryInvestorProdSPBMDetail</a>(CThostFtdcInvestorProdSPBMDetailField *pInvestorProdSPBMDetail, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_16'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_16').click(function() {$('#region_panel_16').toggle();});}); </script></p>
-<pre><code>///投资者产品SPBM明细
+<pre><code>///鎶曡祫鑰呬骇鍝丼PBM鏄庣粏
 struct CThostFtdcInvestorProdSPBMDetailField
 {
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///经纪公司代码
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///品种代码
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///鍝佺浠ｇ爜
     TThostFtdcInstrumentIDType  ProdFamilyCode;
-    ///合约内对锁保证金
+    ///鍚堢害鍐呭閿佷繚璇侀噾
     TThostFtdcMoneyType IntraInstrMargin;
-    ///买归集保证金
+    ///涔板綊闆嗕繚璇侀噾
     TThostFtdcMoneyType BCollectingMargin;
-    ///卖归集保证金
+    ///鍗栧綊闆嗕繚璇侀噾
     TThostFtdcMoneyType SCollectingMargin;
-    ///品种内合约间对锁保证金
-    TThostFtdcMoneyType IntraProdMargin;
-    ///净保证金
-    TThostFtdcMoneyType NetMargin;
-    ///产品间对锁保证金
+    ///鍝佺鍐呭悎绾﹂棿瀵归攣淇濊瘉閲?    TThostFtdcMoneyType IntraProdMargin;
+    ///鍑€淇濊瘉閲?    TThostFtdcMoneyType NetMargin;
+    ///浜у搧闂村閿佷繚璇侀噾
     TThostFtdcMoneyType InterProdMargin;
-    ///裸保证金
+    ///瑁镐繚璇侀噾
     TThostFtdcMoneyType SingleMargin;
-    ///附加保证金
-    TThostFtdcMoneyType AddOnMargin;
-    ///交割月保证金
+    ///闄勫姞淇濊瘉閲?    TThostFtdcMoneyType AddOnMargin;
+    ///浜ゅ壊鏈堜繚璇侀噾
     TThostFtdcMoneyType DeliveryMargin;
-    ///看涨期权最低风险
-    TThostFtdcMoneyType CallOptionMinRisk;
-    ///看跌期权最低风险
-    TThostFtdcMoneyType PutOptionMinRisk;
-    ///卖方期权最低风险
-    TThostFtdcMoneyType OptionMinRisk;
-    ///买方期权冲抵价值
-    TThostFtdcMoneyType OptionValueOffset;
-    ///卖方期权权利金
-    TThostFtdcMoneyType OptionRoyalty;
-    ///价值冲抵
-    TThostFtdcMoneyType RealOptionValueOffset;
-    ///保证金
-    TThostFtdcMoneyType Margin;
-    ///交易所保证金
-    TThostFtdcMoneyType ExchMargin;
+    ///鐪嬫定鏈熸潈鏈€浣庨闄?    TThostFtdcMoneyType CallOptionMinRisk;
+    ///鐪嬭穼鏈熸潈鏈€浣庨闄?    TThostFtdcMoneyType PutOptionMinRisk;
+    ///鍗栨柟鏈熸潈鏈€浣庨闄?    TThostFtdcMoneyType OptionMinRisk;
+    ///涔版柟鏈熸潈鍐叉姷浠峰€?    TThostFtdcMoneyType OptionValueOffset;
+    ///鍗栨柟鏈熸潈鏉冨埄閲?    TThostFtdcMoneyType OptionRoyalty;
+    ///浠峰€煎啿鎶?    TThostFtdcMoneyType RealOptionValueOffset;
+    ///淇濊瘉閲?    TThostFtdcMoneyType Margin;
+    ///浜ゆ槗鎵€淇濊瘉閲?    TThostFtdcMoneyType ExchMargin;
 };
 </code></pre>
 
-</div></div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="6.6.8BBGXSM.html" alt="←">&lt; 前页</a> <a href="_index.html" alt="Ctrl+I">回目录</a> <a href="6.7.0BBGXSM.html" alt="→">后页 &gt;</a></p></div>
+</div></div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="6.6.8BBGXSM.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="6.7.0BBGXSM.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='6.6.8BBGXSM.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='6.7.0BBGXSM.html';
 return;
 }

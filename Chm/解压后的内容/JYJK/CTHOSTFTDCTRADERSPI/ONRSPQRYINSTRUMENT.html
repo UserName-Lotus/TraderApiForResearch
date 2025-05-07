@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,149 +151,135 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#880def18-ac31-447a-bd44-9415d4965da6">1.函数原型</a></p><p><a href="#3ab2d82e-25eb-4dd0-a6ac-3fe66ada4c94">2.参数</a></p><p><a href="#db54f15a-bc52-477a-82b2-c11ed8445671">3.返回</a></p><p><a href="#d97f82dc-9a5f-4534-9170-272c97b41cd1">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="ONRSPQRYFORQUOTE.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRSPQRYINSTRUMENTCOMMISSIONRATE.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>请求查询合约响应，当执行<a href="../CTHOSTFTDCTRADERAPI/REQQRYINSTRUMENT.html">ReqQryInstrument</a>后，该方法被调用。</p>
-<span id="880def18-ac31-447a-bd44-9415d4965da6" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.函数原型</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#880def18-ac31-447a-bd44-9415d4965da6">1.鍑芥暟鍘熷瀷</a></p><p><a href="#3ab2d82e-25eb-4dd0-a6ac-3fe66ada4c94">2.鍙傛暟</a></p><p><a href="#db54f15a-bc52-477a-82b2-c11ed8445671">3.杩斿洖</a></p><p><a href="#d97f82dc-9a5f-4534-9170-272c97b41cd1">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="ONRSPQRYFORQUOTE.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRSPQRYINSTRUMENTCOMMISSIONRATE.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>璇锋眰鏌ヨ鍚堢害鍝嶅簲锛屽綋鎵ц<a href="../CTHOSTFTDCTRADERAPI/REQQRYINSTRUMENT.html">ReqQryInstrument</a>鍚庯紝璇ユ柟娉曡璋冪敤銆?/p>
+<span id="880def18-ac31-447a-bd44-9415d4965da6" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.鍑芥暟鍘熷瀷</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
 <p>virtual void OnRspQryInstrument(CThostFtdcInstrumentField *pInstrument, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="3ab2d82e-25eb-4dd0-a6ac-3fe66ada4c94" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.参数</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
-<p>pInstrument：合约</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="3ab2d82e-25eb-4dd0-a6ac-3fe66ada4c94" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2.鍙傛暟</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>pInstrument锛氬悎绾?/p>
 <pre><code>struct CThostFtdcInstrumentField
 {
-    ///保留的无效字段
-    TThostFtdcOldInstrumentIDType   reserve1;
-    ///交易所代码
+    ///淇濈暀鐨勬棤鏁堝瓧娈?    TThostFtdcOldInstrumentIDType   reserve1;
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///合约名称
+    ///鍚堢害鍚嶇О
     TThostFtdcInstrumentNameType    InstrumentName;
-    ///保留的无效字段
-    TThostFtdcOldExchangeInstIDType reserve2;
-    ///保留的无效字段
-    TThostFtdcOldInstrumentIDType   reserve3;
-    ///产品类型
+    ///淇濈暀鐨勬棤鏁堝瓧娈?    TThostFtdcOldExchangeInstIDType reserve2;
+    ///淇濈暀鐨勬棤鏁堝瓧娈?    TThostFtdcOldInstrumentIDType   reserve3;
+    ///浜у搧绫诲瀷
     TThostFtdcProductClassType  ProductClass;
-    ///交割年份
+    ///浜ゅ壊骞翠唤
     TThostFtdcYearType  DeliveryYear;
-    ///交割月
-    TThostFtdcMonthType DeliveryMonth;
-    ///市价单最大下单量
+    ///浜ゅ壊鏈?    TThostFtdcMonthType DeliveryMonth;
+    ///甯備环鍗曟渶澶т笅鍗曢噺
     TThostFtdcVolumeType    MaxMarketOrderVolume;
-    ///市价单最小下单量
+    ///甯備环鍗曟渶灏忎笅鍗曢噺
     TThostFtdcVolumeType    MinMarketOrderVolume;
-    ///限价单最大下单量
+    ///闄愪环鍗曟渶澶т笅鍗曢噺
     TThostFtdcVolumeType    MaxLimitOrderVolume;
-    ///限价单最小下单量
+    ///闄愪环鍗曟渶灏忎笅鍗曢噺
     TThostFtdcVolumeType    MinLimitOrderVolume;
-    ///合约数量乘数
+    ///鍚堢害鏁伴噺涔樻暟
     TThostFtdcVolumeMultipleType    VolumeMultiple;
-    ///最小变动价位
-    TThostFtdcPriceType PriceTick;
-    ///创建日
-    TThostFtdcDateType  CreateDate;
-    ///上市日
-    TThostFtdcDateType  OpenDate;
-    ///到期日
-    TThostFtdcDateType  ExpireDate;
-    ///开始交割日
+    ///鏈€灏忓彉鍔ㄤ环浣?    TThostFtdcPriceType PriceTick;
+    ///鍒涘缓鏃?    TThostFtdcDateType  CreateDate;
+    ///涓婂競鏃?    TThostFtdcDateType  OpenDate;
+    ///鍒版湡鏃?    TThostFtdcDateType  ExpireDate;
+    ///寮€濮嬩氦鍓叉棩
     TThostFtdcDateType  StartDelivDate;
-    ///结束交割日
-    TThostFtdcDateType  EndDelivDate;
-    ///合约生命周期状态
-    TThostFtdcInstLifePhaseType InstLifePhase;
-    ///当前是否交易
+    ///缁撴潫浜ゅ壊鏃?    TThostFtdcDateType  EndDelivDate;
+    ///鍚堢害鐢熷懡鍛ㄦ湡鐘舵€?    TThostFtdcInstLifePhaseType InstLifePhase;
+    ///褰撳墠鏄惁浜ゆ槗
     TThostFtdcBoolType  IsTrading;
-    ///持仓类型
+    ///鎸佷粨绫诲瀷
     TThostFtdcPositionTypeType  PositionType;
-    ///持仓日期类型
+    ///鎸佷粨鏃ユ湡绫诲瀷
     TThostFtdcPositionDateTypeType  PositionDateType;
-    ///多头保证金率
+    ///澶氬ご淇濊瘉閲戠巼
     TThostFtdcRatioType LongMarginRatio;
-    ///空头保证金率
+    ///绌哄ご淇濊瘉閲戠巼
     TThostFtdcRatioType ShortMarginRatio;
-    ///是否使用大额单边保证金算法
-    TThostFtdcMaxMarginSideAlgorithmType    MaxMarginSideAlgorithm;
-    ///保留的无效字段
-    TThostFtdcOldInstrumentIDType   reserve4;
-    ///执行价
-    TThostFtdcPriceType StrikePrice;
-    ///期权类型
+    ///鏄惁浣跨敤澶ч鍗曡竟淇濊瘉閲戠畻娉?    TThostFtdcMaxMarginSideAlgorithmType    MaxMarginSideAlgorithm;
+    ///淇濈暀鐨勬棤鏁堝瓧娈?    TThostFtdcOldInstrumentIDType   reserve4;
+    ///鎵ц浠?    TThostFtdcPriceType StrikePrice;
+    ///鏈熸潈绫诲瀷
     TThostFtdcOptionsTypeType   OptionsType;
-    ///合约基础商品乘数
+    ///鍚堢害鍩虹鍟嗗搧涔樻暟
     TThostFtdcUnderlyingMultipleType    UnderlyingMultiple;
-    ///组合类型
+    ///缁勫悎绫诲瀷
     TThostFtdcCombinationTypeType   CombinationType;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///合约在交易所的代码
-    TThostFtdcExchangeInstIDType    ExchangeInstID;
-    ///产品代码
+    ///鍚堢害鍦ㄤ氦鏄撴墍鐨勪唬鐮?    TThostFtdcExchangeInstIDType    ExchangeInstID;
+    ///浜у搧浠ｇ爜
     TThostFtdcInstrumentIDType  ProductID;
-    ///基础商品代码
+    ///鍩虹鍟嗗搧浠ｇ爜
     TThostFtdcInstrumentIDType  UnderlyingInstrID;
 };
 </code></pre>
-<p>VolumeMultiple：合约乘数（同交易所）</p>
-<p>PriceTick：最小变动价位（同交易所）</p>
-<p>IsTrading：是否活跃（同交易所）</p>
-<p>DeliveryYear：交割年份（同交易所）</p>
-<p>DeliveryMonth：交割月（同交易所）</p>
+<p>VolumeMultiple锛氬悎绾︿箻鏁帮紙鍚屼氦鏄撴墍锛?/p>
+<p>PriceTick锛氭渶灏忓彉鍔ㄤ环浣嶏紙鍚屼氦鏄撴墍锛?/p>
+<p>IsTrading锛氭槸鍚︽椿璺冿紙鍚屼氦鏄撴墍锛?/p>
+<p>DeliveryYear锛氫氦鍓插勾浠斤紙鍚屼氦鏄撴墍锛?/p>
+<p>DeliveryMonth锛氫氦鍓叉湀锛堝悓浜ゆ槗鎵€锛?/p>
 <p><span id="anchor-id-01" alt=""></span> </p>
-<p>MaxMarketOrderVolume:（同交易所，郑商所的由柜台产品设置，不从郑商所查回来的限价单相关字段进行更新）</p>
+<p>MaxMarketOrderVolume:锛堝悓浜ゆ槗鎵€锛岄儜鍟嗘墍鐨勭敱鏌滃彴浜у搧璁剧疆锛屼笉浠庨儜鍟嗘墍鏌ュ洖鏉ョ殑闄愪环鍗曠浉鍏冲瓧娈佃繘琛屾洿鏂帮級</p>
 <p><span id="anchor-id-02" alt=""></span> </p>
-<p>MinMarketOrderVolume:（同交易所，郑商所的由柜台产品设置，不从郑商所查回来的限价单相关字段进行更新）</p>
-<p>MaxLimitOrderVolume:（同交易所）</p>
-<p>MinLimitOrderVolume:（同交易所）</p>
+<p>MinMarketOrderVolume:锛堝悓浜ゆ槗鎵€锛岄儜鍟嗘墍鐨勭敱鏌滃彴浜у搧璁剧疆锛屼笉浠庨儜鍟嗘墍鏌ュ洖鏉ョ殑闄愪环鍗曠浉鍏冲瓧娈佃繘琛屾洿鏂帮級</p>
+<p>MaxLimitOrderVolume:锛堝悓浜ゆ槗鎵€锛?/p>
+<p>MinLimitOrderVolume:锛堝悓浜ゆ槗鎵€锛?/p>
 <blockquote>
-  <p>柜台版本6.6.5及以上版本支持每日从交易所更新市价单、限价单最大最小报单量；</p>
+  <p>鏌滃彴鐗堟湰6.6.5鍙婁互涓婄増鏈敮鎸佹瘡鏃ヤ粠浜ゆ槗鎵€鏇存柊甯備环鍗曘€侀檺浠峰崟鏈€澶ф渶灏忔姤鍗曢噺锛?/p>
   
-  <p>CTP不会根据合约信息里的下单量限制去判断下单手数，交由交易所判断。</p>
+  <p>CTP涓嶄細鏍规嵁鍚堢害淇℃伅閲岀殑涓嬪崟閲忛檺鍒跺幓鍒ゆ柇涓嬪崟鎵嬫暟锛屼氦鐢变氦鏄撴墍鍒ゆ柇銆?/p>
 </blockquote>
-<p>OpenDate：上市日（同交易所）</p>
-<p>CreateDate：创建日（同交易所）</p>
-<p>ExpireDate：到期日（同交易所）</p>
-<p>StartDeliveDate：开始交割日（同交易所）</p>
-<p>EndDelivDate：结束交割日（同交易所）</p>
+<p>OpenDate锛氫笂甯傛棩锛堝悓浜ゆ槗鎵€锛?/p>
+<p>CreateDate锛氬垱寤烘棩锛堝悓浜ゆ槗鎵€锛?/p>
+<p>ExpireDate锛氬埌鏈熸棩锛堝悓浜ゆ槗鎵€锛?/p>
+<p>StartDeliveDate锛氬紑濮嬩氦鍓叉棩锛堝悓浜ゆ槗鎵€锛?/p>
+<p>EndDelivDate锛氱粨鏉熶氦鍓叉棩锛堝悓浜ゆ槗鎵€锛?/p>
 <blockquote>
-  <p><code>同交易所</code>表示这些字段每天更新自交易所，其余字段为柜台设置值。如果发现有些字段值有误，则以此来判断是否CTP柜台设置问题。</p>
+  <p><code>鍚屼氦鏄撴墍</code>琛ㄧず杩欎簺瀛楁姣忓ぉ鏇存柊鑷氦鏄撴墍锛屽叾浣欏瓧娈典负鏌滃彴璁剧疆鍊笺€傚鏋滃彂鐜版湁浜涘瓧娈靛€兼湁璇紝鍒欎互姝ゆ潵鍒ゆ柇鏄惁CTP鏌滃彴璁剧疆闂銆?/p>
 </blockquote>
 <p><span id="anchor-id-04" alt=""></span> </p>
-<p>PositionDateType:持仓日期类型（区分产品是否有昨仓和今仓的区别，只有上海和能源是使用历史持仓）</p>
+<p>PositionDateType:鎸佷粨鏃ユ湡绫诲瀷锛堝尯鍒嗕骇鍝佹槸鍚︽湁鏄ㄤ粨鍜屼粖浠撶殑鍖哄埆锛屽彧鏈変笂娴峰拰鑳芥簮鏄娇鐢ㄥ巻鍙叉寔浠擄級</p>
 <p><span id="anchor-id-03" alt=""></span> </p>
-<p>LongMarginRatio：多头保证金率（终值），算法如下：</p>
-<p>跟随交易所多头保证金率：LongMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATE.html">OnRspQryExchangeMarginRate</a>查到）+LongMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>查到）</p>
-<p>不跟随交易所多头保证金率：NoLongMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>查到）</p>
-<p>ShortMarginRatio：空头保证金率（终值），算法如下：</p>
-<p>跟随交易所空头保证金率：ShortMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATE.html">OnRspQryExchangeMarginRate</a>查到）+ShortMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>查到）</p>
-<p>不跟随交易所空头保证金率：NoShortMarginRatioByMoney（由<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>查到）</p>
-<p>pRspInfo：响应信息</p>
+<p>LongMarginRatio锛氬澶翠繚璇侀噾鐜囷紙缁堝€硷級锛岀畻娉曞涓嬶細</p>
+<p>璺熼殢浜ゆ槗鎵€澶氬ご淇濊瘉閲戠巼锛歀ongMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATE.html">OnRspQryExchangeMarginRate</a>鏌ュ埌锛?LongMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>鏌ュ埌锛?/p>
+<p>涓嶈窡闅忎氦鏄撴墍澶氬ご淇濊瘉閲戠巼锛歂oLongMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>鏌ュ埌锛?/p>
+<p>ShortMarginRatio锛氱┖澶翠繚璇侀噾鐜囷紙缁堝€硷級锛岀畻娉曞涓嬶細</p>
+<p>璺熼殢浜ゆ槗鎵€绌哄ご淇濊瘉閲戠巼锛歋hortMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATE.html">OnRspQryExchangeMarginRate</a>鏌ュ埌锛?ShortMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>鏌ュ埌锛?/p>
+<p>涓嶈窡闅忎氦鏄撴墍绌哄ご淇濊瘉閲戠巼锛歂oShortMarginRatioByMoney锛堢敱<a href="ONRSPQRYEXCHANGEMARGINRATEADJUST.html">OnRspQryExchangeMarginRateAdjust</a>鏌ュ埌锛?/p>
+<p>pRspInfo锛氬搷搴斾俊鎭?/p>
 <pre><code>struct CThostFtdcRspInfoField
 {
-    ///错误代码
+    ///閿欒浠ｇ爜
     TThostFtdcErrorIDType ErrorID;
-    ///错误信息
+    ///閿欒淇℃伅
     TThostFtdcErrorMsgType ErrorMsg;
 };
 </code></pre>
-<p>nRequestID：返回用户操作请求的ID，该ID 由用户在操作请求时指定。</p>
-<p>bIsLast：指示该次返回是否为针对nRequestID的最后一次返回。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="db54f15a-bc52-477a-82b2-c11ed8445671" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3.返回</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<p>无</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="d97f82dc-9a5f-4534-9170-272c97b41cd1" class="anchor"></span></div><h1 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h1' id='panel4'>
-<p>无</p>
+<p>nRequestID锛氳繑鍥炵敤鎴锋搷浣滆姹傜殑ID锛岃ID 鐢辩敤鎴峰湪鎿嶄綔璇锋眰鏃舵寚瀹氥€?/p>
+<p>bIsLast锛氭寚绀鸿娆¤繑鍥炴槸鍚︿负閽堝nRequestID鐨勬渶鍚庝竴娆¤繑鍥炪€?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="db54f15a-bc52-477a-82b2-c11ed8445671" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3.杩斿洖</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<p>鏃?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="d97f82dc-9a5f-4534-9170-272c97b41cd1" class="anchor"></span></div><h1 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h1' id='panel4'>
+<p>鏃?/p>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPQRYFORQUOTE.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRSPQRYINSTRUMENTCOMMISSIONRATE.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPQRYFORQUOTE.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRSPQRYINSTRUMENTCOMMISSIONRATE.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='ONRSPQRYFORQUOTE.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='../../_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='ONRSPQRYINSTRUMENTCOMMISSIONRATE.html';
 return;
 }

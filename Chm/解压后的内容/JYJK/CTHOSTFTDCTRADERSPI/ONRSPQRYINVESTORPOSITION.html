@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,176 +151,160 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#58ba5872-452b-4b29-bd79-038d64221a2a">1.函数原型</a></p><p><a href="#8fbbb55d-07cc-47f9-b5e6-6033118cc57e">2.参数</a></p><p><a href="#556b355d-bbb4-46eb-a44c-e9a30c3f54b0">3.返回</a></p><p><a href="#42572fd0-5439-4b56-8ee4-f010251b40a4">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="ONRSPQRYINVESTOR.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRSPQRYINVESTORPOSITIONCOMBINEDETAIL.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>请求查询投资者持仓响应，当执行<a href="../CTHOSTFTDCTRADERAPI/REQQRYINVESTORPOSITION.html">ReqQryInvestorPosition</a>后，该方法被调用。</p>
-<p>CTP 系统将持仓明细记录按合约，持仓方向，开仓日期（仅针对上期所，区分昨仓、今仓）进行汇总。</p>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#58ba5872-452b-4b29-bd79-038d64221a2a">1.鍑芥暟鍘熷瀷</a></p><p><a href="#8fbbb55d-07cc-47f9-b5e6-6033118cc57e">2.鍙傛暟</a></p><p><a href="#556b355d-bbb4-46eb-a44c-e9a30c3f54b0">3.杩斿洖</a></p><p><a href="#42572fd0-5439-4b56-8ee4-f010251b40a4">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="ONRSPQRYINVESTOR.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRSPQRYINVESTORPOSITIONCOMBINEDETAIL.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>璇锋眰鏌ヨ鎶曡祫鑰呮寔浠撳搷搴旓紝褰撴墽琛?a href="../CTHOSTFTDCTRADERAPI/REQQRYINVESTORPOSITION.html">ReqQryInvestorPosition</a>鍚庯紝璇ユ柟娉曡璋冪敤銆?/p>
+<p>CTP 绯荤粺灏嗘寔浠撴槑缁嗚褰曟寜鍚堢害锛屾寔浠撴柟鍚戯紝寮€浠撴棩鏈燂紙浠呴拡瀵逛笂鏈熸墍锛屽尯鍒嗘槰浠撱€佷粖浠擄級杩涜姹囨€汇€?/p>
 <blockquote>
-  <p>卖可平数量=多头仓-shortfrozen</p>
+  <p>鍗栧彲骞虫暟閲?澶氬ご浠?shortfrozen</p>
   
-  <p>买可平数量=空头仓-longfrozen</p>
+  <p>涔板彲骞虫暟閲?绌哄ご浠?longfrozen</p>
 </blockquote>
-<span id="58ba5872-452b-4b29-bd79-038d64221a2a" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.函数原型</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+<span id="58ba5872-452b-4b29-bd79-038d64221a2a" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.鍑芥暟鍘熷瀷</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
 <p>virtual void OnRspQryInvestorPosition(CThostFtdcInvestorPositionField *pInvestorPosition, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast) {};</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="8fbbb55d-07cc-47f9-b5e6-6033118cc57e" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.参数</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
-<p>pInvestorPosition：投资者持仓</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="8fbbb55d-07cc-47f9-b5e6-6033118cc57e" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2.鍙傛暟</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>pInvestorPosition锛氭姇璧勮€呮寔浠?/p>
 <pre><code>struct CThostFtdcInvestorPositionField
 {
-    ///保留的无效字段
-    TThostFtdcOldInstrumentIDType   reserve1;
-    ///经纪公司代码
+    ///淇濈暀鐨勬棤鏁堝瓧娈?    TThostFtdcOldInstrumentIDType   reserve1;
+    ///缁忕邯鍏徃浠ｇ爜
     TThostFtdcBrokerIDType  BrokerID;
-    ///投资者代码
-    TThostFtdcInvestorIDType    InvestorID;
-    ///持仓多空方向
+    ///鎶曡祫鑰呬唬鐮?    TThostFtdcInvestorIDType    InvestorID;
+    ///鎸佷粨澶氱┖鏂瑰悜
     TThostFtdcPosiDirectionType PosiDirection;
-    ///投机套保标志
+    ///鎶曟満濂椾繚鏍囧織
     TThostFtdcHedgeFlagType HedgeFlag;
-    ///持仓日期
+    ///鎸佷粨鏃ユ湡
     TThostFtdcPositionDateType  PositionDate;
-    ///上日持仓
+    ///涓婃棩鎸佷粨
     TThostFtdcVolumeType    YdPosition;
-    ///今日持仓
+    ///浠婃棩鎸佷粨
     TThostFtdcVolumeType    Position;
-    ///多头冻结
+    ///澶氬ご鍐荤粨
     TThostFtdcVolumeType    LongFrozen;
-    ///空头冻结
+    ///绌哄ご鍐荤粨
     TThostFtdcVolumeType    ShortFrozen;
-    ///开仓冻结金额
-    TThostFtdcMoneyType LongFrozenAmount;
-    ///开仓冻结金额
-    TThostFtdcMoneyType ShortFrozenAmount;
-    ///开仓量
+    ///寮€浠撳喕缁撻噾棰?    TThostFtdcMoneyType LongFrozenAmount;
+    ///寮€浠撳喕缁撻噾棰?    TThostFtdcMoneyType ShortFrozenAmount;
+    ///寮€浠撻噺
     TThostFtdcVolumeType    OpenVolume;
-    ///平仓量
-    TThostFtdcVolumeType    CloseVolume;
-    ///开仓金额
-    TThostFtdcMoneyType OpenAmount;
-    ///平仓金额
+    ///骞充粨閲?    TThostFtdcVolumeType    CloseVolume;
+    ///寮€浠撻噾棰?    TThostFtdcMoneyType OpenAmount;
+    ///骞充粨閲戦
     TThostFtdcMoneyType CloseAmount;
-    ///持仓成本
+    ///鎸佷粨鎴愭湰
     TThostFtdcMoneyType PositionCost;
-    ///上次占用的保证金
+    ///涓婃鍗犵敤鐨勪繚璇侀噾
     TThostFtdcMoneyType PreMargin;
-    ///占用的保证金
+    ///鍗犵敤鐨勪繚璇侀噾
     TThostFtdcMoneyType UseMargin;
-    ///冻结的保证金
+    ///鍐荤粨鐨勪繚璇侀噾
     TThostFtdcMoneyType FrozenMargin;
-    ///冻结的资金
-    TThostFtdcMoneyType FrozenCash;
-    ///冻结的手续费
+    ///鍐荤粨鐨勮祫閲?    TThostFtdcMoneyType FrozenCash;
+    ///鍐荤粨鐨勬墜缁垂
     TThostFtdcMoneyType FrozenCommission;
-    ///资金差额
+    ///璧勯噾宸
     TThostFtdcMoneyType CashIn;
-    ///手续费
-    TThostFtdcMoneyType Commission;
-    ///平仓盈亏
+    ///鎵嬬画璐?    TThostFtdcMoneyType Commission;
+    ///骞充粨鐩堜簭
     TThostFtdcMoneyType CloseProfit;
-    ///持仓盈亏
+    ///鎸佷粨鐩堜簭
     TThostFtdcMoneyType PositionProfit;
-    ///上次结算价
-    TThostFtdcPriceType PreSettlementPrice;
-    ///本次结算价
-    TThostFtdcPriceType SettlementPrice;
-    ///交易日
-    TThostFtdcDateType  TradingDay;
-    ///结算编号
+    ///涓婃缁撶畻浠?    TThostFtdcPriceType PreSettlementPrice;
+    ///鏈缁撶畻浠?    TThostFtdcPriceType SettlementPrice;
+    ///浜ゆ槗鏃?    TThostFtdcDateType  TradingDay;
+    ///缁撶畻缂栧彿
     TThostFtdcSettlementIDType  SettlementID;
-    ///开仓成本
-    TThostFtdcMoneyType OpenCost;
-    ///交易所保证金
-    TThostFtdcMoneyType ExchangeMargin;
-    ///组合成交形成的持仓
-    TThostFtdcVolumeType    CombPosition;
-    ///组合多头冻结
+    ///寮€浠撴垚鏈?    TThostFtdcMoneyType OpenCost;
+    ///浜ゆ槗鎵€淇濊瘉閲?    TThostFtdcMoneyType ExchangeMargin;
+    ///缁勫悎鎴愪氦褰㈡垚鐨勬寔浠?    TThostFtdcVolumeType    CombPosition;
+    ///缁勫悎澶氬ご鍐荤粨
     TThostFtdcVolumeType    CombLongFrozen;
-    ///组合空头冻结
+    ///缁勫悎绌哄ご鍐荤粨
     TThostFtdcVolumeType    CombShortFrozen;
-    ///逐日盯市平仓盈亏
+    ///閫愭棩鐩競骞充粨鐩堜簭
     TThostFtdcMoneyType CloseProfitByDate;
-    ///逐笔对冲平仓盈亏
+    ///閫愮瑪瀵瑰啿骞充粨鐩堜簭
     TThostFtdcMoneyType CloseProfitByTrade;
-    ///今日持仓
+    ///浠婃棩鎸佷粨
     TThostFtdcVolumeType    TodayPosition;
-    ///保证金率
+    ///淇濊瘉閲戠巼
     TThostFtdcRatioType MarginRateByMoney;
-    ///保证金率(按手数)
+    ///淇濊瘉閲戠巼(鎸夋墜鏁?
     TThostFtdcRatioType MarginRateByVolume;
-    ///执行冻结
+    ///鎵ц鍐荤粨
     TThostFtdcVolumeType    StrikeFrozen;
-    ///执行冻结金额
+    ///鎵ц鍐荤粨閲戦
     TThostFtdcMoneyType StrikeFrozenAmount;
-    ///放弃执行冻结
+    ///鏀惧純鎵ц鍐荤粨
     TThostFtdcVolumeType    AbandonFrozen;
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType    ExchangeID;
-    ///执行冻结的昨仓
-    TThostFtdcVolumeType    YdStrikeFrozen;
-    ///投资单元代码
+    ///鎵ц鍐荤粨鐨勬槰浠?    TThostFtdcVolumeType    YdStrikeFrozen;
+    ///鎶曡祫鍗曞厓浠ｇ爜
     TThostFtdcInvestUnitIDType  InvestUnitID;
-    ///持仓成本差值（柜台版本6.7.1后已废弃）
-    TThostFtdcMoneyType PositionCostOffset;
-    ///tas持仓手数
+    ///鎸佷粨鎴愭湰宸€硷紙鏌滃彴鐗堟湰6.7.1鍚庡凡搴熷純锛?    TThostFtdcMoneyType PositionCostOffset;
+    ///tas鎸佷粨鎵嬫暟
     TThostFtdcVolumeType    TasPosition;
-    ///tas持仓成本
+    ///tas鎸佷粨鎴愭湰
     TThostFtdcMoneyType TasPositionCost;
-    ///合约代码
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
 };
 </code></pre>
-<p>PositionProfit：期权没有持仓盈亏，为0</p>
-<p>Position：表示当前持仓数量</p>
-<p>TodayPosition：表示今新开仓</p>
-<p>YdPosition：表示昨日收盘时持仓数量（≠ 当前的昨仓数量，静态，日间不随着开平仓而变化）</p>
+<p>PositionProfit锛氭湡鏉冩病鏈夋寔浠撶泩浜忥紝涓?</p>
+<p>Position锛氳〃绀哄綋鍓嶆寔浠撴暟閲?/p>
+<p>TodayPosition锛氳〃绀轰粖鏂板紑浠?/p>
+<p>YdPosition锛氳〃绀烘槰鏃ユ敹鐩樻椂鎸佷粨鏁伴噺锛堚墵 褰撳墠鐨勬槰浠撴暟閲忥紝闈欐€侊紝鏃ラ棿涓嶉殢鐫€寮€骞充粨鑰屽彉鍖栵級</p>
 <blockquote>
-  <p>当前的昨仓数量 = ∑Position -∑TodayPosition</p>
+  <p>褰撳墠鐨勬槰浠撴暟閲?= 鈭慞osition -鈭慣odayPosition</p>
 </blockquote>
-<p>YdStrikeFrozen：该字段是给个股期权用的，期货期权里一直保持为0</p>
-<p>PositionCost：持仓成本=上日持仓 * 昨结算价 * 合约乘数 + SUM（今日持仓 * 开仓价 * 合约乘数）</p>
+<p>YdStrikeFrozen锛氳瀛楁鏄粰涓偂鏈熸潈鐢ㄧ殑锛屾湡璐ф湡鏉冮噷涓€鐩翠繚鎸佷负0</p>
+<p>PositionCost锛氭寔浠撴垚鏈?涓婃棩鎸佷粨 * 鏄ㄧ粨绠椾环 * 鍚堢害涔樻暟 + SUM锛堜粖鏃ユ寔浠?* 寮€浠撲环 * 鍚堢害涔樻暟锛?/p>
 <p><span id="anchor-id-02" alt=""></span> </p>
-<p>PositionDate：持仓日期（用于区分上海和能源的仓是今仓还是昨仓）</p>
+<p>PositionDate锛氭寔浠撴棩鏈燂紙鐢ㄤ簬鍖哄垎涓婃捣鍜岃兘婧愮殑浠撴槸浠婁粨杩樻槸鏄ㄤ粨锛?/p>
 <p><span id="anchor-id-03" alt=""></span> </p>
-<p>OpenAmount:开仓金额（所有开仓单的金额累加用于计算开仓手续费）开仓金额是当天一直累加，即使仓位平掉了手续费也要计算。</p>
-<p>OpenCost：持仓成本（当前每笔持仓明细最初的开仓价*合约乘数）计算当前仓位的实际数量。</p>
-<p>SettlementPrice：该字段日初为昨结算价，期权空头持仓和期货持仓中该字段会实时跟随行情的最新价变动，而期权多头持仓中该字段为该仓位变动时的最新价，不随行情变动。例如某期权多头持仓对应的合约最新价为10，持仓手数为2，此时以成交价20平仓了1手，平仓后该多头持仓的SettlementPrice会变更为10。</p>
-<p>pRspInfo：响应信息</p>
+<p>OpenAmount:寮€浠撻噾棰濓紙鎵€鏈夊紑浠撳崟鐨勯噾棰濈疮鍔犵敤浜庤绠楀紑浠撴墜缁垂锛夊紑浠撻噾棰濇槸褰撳ぉ涓€鐩寸疮鍔狅紝鍗充娇浠撲綅骞虫帀浜嗘墜缁垂涔熻璁＄畻銆?/p>
+<p>OpenCost锛氭寔浠撴垚鏈紙褰撳墠姣忕瑪鎸佷粨鏄庣粏鏈€鍒濈殑寮€浠撲环*鍚堢害涔樻暟锛夎绠楀綋鍓嶄粨浣嶇殑瀹為檯鏁伴噺銆?/p>
+<p>SettlementPrice锛氳瀛楁鏃ュ垵涓烘槰缁撶畻浠凤紝鏈熸潈绌哄ご鎸佷粨鍜屾湡璐ф寔浠撲腑璇ュ瓧娈典細瀹炴椂璺熼殢琛屾儏鐨勬渶鏂颁环鍙樺姩锛岃€屾湡鏉冨澶存寔浠撲腑璇ュ瓧娈典负璇ヤ粨浣嶅彉鍔ㄦ椂鐨勬渶鏂颁环锛屼笉闅忚鎯呭彉鍔ㄣ€備緥濡傛煇鏈熸潈澶氬ご鎸佷粨瀵瑰簲鐨勫悎绾︽渶鏂颁环涓?0锛屾寔浠撴墜鏁颁负2锛屾鏃朵互鎴愪氦浠?0骞充粨浜?鎵嬶紝骞充粨鍚庤澶氬ご鎸佷粨鐨凷ettlementPrice浼氬彉鏇翠负10銆?/p>
+<p>pRspInfo锛氬搷搴斾俊鎭?/p>
 <pre><code>struct CThostFtdcRspInfoField
 {
-    ///错误代码
+    ///閿欒浠ｇ爜
     TThostFtdcErrorIDType ErrorID;
-    ///错误信息
+    ///閿欒淇℃伅
     TThostFtdcErrorMsgType ErrorMsg;
 };
 </code></pre>
-<p>nRequestID：返回用户操作请求的ID，该ID 由用户在操作请求时指定。</p>
-<p>bIsLast：指示该次返回是否为针对nRequestID的最后一次返回。</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="556b355d-bbb4-46eb-a44c-e9a30c3f54b0" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3.返回</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<p>无</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="42572fd0-5439-4b56-8ee4-f010251b40a4" class="anchor"></span></div><h1 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h1' id='panel4'>
-<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>投资者发现自己账号里面莫名其妙多了一条“PRT SR711&amp;SR711C6000"的持仓，是什么原因？</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
-<p>这个合约是郑商所跨式，宽跨式期权组合合约。此合约不需要投资者使用特别的指令构建，只要客户持有可以构成备兑期权组合的持仓。在每日结算的时候，郑商所会将符合条件的期权和期货持仓自动确认为备兑期权套利持仓，包括备兑看涨期权套利和备兑看跌期权套利，并给予保证金优惠。</p>
-<p>对于此期权合约，投资者需要分腿平仓，不需要管这个是否为备兑组合。</p>
+<p>nRequestID锛氳繑鍥炵敤鎴锋搷浣滆姹傜殑ID锛岃ID 鐢辩敤鎴峰湪鎿嶄綔璇锋眰鏃舵寚瀹氥€?/p>
+<p>bIsLast锛氭寚绀鸿娆¤繑鍥炴槸鍚︿负閽堝nRequestID鐨勬渶鍚庝竴娆¤繑鍥炪€?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="556b355d-bbb4-46eb-a44c-e9a30c3f54b0" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3.杩斿洖</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<p>鏃?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="42572fd0-5439-4b56-8ee4-f010251b40a4" class="anchor"></span></div><h1 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h1' id='panel4'>
+<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鎶曡祫鑰呭彂鐜拌嚜宸辫处鍙烽噷闈㈣帿鍚嶅叾濡欏浜嗕竴鏉♀€淧RT SR711&amp;SR711C6000"鐨勬寔浠擄紝鏄粈涔堝師鍥狅紵</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
+<p>杩欎釜鍚堢害鏄儜鍟嗘墍璺ㄥ紡锛屽璺ㄥ紡鏈熸潈缁勫悎鍚堢害銆傛鍚堢害涓嶉渶瑕佹姇璧勮€呬娇鐢ㄧ壒鍒殑鎸囦护鏋勫缓锛屽彧瑕佸鎴锋寔鏈夊彲浠ユ瀯鎴愬鍏戞湡鏉冪粍鍚堢殑鎸佷粨銆傚湪姣忔棩缁撶畻鐨勬椂鍊欙紝閮戝晢鎵€浼氬皢绗﹀悎鏉′欢鐨勬湡鏉冨拰鏈熻揣鎸佷粨鑷姩纭涓哄鍏戞湡鏉冨鍒╂寔浠擄紝鍖呮嫭澶囧厬鐪嬫定鏈熸潈濂楀埄鍜屽鍏戠湅璺屾湡鏉冨鍒╋紝骞剁粰浜堜繚璇侀噾浼樻儬銆?/p>
+<p>瀵逛簬姝ゆ湡鏉冨悎绾︼紝鎶曡祫鑰呴渶瑕佸垎鑵垮钩浠擄紝涓嶉渶瑕佺杩欎釜鏄惁涓哄鍏戠粍鍚堛€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_1'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_1').click(function() {$('#region_panel_1').toggle();});}); </script></p>
 <p><span id="anchor-id-01" alt=""></span> </p>
-<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>各大交易所保证金的单边收取规则有的是盘中生效，有的是结算后生效。那查询的持仓中的保证金占用是否有区别？</p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
-<p>查询后的结果都是按照优惠收取。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鍚勫ぇ浜ゆ槗鎵€淇濊瘉閲戠殑鍗曡竟鏀跺彇瑙勫垯鏈夌殑鏄洏涓敓鏁堬紝鏈夌殑鏄粨绠楀悗鐢熸晥銆傞偅鏌ヨ鐨勬寔浠撲腑鐨勪繚璇侀噾鍗犵敤鏄惁鏈夊尯鍒紵</p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
+<p>鏌ヨ鍚庣殑缁撴灉閮芥槸鎸夌収浼樻儬鏀跺彇銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_2'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_2').click(function() {$('#region_panel_2').toggle();});}); </script></p>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPQRYINVESTOR.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRSPQRYINVESTORPOSITIONCOMBINEDETAIL.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPQRYINVESTOR.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRSPQRYINVESTORPOSITIONCOMBINEDETAIL.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='ONRSPQRYINVESTOR.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='../../_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='ONRSPQRYINVESTORPOSITIONCOMBINEDETAIL.html';
 return;
 }

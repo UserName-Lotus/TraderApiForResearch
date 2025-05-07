@@ -140,7 +140,7 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
 </script><script>function copyFillBlankQuestion(examDiv,questionTitleId)
 {
@@ -151,156 +151,144 @@ examDiv.appendChild(ta);
 ta.select();
 document.execCommand("Copy");
 ta.style.display = 'none';
-alert('已复制');
+alert('宸插鍒?);
 }
-</script><div id="left_menu"><div class="left_menu_content"><p><a href="#da8ef020-5103-4b64-8352-c1304d971a46">1.函数原型</a></p><p><a href="#3d86c71c-b1c6-42d1-82db-b99bc9d9c62e">2.参数</a></p><p><a href="#0305f949-80c9-4549-94a0-6e9142f62713">3.返回</a></p><p><a href="#73e7e79c-c35e-489b-b8f3-9221411fa0c4">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><hr/><p><a href="ONRSPUSERLOGOUT.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRTNFORQUOTERSP.html" alt="→">后页 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>深度行情通知，当<a href="../CTHOSTFTDCMDAPI/SUBSCRIBEMARKETDATA.html">SubscribeMarketData</a>订阅行情后，行情通知由此推送。</p>
-<span id="da8ef020-5103-4b64-8352-c1304d971a46" class="anchor"></span><h1 class='title' id='title1' title='点击展开/折叠'><span id='header_span1' class='header_span'>◇ </span>1.函数原型</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('◆ ');}else{$("#header_span1").html('◇ ');}});});</script><div class='panel_title_h1' id='panel1'>
+</script><div id="left_menu"><div class="left_menu_content"><p><a href="#da8ef020-5103-4b64-8352-c1304d971a46">1.鍑芥暟鍘熷瀷</a></p><p><a href="#3d86c71c-b1c6-42d1-82db-b99bc9d9c62e">2.鍙傛暟</a></p><p><a href="#0305f949-80c9-4549-94a0-6e9142f62713">3.杩斿洖</a></p><p><a href="#73e7e79c-c35e-489b-b8f3-9221411fa0c4">4.FAQ</a></p><p><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><hr/><p><a href="ONRSPUSERLOGOUT.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRTNFORQUOTERSP.html" alt="鈫?>鍚庨〉 &gt;</a></p></div><strong class="left_menu_title"><span> </span></strong></div><p>娣卞害琛屾儏閫氱煡锛屽綋<a href="../CTHOSTFTDCMDAPI/SUBSCRIBEMARKETDATA.html">SubscribeMarketData</a>璁㈤槄琛屾儏鍚庯紝琛屾儏閫氱煡鐢辨鎺ㄩ€併€?/p>
+<span id="da8ef020-5103-4b64-8352-c1304d971a46" class="anchor"></span><h1 class='title' id='title1' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span1' class='header_span'>鈼?</span>1.鍑芥暟鍘熷瀷</h1><script>$(document).ready(function(){$("#title1").click(function(){$("#panel1").toggle();if($("#panel1").is(":hidden")){$("#header_span1").html('鈼?');}else{$("#header_span1").html('鈼?');}});});</script><div class='panel_title_h1' id='panel1'>
 <p>virtual void OnRtnDepthMarketData(CThostFtdcDepthMarketDataField *pDepthMarketData) {};</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="3d86c71c-b1c6-42d1-82db-b99bc9d9c62e" class="anchor"></span></div><h1 class='title' id='title2' title='点击展开/折叠'><span id='header_span2' class='header_span'>◇ </span>2.参数</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('◆ ');}else{$("#header_span2").html('◇ ');}});});</script><div class='panel_title_h1' id='panel2'>
-<p>pDepthMarketData：深度行情</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="3d86c71c-b1c6-42d1-82db-b99bc9d9c62e" class="anchor"></span></div><h1 class='title' id='title2' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span2' class='header_span'>鈼?</span>2.鍙傛暟</h1><script>$(document).ready(function(){$("#title2").click(function(){$("#panel2").toggle();if($("#panel2").is(":hidden")){$("#header_span2").html('鈼?');}else{$("#header_span2").html('鈼?');}});});</script><div class='panel_title_h1' id='panel2'>
+<p>pDepthMarketData锛氭繁搴﹁鎯?/p>
 <pre><code>struct CThostFtdcDepthMarketDataField
 {
-    ///交易日
-    TThostFtdcDateType   TradingDay;
-    ///合约代码
+    ///浜ゆ槗鏃?    TThostFtdcDateType   TradingDay;
+    ///鍚堢害浠ｇ爜
     TThostFtdcInstrumentIDType  InstrumentID;
-    ///交易所代码
+    ///浜ゆ槗鎵€浠ｇ爜
     TThostFtdcExchangeIDType ExchangeID;
-    ///合约在交易所的代码
-    TThostFtdcExchangeInstIDType    ExchangeInstID;
-    ///最新价
+    ///鍚堢害鍦ㄤ氦鏄撴墍鐨勪唬鐮?    TThostFtdcExchangeInstIDType    ExchangeInstID;
+    ///鏈€鏂颁环
     TThostFtdcPriceType  LastPrice;
-    ///上次结算价
-    TThostFtdcPriceType  PreSettlementPrice;
-    ///昨收盘
-    TThostFtdcPriceType  PreClosePrice;
-    ///昨持仓量
+    ///涓婃缁撶畻浠?    TThostFtdcPriceType  PreSettlementPrice;
+    ///鏄ㄦ敹鐩?    TThostFtdcPriceType  PreClosePrice;
+    ///鏄ㄦ寔浠撻噺
     TThostFtdcLargeVolumeType   PreOpenInterest;
-    ///今开盘
-    TThostFtdcPriceType  OpenPrice;
-    ///最高价
+    ///浠婂紑鐩?    TThostFtdcPriceType  OpenPrice;
+    ///鏈€楂樹环
     TThostFtdcPriceType  HighestPrice;
-    ///最低价
+    ///鏈€浣庝环
     TThostFtdcPriceType  LowestPrice;
-    ///数量
+    ///鏁伴噺
     TThostFtdcVolumeType Volume;
-    ///成交金额
+    ///鎴愪氦閲戦
     TThostFtdcMoneyType  Turnover;
-    ///持仓量
-    TThostFtdcLargeVolumeType   OpenInterest;
-    ///今收盘
-    TThostFtdcPriceType  ClosePrice;
-    ///本次结算价
-    TThostFtdcPriceType  SettlementPrice;
-    ///涨停板价
+    ///鎸佷粨閲?    TThostFtdcLargeVolumeType   OpenInterest;
+    ///浠婃敹鐩?    TThostFtdcPriceType  ClosePrice;
+    ///鏈缁撶畻浠?    TThostFtdcPriceType  SettlementPrice;
+    ///娑ㄥ仠鏉夸环
     TThostFtdcPriceType  UpperLimitPrice;
-    ///跌停板价
+    ///璺屽仠鏉夸环
     TThostFtdcPriceType  LowerLimitPrice;
-    ///昨虚实度
+    ///鏄ㄨ櫄瀹炲害
     TThostFtdcRatioType  PreDelta;
-    ///今虚实度
+    ///浠婅櫄瀹炲害
     TThostFtdcRatioType  CurrDelta;
-    ///最后修改时间
-    TThostFtdcTimeType   UpdateTime;
-    ///最后修改毫秒
-    TThostFtdcMillisecType   UpdateMillisec;
-    ///申买价一
+    ///鏈€鍚庝慨鏀规椂闂?    TThostFtdcTimeType   UpdateTime;
+    ///鏈€鍚庝慨鏀规绉?    TThostFtdcMillisecType   UpdateMillisec;
+    ///鐢充拱浠蜂竴
     TThostFtdcPriceType  BidPrice1;
-    ///申买量一
+    ///鐢充拱閲忎竴
     TThostFtdcVolumeType BidVolume1;
-    ///申卖价一
+    ///鐢冲崠浠蜂竴
     TThostFtdcPriceType  AskPrice1;
-    ///申卖量一
+    ///鐢冲崠閲忎竴
     TThostFtdcVolumeType AskVolume1;
-    ///申买价二
+    ///鐢充拱浠蜂簩
     TThostFtdcPriceType  BidPrice2;
-    ///申买量二
+    ///鐢充拱閲忎簩
     TThostFtdcVolumeType BidVolume2;
-    ///申卖价二
+    ///鐢冲崠浠蜂簩
     TThostFtdcPriceType  AskPrice2;
-    ///申卖量二
+    ///鐢冲崠閲忎簩
     TThostFtdcVolumeType AskVolume2;
-    ///申买价三
+    ///鐢充拱浠蜂笁
     TThostFtdcPriceType  BidPrice3;
-    ///申买量三
+    ///鐢充拱閲忎笁
     TThostFtdcVolumeType BidVolume3;
-    ///申卖价三
+    ///鐢冲崠浠蜂笁
     TThostFtdcPriceType  AskPrice3;
-    ///申卖量三
+    ///鐢冲崠閲忎笁
     TThostFtdcVolumeType AskVolume3;
-    ///申买价四
+    ///鐢充拱浠峰洓
     TThostFtdcPriceType  BidPrice4;
-    ///申买量四
+    ///鐢充拱閲忓洓
     TThostFtdcVolumeType BidVolume4;
-    ///申卖价四
+    ///鐢冲崠浠峰洓
     TThostFtdcPriceType  AskPrice4;
-    ///申卖量四
+    ///鐢冲崠閲忓洓
     TThostFtdcVolumeType AskVolume4;
-    ///申买价五
+    ///鐢充拱浠蜂簲
     TThostFtdcPriceType  BidPrice5;
-    ///申买量五
+    ///鐢充拱閲忎簲
     TThostFtdcVolumeType BidVolume5;
-    ///申卖价五
+    ///鐢冲崠浠蜂簲
     TThostFtdcPriceType  AskPrice5;
-    ///申卖量五
+    ///鐢冲崠閲忎簲
     TThostFtdcVolumeType AskVolume5;
-    ///当日均价
+    ///褰撴棩鍧囦环
     TThostFtdcPriceType  AveragePrice;
-    ///业务日期
+    ///涓氬姟鏃ユ湡
     TThostFtdcDateType   ActionDay;
-    ///上带价
-    TThostFtdcPriceType BandingUpperPrice;
-    ///下带价
-    TThostFtdcPriceType BandingLowerPrice;
+    ///涓婂甫浠?    TThostFtdcPriceType BandingUpperPrice;
+    ///涓嬪甫浠?    TThostFtdcPriceType BandingLowerPrice;
 };
 </code></pre>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="0305f949-80c9-4549-94a0-6e9142f62713" class="anchor"></span></div><h1 class='title' id='title3' title='点击展开/折叠'><span id='header_span3' class='header_span'>◇ </span>3.返回</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('◆ ');}else{$("#header_span3").html('◇ ');}});});</script><div class='panel_title_h1' id='panel3'>
-<p>无</p>
-<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p><span id="73e7e79c-c35e-489b-b8f3-9221411fa0c4" class="anchor"></span></div><h1 class='title' id='title4' title='点击展开/折叠'><span id='header_span4' class='header_span'>◇ </span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('◆ ');}else{$("#header_span4").html('◇ ');}});});</script><div class='panel_title_h1' id='panel4'>
-<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>行情中有些字段出现极大值，为什么？</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
-<p>行情通知中，例如结算价、收盘价、买卖价出现double极大值，则表示该字段没有值。例如涨停板的时候，因为没有卖价，会给出一个double极大值，同时卖量为0。</p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="0305f949-80c9-4549-94a0-6e9142f62713" class="anchor"></span></div><h1 class='title' id='title3' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span3' class='header_span'>鈼?</span>3.杩斿洖</h1><script>$(document).ready(function(){$("#title3").click(function(){$("#panel3").toggle();if($("#panel3").is(":hidden")){$("#header_span3").html('鈼?');}else{$("#header_span3").html('鈼?');}});});</script><div class='panel_title_h1' id='panel3'>
+<p>鏃?/p>
+<p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p><span id="73e7e79c-c35e-489b-b8f3-9221411fa0c4" class="anchor"></span></div><h1 class='title' id='title4' title='鐐瑰嚮灞曞紑/鎶樺彔'><span id='header_span4' class='header_span'>鈼?</span>4.FAQ</h1><script>$(document).ready(function(){$("#title4").click(function(){$("#panel4").toggle();if($("#panel4").is(":hidden")){$("#header_span4").html('鈼?');}else{$("#header_span4").html('鈼?');}});});</script><div class='panel_title_h1' id='panel4'>
+<p><div class='region_i'><p class='region_header' id='region_header_1' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>琛屾儏涓湁浜涘瓧娈靛嚭鐜版瀬澶у€硷紝涓轰粈涔堬紵</p><div class='region_panel' id='region_panel_1' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_1').click(function() {$('#region_panel_1').toggle();});}); </script>
+<p>琛屾儏閫氱煡涓紝渚嬪缁撶畻浠枫€佹敹鐩樹环銆佷拱鍗栦环鍑虹幇double鏋佸ぇ鍊硷紝鍒欒〃绀鸿瀛楁娌℃湁鍊笺€備緥濡傛定鍋滄澘鐨勬椂鍊欙紝鍥犱负娌℃湁鍗栦环锛屼細缁欏嚭涓€涓猟ouble鏋佸ぇ鍊硷紝鍚屾椂鍗栭噺涓?銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_1'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_1').click(function() {$('#region_panel_1').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>郑商所的结算价在盘中也会送出，但数值在盘中不会变化，这和盘后推送的结算价怎么区分？</p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
-<p>郑商所夜盘收盘后会推送结算价，这也就是早上行情中有可能会收到结算价的原因，盘中行情中推送的结算价数值不会发生变化。无夜盘的合约，盘中不会收到结算价。白盘收盘后郑商所也会推送所有合约最新的结算价，CTP对交易所推送的结算价不做处理，直接转发。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_2' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>閮戝晢鎵€鐨勭粨绠椾环鍦ㄧ洏涓篃浼氶€佸嚭锛屼絾鏁板€煎湪鐩樹腑涓嶄細鍙樺寲锛岃繖鍜岀洏鍚庢帹閫佺殑缁撶畻浠锋€庝箞鍖哄垎锛?/p><div class='region_panel' id='region_panel_2' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_2').click(function() {$('#region_panel_2').toggle();});}); </script>
+<p>閮戝晢鎵€澶滅洏鏀剁洏鍚庝細鎺ㄩ€佺粨绠椾环锛岃繖涔熷氨鏄棭涓婅鎯呬腑鏈夊彲鑳戒細鏀跺埌缁撶畻浠风殑鍘熷洜锛岀洏涓鎯呬腑鎺ㄩ€佺殑缁撶畻浠锋暟鍊间笉浼氬彂鐢熷彉鍖栥€傛棤澶滅洏鐨勫悎绾︼紝鐩樹腑涓嶄細鏀跺埌缁撶畻浠枫€傜櫧鐩樻敹鐩樺悗閮戝晢鎵€涔熶細鎺ㄩ€佹墍鏈夊悎绾︽渶鏂扮殑缁撶畻浠凤紝CTP瀵逛氦鏄撴墍鎺ㄩ€佺殑缁撶畻浠蜂笉鍋氬鐞嗭紝鐩存帴杞彂銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_2'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_2').click(function() {$('#region_panel_2').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_3' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>郑商所的UDP行情里，Tradingday和AveragePrice字段都是空的，但是TCP行情里有，这是为什么？</p><div class='region_panel' id='region_panel_3' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_3').click(function() {$('#region_panel_3').toggle();});}); </script>
-<p>UDP行情不推送AveragePrice字段；TCP行情里的Tradingday和AveragePrice是CTP给的。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_3' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>閮戝晢鎵€鐨刄DP琛屾儏閲岋紝Tradingday鍜孉veragePrice瀛楁閮芥槸绌虹殑锛屼絾鏄疶CP琛屾儏閲屾湁锛岃繖鏄负浠€涔堬紵</p><div class='region_panel' id='region_panel_3' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_3').click(function() {$('#region_panel_3').toggle();});}); </script>
+<p>UDP琛屾儏涓嶆帹閫丄veragePrice瀛楁锛汿CP琛屾儏閲岀殑Tradingday鍜孉veragePrice鏄疌TP缁欑殑銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_3'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_3').click(function() {$('#region_panel_3').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_4' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>行情中哪些字段是CTP自己计算发出的？</p><div class='region_panel' id='region_panel_4' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_4').click(function() {$('#region_panel_4').toggle();});}); </script>
-<p>郑商所的套利合约的涨跌停板价由CTP计算，交易所不发</p>
-<p>成交总额郑商所不推送由CTP计算，另外cffex,dce,shfe,ine这几家的成交均价不推送，由ctp计算。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_4' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>琛屾儏涓摢浜涘瓧娈垫槸CTP鑷繁璁＄畻鍙戝嚭鐨勶紵</p><div class='region_panel' id='region_panel_4' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_4').click(function() {$('#region_panel_4').toggle();});}); </script>
+<p>閮戝晢鎵€鐨勫鍒╁悎绾︾殑娑ㄨ穼鍋滄澘浠风敱CTP璁＄畻锛屼氦鏄撴墍涓嶅彂</p>
+<p>鎴愪氦鎬婚閮戝晢鎵€涓嶆帹閫佺敱CTP璁＄畻锛屽彟澶朿ffex,dce,shfe,ine杩欏嚑瀹剁殑鎴愪氦鍧囦环涓嶆帹閫侊紝鐢眂tp璁＄畻銆?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_4'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_4').click(function() {$('#region_panel_4').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_5' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>发现连上前置后，为什么收到的行情涨跌停价是0？</p><div class='region_panel' id='region_panel_5' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_5').click(function() {$('#region_panel_5').toggle();});}); </script>
-<p>连上的如果是mdfront的话可能mdfront是级联的，也就是说上一级还是mdfront这两个mdfront如果版本不对，也同样会导致这个问题</p>
+<p><div class='region_i'><p class='region_header' id='region_header_5' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>鍙戠幇杩炰笂鍓嶇疆鍚庯紝涓轰粈涔堟敹鍒扮殑琛屾儏娑ㄨ穼鍋滀环鏄?锛?/p><div class='region_panel' id='region_panel_5' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_5').click(function() {$('#region_panel_5').toggle();});}); </script>
+<p>杩炰笂鐨勫鏋滄槸mdfront鐨勮瘽鍙兘mdfront鏄骇鑱旂殑锛屼篃灏辨槸璇翠笂涓€绾ц繕鏄痬dfront杩欎袱涓猰dfront濡傛灉鐗堟湰涓嶅锛屼篃鍚屾牱浼氬鑷磋繖涓棶棰?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_5'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_5').click(function() {$('#region_panel_5').toggle();});}); </script></p>
-<p><div class='region_i'><p class='region_header' id='region_header_6' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>订阅后大商所组合合约行情不跳动，其他交易终端（闪电王、快期等）的组合合约都有行情且在跳跃，为什么？</p><div class='region_panel' id='region_panel_6' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_6').click(function() {$('#region_panel_6').toggle();});}); </script>
-<p>大商所只会推送单腿合约的行情，组合合约的行情需要下端自行计算。其他终端则是实时计算两条腿的价差，故行情看上去一直跳跃。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_6' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>璁㈤槄鍚庡ぇ鍟嗘墍缁勫悎鍚堢害琛屾儏涓嶈烦鍔紝鍏朵粬浜ゆ槗缁堢锛堥棯鐢电帇銆佸揩鏈熺瓑锛夌殑缁勫悎鍚堢害閮芥湁琛屾儏涓斿湪璺宠穬锛屼负浠€涔堬紵</p><div class='region_panel' id='region_panel_6' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_6').click(function() {$('#region_panel_6').toggle();});}); </script>
+<p>澶у晢鎵€鍙細鎺ㄩ€佸崟鑵垮悎绾︾殑琛屾儏锛岀粍鍚堝悎绾︾殑琛屾儏闇€瑕佷笅绔嚜琛岃绠椼€傚叾浠栫粓绔垯鏄疄鏃惰绠椾袱鏉¤吙鐨勪环宸紝鏁呰鎯呯湅涓婂幓涓€鐩磋烦璺冦€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_6'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_6').click(function() {$('#region_panel_6').toggle();});}); </script></p>
 <p><span id="anchor-id-01" alt=""></span> </p>
-<p><div class='region_i'><p class='region_header' id='region_header_7' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>行情中为什么T日的OpenInterest和T+1日的PreOpenInterest手数不一致？</p><div class='region_panel' id='region_panel_7' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_7').click(function() {$('#region_panel_7').toggle();});}); </script>
-<p>交易所有大笔报单产生，大笔报单不是通过交易方式报出的。不在盘中行情中体现，盘中交易所会公示出来，盘后才汇总到行情中。</p>
+<p><div class='region_i'><p class='region_header' id='region_header_7' style='padding-left: 1em;font-weight : bold;text-indent: 0px;text-align: left;'>琛屾儏涓负浠€涔圱鏃ョ殑OpenInterest鍜孴+1鏃ョ殑PreOpenInterest鎵嬫暟涓嶄竴鑷达紵</p><div class='region_panel' id='region_panel_7' style='display:block;'><table><tr><td><script>$(document).ready(function() {$('#region_header_7').click(function() {$('#region_panel_7').toggle();});}); </script>
+<p>浜ゆ槗鎵€鏈夊ぇ绗旀姤鍗曚骇鐢燂紝澶х瑪鎶ュ崟涓嶆槸閫氳繃浜ゆ槗鏂瑰紡鎶ュ嚭鐨勩€備笉鍦ㄧ洏涓鎯呬腑浣撶幇锛岀洏涓氦鏄撴墍浼氬叕绀哄嚭鏉ワ紝鐩樺悗鎵嶆眹鎬诲埌琛屾儏涓€?/p>
 </td></tr></table>
 </div><p class='region_tail' id='region_tail_7'  style='border-top-color:transparent;border-bottom-width:0;'></p></div><script>$(document).ready(function() {$('#region_tail_7').click(function() {$('#region_panel_7').toggle();});}); </script></p>
 
-</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">回到顶部</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPUSERLOGOUT.html" alt="←">&lt; 前页</a> <a href="../../_index.html" alt="Ctrl+I">回目录</a> <a href="ONRTNFORQUOTERSP.html" alt="→">后页 &gt;</a></p></div>
+</div><script>$(document).ready(function() {$('#file_header').click(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').hide();});});</script><script>$(document).ready(function() {$('#file_header').dblclick(function() {$('.panel_title_h1,.panel_title_h2,.panel_title_h3,.panel_title_h4,.panel_title_h5,.panel_title_h6').show();});});</script><script></script><p class="back_to_top_link"><a href="#__TOP_4E4ABC53-B143-46FF-93CF-F9381EAD8E14__">鍥炲埌椤堕儴</a></p></div><hr class="footline"/><div class="foot-comment-area"</div><div class="foot"><p id="author"></p></div><p style="margin-left:10px;margin-right:10px;text-indent:0px;"><a href="ONRSPUSERLOGOUT.html" alt="鈫?>&lt; 鍓嶉〉</a> <a href="../../_index.html" alt="Ctrl+I">鍥炵洰褰?/a> <a href="ONRTNFORQUOTERSP.html" alt="鈫?>鍚庨〉 &gt;</a></p></div>
 <script language="javascript" type="text/javascript">
 function onDocKeydown(e) {
 e = e || window.event;
-if(e.keyCode==37){　　　//快捷键 left
+if(e.keyCode==37){銆€銆€銆€//蹇嵎閿?left
 window.location.href='ONRSPUSERLOGOUT.html';
 return;
 }
-if(e.ctrlKey && e.keyCode==73){　　　//快捷键 Ctrl+I 
+if(e.ctrlKey && e.keyCode==73){銆€銆€銆€//蹇嵎閿?Ctrl+I 
 window.location.href='../../_index.html';
 return;
 }
-if(e.keyCode==39){　　　//快捷键 right
+if(e.keyCode==39){銆€銆€銆€//蹇嵎閿?right
 window.location.href='ONRTNFORQUOTERSP.html';
 return;
 }
